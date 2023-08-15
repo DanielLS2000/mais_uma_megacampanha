@@ -1,0 +1,21 @@
+# country_decisions = {
+
+	# dcc_modmenu = {
+		# major = yes
+		# potential = {
+			# ai = no
+			# NOT = { has_country_flag = DCC_help_open }
+		# }
+		# allow = {
+			# always = yes
+		# }
+		# effect = {
+			# hidden_effect = {
+				# country_event = {
+					# id = DCC_help.1
+					# days = 0
+				# }
+			# }
+		# }
+	# }
+# }

@@ -1,0 +1,47 @@
+namespace = DCC_developer
+
+country_event = {
+	id = DCC_developer.1
+	title = DCC_developer.1.t
+	desc = DCC_developer.1.d
+	picture = CULTURE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = DCC_developer.1.a
+		every_province = {
+			limit = {
+				owned_by = ROOT
+				NOT = { culture = ROOT }
+			}
+			change_culture = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = DCC_developer.2
+	title = DCC_developer.1.t
+	desc = DCC_developer.1.d
+	picture = CULTURE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = DCC_developer.1.a
+		every_province = {
+			limit = {
+				owned_by = ROOT
+				NOT = { religion = ROOT }
+				OR = {
+					any_neighbor_province = {
+						owned_by = PREV
+						religion = ROOT
+						controlled_by = PREV
+					}
+					is_island = yes
+				}
+			}
+			change_religion = ROOT
+		}
+	}
+}

@@ -5,69 +5,102 @@ first_branch = {
 	has_country_shield = yes
 	potential = {
 		OR = {
-			tag = HOL
-			tag = NED
+			tag = AAC
+			tag = LOT
 		}
 	}
 
 	nord_reveillez_vous_picards = {
-		icon = mission_build_up_to_force_limit
+		icon = league_of_the_public_weal
 		position = 1
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_masters_of_trade = {
-		icon = mission_build_up_to_force_limit
+		icon = purely_for_commerce
 		position = 3
-		required_missions = { nord_the_dutch_provinces }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_the_dutch_provinces } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_regional_powerhouse = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_among_the_great_powers
 		position = 5
-		required_missions = { nord_imperial_ambitions }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_imperial_ambitions } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_arsenal_of_the_north_sea = {
-		icon = mission_build_up_to_force_limit
+		icon = expand_the_arsenal
 		position = 6
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_discover_the_new_world = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_explore_the_world
 		position = 8
-		required_missions = { nord_arsenal_of_the_north_sea nord_throne_of_britanny }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_arsenal_of_the_north_sea
+			nord_throne_of_britanny
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_settle_the_north = {
-		icon = mission_build_up_to_force_limit
+		icon = settle_north_america
 		position = 9
-		required_missions = { nord_discover_the_new_world }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_discover_the_new_world } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_colonial_mastery = {
-		icon = mission_build_up_to_force_limit
+		icon = france_antarctique
 		position = 10
-		required_missions = { nord_settle_the_north nord_explore_the_caribbean }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_settle_the_north
+			nord_explore_the_caribbean
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
-	nord_refine_the_combards = {
-		icon = mission_build_up_to_force_limit
+
+	nord_refine_the_bombards = {
+		icon = mission_cannons_firing
 		position = 14
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
-
 second_branch = {
 	slot = 2
 	generic = no
@@ -75,90 +108,146 @@ second_branch = {
 	has_country_shield = yes
 	potential = {
 		OR = {
-			tag = HOL
-			tag = NED
+			tag = AAC
+			tag = LOT
 		}
 	}
 
 	nord_frisian_rebellion = {
-		icon = mission_build_up_to_force_limit
+		icon = the_hundred_years_war
 		position = 1
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_the_dutch_provinces = {
-		icon = mission_build_up_to_force_limit
+		icon = bavarian_netherlands
 		position = 2
-		required_missions = { nord_reveillez_vous_picards nord_frisian_rebellion }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_reveillez_vous_picards
+			nord_frisian_rebellion
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_imperial_ambitions = {
-		icon = mission_build_up_to_force_limit
+		icon = carolingian_empire
 		position = 4
-		required_missions = { nord_masters_of_trade nord_the_crown_of_nordrhein }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_masters_of_trade
+			nord_the_crown_of_nordrhein
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_right_by_conquest = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_rb_conquer_the_highlands
 		position = 5
-		required_missions = { nord_imperial_ambitions }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_imperial_ambitions } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_haralds_legacy = {
-		icon = mission_build_up_to_force_limit
+		icon = influence_the_princes
 		position = 6
-		required_missions = { nord_regional_powerhouse nord_right_by_conquest nord_protector_of_europe }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_regional_powerhouse
+			nord_right_by_conquest
+			nord_protector_of_europe
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_throne_of_britanny = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_rb_conquer_brittany
 		position = 7
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_kingdom_of_aquitaine = {
-		icon = mission_build_up_to_force_limit
+		icon = unite_the_wittelsbachs
 		position = 8
-		required_missions = { nord_throne_of_britanny }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_throne_of_britanny } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_explore_the_caribbean = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_caribbean_cn
 		position = 9
-		required_missions = { nord_company_of_the_west_indies nord_discover_the_new_world }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_company_of_the_west_indies
+			nord_discover_the_new_world
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_north_american_fur = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_control_fur_trade
 		position = 11
-		required_missions = { nord_colonial_mastery }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_colonial_mastery } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_centralization_of_the_state = {
-		icon = mission_build_up_to_force_limit
+		icon = regents_contracts
 		position = 15
-		required_missions = { nord_refine_the_combards nord_the_crown_seat_of_aachen }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_refine_the_bombards
+			nord_the_crown_seat_of_aachen
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_legal_reforms = {
-		icon = mission_build_up_to_force_limit
+		icon = reform_the_nomocanon
 		position = 17
-		required_missions = { nord_centralization_of_the_state }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_centralization_of_the_state } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
-
 third_branch = {
 	slot = 3
 	generic = no
@@ -166,76 +255,120 @@ third_branch = {
 	has_country_shield = yes
 	potential = {
 		OR = {
-			tag = HOL
-			tag = NED
+			tag = AAC
+			tag = LOT
 		}
 	}
 
 	nord_the_crown_of_nordrhein = {
-		icon = mission_build_up_to_force_limit
+		icon = the_crown_of_lothair
 		position = 3
-		required_missions = { nord_the_dutch_provinces nord_a_house_united }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_the_dutch_provinces
+			nord_a_house_united
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_protector_of_europe = {
-		icon = mission_build_up_to_force_limit
+		icon = peace_in_europe
 		position = 5
-		required_missions = { nord_imperial_ambitions }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_imperial_ambitions } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_company_of_the_west_indies = {
-		icon = mission_build_up_to_force_limit
+		icon = the_emden_company
 		position = 8
-		required_missions = { nord_support_the_bulk_trades }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_support_the_bulk_trades } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_tropical_frontier = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_colonise_brazil
 		position = 10
-		required_missions = { nord_company_of_the_west_indies }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_company_of_the_west_indies } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_center_of_worlds_trade = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_rb_monopolize_the_channel
 		position = 12
-		required_missions = { nord_north_american_fur nord_indian_dominance }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_north_american_fur
+			nord_indian_dominance
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_the_crown_seat_of_aachen = {
-		icon = mission_build_up_to_force_limit
+		icon = fra_crown_seat_capital
 		position = 14
-		required_missions = { nord_embrace_the_renaissance }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_embrace_the_renaissance } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_royal_musketeers = {
-		icon = mission_build_up_to_force_limit
+		icon = establish_the_musketeers
 		position = 16
-		required_missions = { nord_centralization_of_the_state }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_centralization_of_the_state } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_dawn_of_absolutism = {
-		icon = mission_build_up_to_force_limit
+		icon = letat_cest_moi
 		position = 17
-		required_missions = { nord_royal_musketeers }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_royal_musketeers } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_industrial_revolution = {
-		icon = mission_build_up_to_force_limit
+		icon = industrialized_rhineland
 		position = 18
-		required_missions = { nord_legal_reforms nord_dawn_of_absolutism nord_embrace_free_trade }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_legal_reforms
+			nord_dawn_of_absolutism
+			nord_embrace_free_trade
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
-
 fourth_branch = {
 	slot = 4
 	generic = no
@@ -243,90 +376,135 @@ fourth_branch = {
 	has_country_shield = yes
 	potential = {
 		OR = {
-			tag = HOL
-			tag = NED
+			tag = AAC
+			tag = LOT
 		}
 	}
 
 	nord_a_house_united = {
-		icon = mission_build_up_to_force_limit
+		icon = hungarian_union
 		position = 2
-		required_missions = { nord_the_lorranean_question }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_the_lorranean_question } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_order_of_calatrava = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_united_knight_order
 		position = 3
-		required_missions = { nord_papal_lands_of_cologne }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_papal_lands_of_cologne } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_shield_of_the_papacy = {
-		icon = mission_build_up_to_force_limit
+		icon = sway_the_pope
 		position = 4
-		required_missions = { nord_the_crown_of_nordrhein nord_order_of_calatrava nord_chanson_de_geste }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_the_crown_of_nordrhein
+			nord_order_of_calatrava
+			nord_chanson_de_geste
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_support_the_bulk_trades = {
-		icon = mission_build_up_to_force_limit
+		icon = support_the_bulk_trades
 		position = 7
-		required_missions = { nord_taxation_reforms }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_taxation_reforms } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_company_of_the_east_indies = {
-		icon = mission_build_up_to_force_limit
+		icon = the_ostend_company
 		position = 8
-		required_missions = { nord_support_the_bulk_trades }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_support_the_bulk_trades } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_holdings_in_india = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_indian_empire
 		position = 9
-		required_missions = { nord_company_of_the_east_indies }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_company_of_the_east_indies } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_indian_dominance = {
-		icon = mission_build_up_to_force_limit
+		icon = indian_dominance
 		position = 11
-		required_missions = { nord_holdings_in_india }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_holdings_in_india } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_embrace_the_renaissance = {
-		icon = mission_build_up_to_force_limit
+		icon = florentine_renaissance
 		position = 13
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_pontifical_universities = {
-		icon = mission_build_up_to_force_limit
+		icon = leiden_university
 		position = 14
-		required_missions = { nord_embrace_the_renaissance }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_embrace_the_renaissance } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_fund_trade_ventures = {
-		icon = mission_build_up_to_force_limit
+		icon = friends_in_high_places
 		position = 16
-		required_missions = { nord_antwerpean_dockyards }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_antwerpean_dockyards } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_embrace_free_trade = {
-		icon = mission_build_up_to_force_limit
+		icon = the_shape_of_trades_to_come
 		position = 17
-		required_missions = { nord_fund_trade_ventures }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_fund_trade_ventures } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
-
 fifth_branch = {
 	slot = 5
 	generic = no
@@ -334,87 +512,132 @@ fifth_branch = {
 	has_country_shield = yes
 	potential = {
 		OR = {
-			tag = HOL
-			tag = NED
+			tag = AAC
+			tag = LOT
 		}
 	}
 
 	nord_the_lorranean_question = {
-		icon = mission_build_up_to_force_limit
+		icon = integrate_lorraine
 		position = 1
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_papal_lands_of_cologne = {
-		icon = mission_build_up_to_force_limit
+		icon = negotiate_for_avignon
 		position = 2
-		required_missions = { nord_the_lorranean_question }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_the_lorranean_question } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_chanson_de_geste = {
-		icon = mission_build_up_to_force_limit
+		icon = chivalry_is_not_dead
 		position = 3
-		required_missions = { nord_papal_lands_of_cologne }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_papal_lands_of_cologne } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_taxation_reforms = {
-		icon = mission_build_up_to_force_limit
+		icon = adjust_the_general_means
 		position = 6
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_support_the_dutch_market = {
-		icon = mission_build_up_to_force_limit
+		icon = interest_of_holland
 		position = 8
-		required_missions = { nord_support_the_bulk_trades }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_support_the_bulk_trades } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_theory_of_the_free_market = {
-		icon = mission_build_up_to_force_limit
+		icon = fra_develop_trade
 		position = 9
-		required_missions = { nord_support_the_dutch_market }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_support_the_dutch_market } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_the_chinese_market = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_asian_trader
 		position = 10
-		required_missions = { nord_theory_of_the_free_market }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_theory_of_the_free_market } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_naval_supremacy = {
-		icon = mission_build_up_to_force_limit
+		icon = imperial_navy
 		position = 12
-		required_missions = { nord_the_chinese_market nord_indian_dominance }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_the_chinese_market
+			nord_indian_dominance
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_connect_the_countryside = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_expand_into_the_forest
 		position = 13
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_the_palace_of_aachen = {
-		icon = mission_build_up_to_force_limit
+		icon = versailles_palace
 		position = 14
-		required_missions = { nord_embrace_the_renaissance nord_connect_the_countryside }
-		trigger = { }
-		effect = { }
+		required_missions = {
+			nord_embrace_the_renaissance
+			nord_connect_the_countryside
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
+
 	nord_antwerpean_dockyards = {
-		icon = mission_build_up_to_force_limit
+		icon = toulon_dockyards
 		position = 15
-		required_missions = { nord_the_palace_of_aachen }
-		trigger = { }
-		effect = { }
+		required_missions = { nord_the_palace_of_aachen } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
 	}
 }
-
