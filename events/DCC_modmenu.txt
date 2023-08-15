@@ -1,0 +1,510 @@
+namespace = DCC_help
+
+country_event = {
+	id = DCC_help.1
+	title = DCC_help.1.t
+	desc = DCC_help.1.d
+	picture = {
+		trigger = {
+			NOT = { has_global_flag = es_dcc_compat_DCC }
+		}
+		picture = CULTURE_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_global_flag = es_dcc_compat_DCC
+		}
+		picture = ES_HARVEST_eventPicture
+	}
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = DCC_help_open
+	}
+	
+	option = {
+		name = DCC_help.length
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.2
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.length.ai
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.4
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.misc
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.3
+				days = 0
+			}
+		}
+	}
+	
+	option = {
+		name = DCC_help.compat
+		trigger = {
+			OR = {
+				has_global_flag = beyond_typus_mod_enabled
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.5
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.TCCompat
+		trigger = {
+			OR = {
+				has_global_flag = elder_scrolls_compat
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.6
+				days = 0
+			}
+		}
+	}
+	
+	option = {
+		name = DCC_help.exit
+
+		hidden_effect = {
+			clr_country_flag = DCC_help_open
+		}
+	}
+}
+
+country_event = {
+	id = DCC_help.2
+	title = DCC_help.2.t
+	desc = DCC_help.2.d
+	picture = {
+		trigger = {
+			NOT = { has_global_flag = es_dcc_compat_DCC }
+		}
+		picture = CULTURE_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_global_flag = es_dcc_compat_DCC
+		}
+		picture = ES_HARVEST_eventPicture
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = DCC_help.1.a
+		trigger = {
+			NOT = { has_global_flag = short }
+		}
+		hidden_effect = {
+			set_global_flag = short
+			clr_global_flag = default
+			clr_global_flag = long
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+	option = {
+		name = DCC_help.1.ab
+		trigger = {
+			has_global_flag = short
+		}
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.1.b
+		trigger = {
+			NOT = { has_global_flag = default }
+		}
+		hidden_effect = {
+			set_global_flag = default
+			clr_global_flag = short
+			clr_global_flag = long
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+	option = {
+		name = DCC_help.1.bc
+		trigger = {
+			has_global_flag = default
+		}
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option  = {
+		name = DCC_help.1.c
+		trigger = {
+			NOT = { has_global_flag = long }
+		}
+		hidden_effect = {
+			set_global_flag = long
+			clr_global_flag = short
+			clr_global_flag = default
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+		
+	}
+	option = {
+		name = DCC_help.1.cd
+		trigger = {
+			has_global_flag = long
+		}
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.back
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.exit
+
+		hidden_effect = {
+			clr_country_flag = DCC_help_open
+		}
+	}
+}
+
+country_event = {
+	id = DCC_help.3
+	title = DCC_help.3.t
+	desc = DCC_help.3.d
+	picture = {
+		trigger = {
+			NOT = { has_global_flag = es_dcc_compat_DCC }
+		}
+		picture = CULTURE_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_global_flag = es_dcc_compat_DCC
+		}
+		picture = ES_HARVEST_eventPicture
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = DCC_help.3.a
+		trigger = { has_global_flag = custom_factor }
+		custom_tooltip = DCC_help.3.a_tooltip
+		set_global_flag = default_factor
+		clr_global_flag = custom_factor
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}	
+	}
+	option = {
+		name = DCC_help.3.ab
+		trigger = { has_global_flag = default_factor }
+		custom_tooltip = DCC_help.3.ab_tooltip
+		set_global_flag = custom_factor
+		clr_global_flag = default_factor
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.back
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.exit
+		
+		hidden_effect = {
+			clr_country_flag = DCC_help_open
+		}
+	}
+}
+
+country_event = {
+	id = DCC_help.4
+	title = DCC_help.4.t
+	desc = DCC_help.4.d
+	picture = {
+		trigger = {
+			NOT = { has_global_flag = es_dcc_compat_DCC }
+		}
+		picture = CULTURE_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_global_flag = es_dcc_compat_DCC
+		}
+		picture = ES_HARVEST_eventPicture
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = DCC_help.1.a
+		trigger = {
+			NOT = { has_global_flag = short_ai }
+		}
+		hidden_effect = {
+			set_global_flag = short_ai
+			clr_global_flag = default_ai
+			clr_global_flag = long_ai
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+	option = {
+		name = DCC_help.1.ab
+		trigger = {
+			has_global_flag = short_ai
+		}
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.1.b
+		trigger = {
+			NOT = { has_global_flag = default_ai }
+		}
+		hidden_effect = {
+			set_global_flag = default_ai
+			clr_global_flag = short_ai
+			clr_global_flag = long_ai
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+	option = {
+		name = DCC_help.1.bc
+		trigger = {
+			has_global_flag = default_ai
+		}
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option  = {
+		name = DCC_help.1.c
+		trigger = {
+			NOT = { has_global_flag = long_ai }
+		}
+		hidden_effect = {
+			set_global_flag = long_ai
+			clr_global_flag = short_ai
+			clr_global_flag = default_ai
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+		
+	}
+	option = {
+		name = DCC_help.1.cd
+		trigger = {
+			has_global_flag = long_ai
+		}
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.back
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.exit
+
+		hidden_effect = {
+			clr_country_flag = DCC_help_open
+		}
+	}
+}
+
+country_event = {
+	id = DCC_help.5
+	title = DCC_help.5.t
+	desc = DCC_help.5.d
+	picture = CULTURE_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = DCC_help.5.bt
+		trigger = {
+			has_global_flag = beyond_typus_mod_enabled
+			NOT = { has_global_flag = beyond_typus_compat_DCC }
+		}
+		set_global_flag = beyond_typus_compat_DCC
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.5.bta
+		trigger = {
+			has_global_flag = beyond_typus_compat_DCC
+			has_global_flag = beyond_typus_mod_enabled
+		}
+		clr_global_flag = beyond_typus_compat_DCC
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.back
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.exit
+
+		hidden_effect = {
+			clr_country_flag = DCC_help_open
+		}
+	}
+}
+
+country_event = {
+	id = DCC_help.6
+	title = DCC_help.6.t
+	desc = DCC_help.6.d
+	picture = {
+		trigger = {
+			NOT = { has_global_flag = es_dcc_compat_DCC }
+		}
+		picture = CULTURE_eventPicture
+	}
+	picture = {
+		trigger = {
+			has_global_flag = es_dcc_compat_DCC
+		}
+		picture = ES_HARVEST_eventPicture
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = DCC_help.6.a
+		trigger = {
+			NOT = { has_global_flag = es_dcc_compat_DCC }
+		}
+		custom_tooltip = DCC_help.6.a_tooltip
+		set_global_flag = es_dcc_compat_DCC
+	}
+	option = {
+		name = DCC_help.6.ab
+		trigger = {
+			has_global_flag = es_dcc_compat_DCC
+		}
+		custom_tooltip = DCC_help.6.ab_tooltip
+		clr_global_flag = es_dcc_compat_DCC
+	}
+
+	option = {
+		name = DCC_help.back
+		hidden_effect = {
+			country_event = {
+				id = DCC_help.1
+				days = 0
+			}
+		}
+	}
+
+	option = {
+		name = DCC_help.exit
+
+		hidden_effect = {
+			clr_country_flag = DCC_help_open
+		}
+	}
+}

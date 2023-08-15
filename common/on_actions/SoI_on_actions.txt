@@ -1,0 +1,23 @@
+on_monthly_pulse = {
+	add_monthly_influence_effect = yes
+}
+
+on_gain_great_power_status = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = became_great_power_flag }
+		}
+		set_country_flag = became_great_power_flag
+	}
+	update_diplomatic_influence_system = yes
+}
+
+on_lose_great_power_status = {
+	every_subject_country = {
+		limit = {
+			is_subject_of_type = sphere_member
+		}
+		grant_independence = yes # Freedom for Spheres
+	}
+	update_diplomatic_influence_system = yes
+}
