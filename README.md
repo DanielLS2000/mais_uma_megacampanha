@@ -19,9 +19,9 @@
 - [Realistic African Colonization](https://steamcommunity.com/sharedfiles/filedetails/?id=2967440220)
 - [Spheres of Influence](https://steamcommunity.com/sharedfiles/filedetails/?id=3002729793)
 - [New World Colony Names Fan Fork](https://steamcommunity.com/sharedfiles/filedetails/?id=2776989437)
+- [Eurocentric Institutions](https://steamcommunity.com/sharedfiles/filedetails/?id=1881890980)
 *To do*
 - [Dynamic Culture Conversion](https://steamcommunity.com/sharedfiles/filedetails/?id=2760914801)
-- [Eurocentric Institutions](https://steamcommunity.com/sharedfiles/filedetails/?id=1881890980)
 *Maybe Later?*
 - [The Balance of Powers 2.0](https://steamcommunity.com/sharedfiles/filedetails/?id=2389825193)
 - [Colony Merging](https://steamcommunity.com/sharedfiles/filedetails/?id=1562888561)
