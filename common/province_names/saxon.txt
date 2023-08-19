@@ -1,0 +1,8 @@
+62 = "Leibz'sch"
+4744 = "Zwigge"
+61 = {"Dräsdn" "Dräsdn"}
+59 = {"Wuittanbarg" "Wuittanbarg"}
+2965 = {"Foktlant" "Weidn"}
+4743 = {"Wuaimr" "Jena"}
+4716 = {"Koburch" "Koburch"}
+63 = {"Erfuad" "Erfuad"}

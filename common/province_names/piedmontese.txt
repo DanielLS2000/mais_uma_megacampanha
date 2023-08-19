@@ -1,0 +1,60 @@
+101 = "Génoa"
+102 = "Nissa" #Nissa Marìtima
+103 = "Túri"
+#SAME 104
+105 = "Parma"
+106 = "Mòdena"
+107 = "Bressia"
+108 = "Veron-a"
+109 = "Màntoa"
+110 = "Trent"
+111 = "Friul"
+112 = "Venessia"
+113 = "Fërara"
+114 = "Romagna" #Ravënna
+#SAME 115
+116 = "Firense" #Florensa, Fiorensa
+117 = "Sien-a"
+#SAME 118
+119 = "Ancon-a"
+120 = "Abruss"
+121 = "Nàpoli"
+122 = "Tàranto"
+123 = "Calabria"
+124 = "Messin-a"
+125 = "Palerm"
+#SAME 127
+1247 = "Còrsica"
+1774 = "Trevis"
+1862 = "Cremon-a"
+1875 = "Coni"
+1933 = "Bari"
+1934 = "Basilicà" #Lücannia
+#SAME 2976
+2977 = "Urbin"
+2978 = "Aress"
+2979 = "Noara"
+2980 = "Luca"
+2981 = "Monfrà"
+2982 = "Siracusa"
+2983 = "Salern"
+2984 = "Cosensa"
+2985 = "Fògia"
+2986 = "Càliari"
+2992 = "Albenga"
+4719 = "Bressa"
+205 = "Savouè"
+4727 = "Sèlusse"
+4728 = "Pavìa"
+#SAME 4729
+4730 = "Bològna"
+4731 = "Spoleto"
+#SAME 4732
+4733 = "Molise"
+4734 = "Avlin"
+4735 = "Arborea"
+#SAME 4736
+4737 = "Agrigent"
+#SAME 4738
+4739 = "Bérghem"
+4740 = "Còm"

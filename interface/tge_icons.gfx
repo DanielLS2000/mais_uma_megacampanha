@@ -1,0 +1,30 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_event_button_red"
+		texturefile = "gfx//interface//ideas_EU4//event_button_red.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_event_button_color_red_back"
+		texturefile = "gfx//interface//ideas_EU4//event_button_color_red_back.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_event_button_yellow_goods"
+		texturefile = "gfx//interface//ideas_EU4//event_button_yellow_goods.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_event_button_blue_latent"
+		texturefile = "gfx//interface//ideas_EU4//event_button_blue_latent.dds"
+		loadType = "INGAME"
+	}
+
+}
+	
+
+	

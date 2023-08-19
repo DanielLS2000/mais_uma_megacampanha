@@ -1,0 +1,194 @@
+#similar: serbian, croatian, bosnian, slovene
+60 = "Gornja Lužica"
+#SAME 73
+76 = "Solnograd"
+101 = "Ðenova" #? #GREEN
+102 = "Nica" #GREEN
+103 = "Torino" #GREEN
+104 = "Milano" #GREEN
+105 = "Parma" #GREEN
+106 = "Modena" #GREEN
+107 = "Breša" #?
+108 = "Verona"
+109 = "Mantova" #GREEN
+110 = "Trident"
+111 = "Furlanija"
+112 = "Mleci" #Venecija
+113 = "Ferrara" #GREEN
+114 = "Romanja" #?, Ravena? #GREEN
+115 = "Piza" #? #GREEN
+116 = "Firenca"
+117 = "Sijena" #? #GREEN
+118 = "Rim"
+119 = "Jakin" #GREEN
+120 = "Abruco" #? #GREEN
+121 = "Napulj"
+122 = "Salento" #GREEN
+123 = "Kalabrija" #GREEN
+124 = "Mesina" #GREEN
+125 = "Palermo" #GREEN
+#SAME 126 #YELLOW
+127 = "Sasari" #? #GREEN
+128 = "Dolnja Koruška" #Celovac
+#SAME 129 #YELLOW
+#SAME 130
+#SAME 131
+132 = "Štajerska"
+133 = "Gornja Austrija" #Linc? #GREEN
+134 = "Bec"
+135 = "Šopron"
+#SAME 136
+#SAME 137
+138 = "Crna Gora"
+#SAME 139
+#SAME 140
+#SAME 141
+142 = "Krf"
+143 = "Valona"
+144 = "Janjina" #Epir
+145 = "Moreja"
+146 = "Atina"
+147 = "Tesalija"
+148 = "Solun"
+149 = "Drinopolje"
+150 = "Nikopolj"
+151 = "Carigrad"
+#SAME 152
+153 = "Pešta"
+154 = "Nove Zamki" #?
+155 = "Bekeš" #?
+156 = "Temišvar"
+157 = "Krišana"
+158 = "Moriš"
+#SAME 159
+160 = "Mala Vlaška" #Oltenija
+161 = "Trgovište"
+162 = "Košice"
+163 = "Kreta"
+164 = "Cikladi"
+261 = "Galic" #?
+262 = "Krakov"
+263 = "Racibož" #?
+264 = "Vroclav" #?
+#SAME 265
+266 = "Prag"
+267 = "Plzenj" #? #GREEN
+268 = "Sucava" #?
+320 = "Rod" #Rodos
+321 = "Cipar"
+1247 = "Korzika" #GREEN
+#SAME 1318
+1756 = "Besarabija"
+1763 = "Donja Lužica" #?
+#SAME 1764
+1765 = "Sofija"
+#SAME 1766
+#SAME 1767
+1768 = "Lijenc"
+#SAME 1769 #YELLOW
+1770 = "Donja Austrija" #Krems na Dunavu
+1771 = "Rudna gora"
+1772 = "Požun"
+1773 = "Ahaja"
+1774 = "Treviž" #?
+#SAME 1826
+#SAME 1827
+1828 = "Dolnji Kraji"
+#SAME 1831
+1853 = "Kostur" #?
+1862 = "Kremona" #? #GREEN
+1863 = "Gradec"
+1864 = "Šomod"
+1875 = "Kuneo" #? #GREEN
+1933 = "Veliki Bar" #? #GREEN
+1934 = "Bazilikata" #? #GREEN
+1951 = "Erdeljski Biograd" #GREEN
+1952 = "Maramureš" #?
+1953 = "Debrecin" # Sabolc
+1954 = "Vojvodina"
+2405 = "Bender" #?, Benderi?, Tigina?
+#SAME 2746
+#SAME 2750
+2960 = "Novi Sonc"
+2966 = "Glogov" #?
+2967 = "Karlove Vari" #?, Heb
+2968 = "Budjejovice" #? #GREEN
+2970 = "Kraljicin Gradac"
+2976 = "Peruða" #Umbrija #GREEN
+2977 = "Urbino" #GREEN
+2978 = "Areco" #? #GREEN
+2979 = "Novara" #GREEN
+2980 = "Luka" #? #GREEN
+2982 = "Sirakuza" #GREEN
+2983 = "Salerno" #GREEN
+2984 = "Kozenca" #? #GREEN
+2985 = "Foða" #? #GREEN
+2986 = "Kaljari" #GREEN
+2992 = "Albenga" #GREEN
+2998 = "Buzeu" #? #GREEN
+#SAME 3000
+3001 = "Skoplje"
+#SAME 3002
+3003 = "Eubeja"
+4125 = "Solnok" #?
+4126 = "Segedin"
+#SAME 4127
+4128 = "Transilvanija" # Sedmogradska, Erdelj
+4173 = "Srijem"
+4174 = "Drac"
+4175 = "Skadar"
+#SAME 4176
+4236 = "Trencin"
+4237 = "Olomouc"
+4238 = "Legnjica"
+4239 = "Biograd"
+4240 = "Stolni Biograd"
+
+4529 = "Jaši"
+4530 = "Barlad" #?
+4531 = "Ðurðevo" #?, Ðurðu?
+#SAME 4532
+
+4698 = "Kefalonija"
+4699 = "Arta"
+4700 = "Lezbos" #Lezb
+4701 = "Korint"
+4702 = "Ser" # Seres
+4703 = "Custendil" #Velbužd
+4704 = "Trnovo"
+4705 = "Komotini" #Komotene
+4706 = "Tulca" #?
+4710 = "Brežnice" #?, Bregenc?
+4723 = "Opole"
+#SAME 4724
+4725 = "Jindrihuv Hradec" #?
+4726 = "Ostrava" #Moravska Ostrava
+4727 = "Saluco" #?
+4728 = "Pavija" #?
+4729 = "Padova"
+4730 = "Bolonja" #?
+4731 = "Spoleto"
+4732 = "Teracina" #?
+4733 = "Molize"
+4734 = "Avelino" #?
+4735 = "Arboreja" #?
+4736 = "Trapani" #Trani?
+4737 = "Agriðento" #?, Agriðent?
+4738 = "Trst"
+4739 = "Bergamo"
+4740 = "Komo" #?
+4750 = "Kruj"
+4751 = "Celje"
+4752 = "Rijeka"
+#SAME 4753
+#SAME 4754
+#SAME 4755 or Višegrad
+4756 = "Bjelovar"
+#SAME 4757 or Valjevo
+4758 = "Meran"
+4759 = "Gornja Koruška" #Beljak
+4760 = "Braunau na Innu"
+4761 = "Štajr" #?
+4762 = "Becka šuma" # Sankt Pelten?
+4779 = "Galipolje"
+#SAME 4780

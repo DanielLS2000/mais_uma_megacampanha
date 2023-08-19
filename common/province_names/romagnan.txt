@@ -1,0 +1,43 @@
+#Emilian and Romagnol
+101 = "Zêna"
+102 = "Nisa"
+103 = "Turén"
+104 = "Milân"
+#SAME 105
+106 = "Mòdna"
+107 = "Brësa"
+109 = "Mantva"
+111 = "Friåul"
+112 = "Venêzia"
+113 = "Frèra"
+114 = "Ravêna"
+#SAME 115
+116 = "Fiuränza"
+117 = "Séna"
+118 = "Råmma"
+#SAME 119
+120 = "Abrózz"
+121 = "Nâpol"
+122 = "Târent"
+124 = "Messina"
+125 = "Palèrum"
+1774 = "Trevîs"
+1862 = "Carmona"
+1875 = "Cònni"
+1933 = "Bari"
+1934 = "Basilichèda" #Lucàgna
+2976 = "Perûgia" #Ónbria
+2977 = "Urbén"
+2979 = "Nuvèra"
+2980 = "Locca"
+2982 = "Siracusa"
+2985 = "Fògia"
+2986 = "Cagliari"
+
+4728 = "Pavéia"
+4729 = "Pèdva"
+4730 = "Bulåggna"
+4733 = "Mulìs"
+4738 = "Trieste"
+4739 = "Bêrgum"
+4740 = "Còm"
