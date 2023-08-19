@@ -1,0 +1,6 @@
+263 = {"Racibór" "Racibór"}
+264 = {"Pogórze Slõnske" "Wroclõw"}
+4723 = {"Opole" "Opole"}
+4238 = {"Legnica" "Legnica"}
+2966 = {"Ôpawsko" "Glogõw" }
+4778 = {"Górna Luzyca" "Górjelice"}

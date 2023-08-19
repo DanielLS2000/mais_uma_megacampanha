@@ -1,0 +1,5 @@
+208 = "Llión"
+207 = "Asturies" 
+1747 = "Caçris"
+216 = {"Sallamanxa" "Sallamanxa"}
+4788 = {"Estremaúra" "Badajós"}

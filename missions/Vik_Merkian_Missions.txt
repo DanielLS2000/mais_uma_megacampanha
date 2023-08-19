@@ -1,0 +1,613 @@
+first_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+	} 
+
+	mer_raise_the_vigsmen = {
+		icon = mission_rb_unite_the_clans
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_subjugate_alba = {
+		icon = mission_rb_conquer_scotland
+		position = 2
+		required_missions = { mer_raise_the_vigsmen } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_unify_the_isles = {
+		icon = mission_rb_conquer_the_isles
+		position = 3
+		required_missions = {
+			mer_subjugate_alba
+			mer_conquer_vigsland
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_the_acts_of_union = {
+		icon = hungarian_union
+		position = 4
+		required_missions = { mer_unify_the_isles } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_war_of_the_dragons = {
+		icon = mission_rb_war_of_the_roses
+		position = 7
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_found_logordnism = {
+		icon = mission_bridge_the_heresy
+		position = 8
+		required_missions = { mer_war_of_the_dragons } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_piety_of_the_state = {
+		icon = show_piety
+		position = 9
+		required_missions = { mer_found_logordnism } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_monopolize_the_channel = {
+		icon = mission_rb_monopolize_the_channel
+		position = 10
+		required_missions = { mer_the_education_acts } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_centers_of_worlds_trade = {
+		icon = mission_the_triangle_trade
+		position = 11
+		required_missions = { mer_monopolize_the_channel } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+second_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+	} 
+
+	mer_conquer_vigsland = {
+		icon = mission_rb_into_ireland
+		position = 2
+		required_missions = { mer_raise_the_vigsmen } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_develop_merkian_identity = {
+		icon = mission_rb_rein_in_the_highland_clans
+		position = 3
+		required_missions = { mer_merkian_supremacy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_discover_the_americas = {
+		icon = mission_explore_the_world
+		position = 5
+		required_missions = { mer_found_the_drakkars } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_colonize_canada = {
+		icon = mission_rb_colonise_canada
+		position = 6
+		required_missions = { mer_discover_the_americas } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_import_potatoes = {
+		icon = mission_rb_import_potatoes
+		position = 7
+		required_missions = { mer_colonize_canada } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_the_bank_of_merkia = {
+		icon = mission_rb_the_bank_of_scotland
+		position = 8
+		required_missions = { mer_war_of_the_dragons } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_the_education_acts = {
+		icon = mission_early_modern_university
+		position = 9
+		required_missions = {
+			mer_found_logordnism
+			mer_the_bank_of_merkia
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_college_of_justice = {
+		icon = mission_fiqh_laws
+		position = 10
+		required_missions = { mer_the_education_acts } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_early_industry = {
+		icon = industrialized_rhineland
+		position = 11
+		required_missions = { mer_college_of_justice } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+third_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+	} 
+
+	mer_the_revenge_war = {
+		icon = mission_hundred_years_war
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_merkian_supremacy = {
+		icon = mission_rb_rule_britannia_irish_version
+		position = 2
+		required_missions = { mer_the_revenge_war } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_shatter_celtic_nobility = {
+		icon = balance_the_estates
+		position = 3
+		required_missions = { mer_merkian_supremacy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_found_the_drakkars = {
+		icon = mission_longships
+		position = 4
+		required_missions = { mer_shatter_celtic_nobility } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_rule_merkia = {
+		icon = mission_rule_britannia
+		position = 5
+		required_missions = { mer_found_the_drakkars } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_settle_in_america = {
+		icon = settle_north_america
+		position = 6
+		required_missions = { mer_discover_the_americas } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_dominate_the_new_world = {
+		icon = mission_ruler_of_north_america
+		position = 7
+		required_missions = {
+			mer_colonize_canada
+			mer_settle_in_america
+			mer_colonize_the_caribbean
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_take_west_indian_coast = {
+		icon = mission_indian_trade_company
+		position = 9
+		required_missions = { mer_east_indies_company } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_merkian_renaissance = {
+		icon = mission_english_renaissance
+		position = 10
+		required_missions = { mer_the_education_acts } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_renovate_oxbridge = {
+		icon = mission_rb_renovate_oxbridge
+		position = 11
+		required_missions = { mer_merkian_renaissance } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+fourth_branch = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+	} 
+
+	mer_north_sea_trade = {
+		icon = mission_seize_north_sea_trade
+		position = 2
+		required_missions = { mer_the_revenge_war } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_issue_the_royal_warrant = {
+		icon = the_ostend_company
+		position = 3
+		required_missions = { mer_merkian_supremacy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_mediterranean_authority = {
+		icon = mission_rb_increase_our_reach
+		position = 5
+		required_missions = { mer_found_the_drakkars } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_colonize_the_caribbean = {
+		icon = mission_caribbean_cn
+		position = 6
+		required_missions = { mer_discover_the_americas } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_discover_india = {
+		icon = mission_south_indian_trade
+		position = 7
+		required_missions = { mer_colonize_the_cape } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_east_indies_company = {
+		icon = mission_indian_empire
+		position = 8
+		required_missions = { mer_discover_india } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_push_into_inland_india = {
+		icon = mission_rb_inland_india
+		position = 9
+		required_missions = { mer_east_indies_company } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_expand_the_royal_navy = {
+		icon = mission_rb_a_mighty_fleet
+		position = 10
+		required_missions = { mer_the_education_acts } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_a_combined_military = {
+		icon = fra_military_reform
+		position = 11
+		required_missions = {
+			mer_expand_the_royal_navy
+			mer_expand_the_army
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_the_royal_marines = {
+		icon = mission_marines
+		position = 12
+		required_missions = { mer_a_combined_military } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+fifth_branch = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+	} 
+
+	mer_family_tides = {
+		icon = mission_alliances
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_a_better_agreement = {
+		icon = mission_diplomatic_relation
+		position = 2
+		required_missions = { mer_family_tides } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_influence_the_north_sea = {
+		icon = mission_corsairs_of_the_north_sea
+		position = 3
+		required_missions = {
+			mer_north_sea_trade
+			mer_a_better_agreement
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_the_european_trade = {
+		icon = mission_european_politics
+		position = 4
+		required_missions = {
+			mer_issue_the_royal_warrant
+			mer_influence_the_north_sea
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_sail_around_africa = {
+		icon = mission_west_african_ports
+		position = 5
+		required_missions = { mer_found_the_drakkars } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_colonize_the_cape = {
+		icon = colonize_the_cape
+		position = 6
+		required_missions = { mer_sail_around_africa } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_chart_the_southern_seas = {
+		icon = mission_establish_high_seas_navy
+		position = 7
+		required_missions = { mer_colonize_the_cape } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_colonize_spice_islands = {
+		icon = mission_rb_colonise_spice_islands
+		position = 8
+		required_missions = { mer_chart_the_southern_seas } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_conquer_bengal = {
+		icon = mission_unite_bengal
+		position = 9
+		required_missions = { mer_east_indies_company } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_expand_the_army = {
+		icon = mission_assemble_an_army
+		position = 10
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	mer_the_bluecoats = {
+		icon = mission_redcoats
+		position = 12
+		required_missions = { mer_a_combined_military } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
