@@ -1,0 +1,87 @@
+ck2_converter_generated = yes
+graphical_culture = easterngfx
+color = { 138 110 130 }
+revolutionary_colors = { 15 0 15 }
+historical_idea_groups = {
+	religious_ideas
+	defensive_ideas
+	spy_ideas
+	trade_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	administrative_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	ottoman_lancer
+	ottoman_new_model
+	ottoman_nizami_cedid
+	ottoman_reformed_janissary
+	ottoman_reformed_spahi
+	ottoman_sekban
+	ottoman_spahi
+	ottoman_toprakli_dragoon
+	ottoman_toprakli_hit_and_run
+	slavic_stradioti
+}
+monarch_names = {
+	"Agne #0" = -1
+	"Anthe #0" = -1
+	"Artemios #0" = 0
+	"Asmuna #0" = -1
+	"Daniel #0" = 0
+	"Demetra #0" = -1
+	"Dorothea #0" = -1
+	"Eunike #0" = -1
+	"Faraj #0" = 0
+	"Firoza #0" = -1
+	"Guliko #0" = -1
+	"Herakleios #0" = 0
+	"Ioannikios #0" = 0
+	"Ioustinos #0" = 0
+	"Isaias #0" = 0
+	"Komitas #0" = 0
+	"Konstantia #0" = -1
+	"Lalla #0" = -1
+	"Nikodemos #0" = 0
+	"Paschalis #0" = 0
+	"Pavlina #0" = -1
+	"Romylia #0" = -1
+	"Timotheos #0" = 0
+	"Valerios #0" = 0
+	"Yusuf #1" = 10
+	"Æbba #0" = -1
+}
+leader_names = {
+	"Argyrus"
+	"Artavasdus"
+	"Basileus"
+	"Diogenes"
+	"Ducas"
+	"Monomachus"
+	"Morosini"
+	"Romanus"
+	"Stauracius"
+	"Stratioticus"
+	"Vataces"
+	"Zimisces"
+	"de Vendôme"
+}
+ship_names = {
+	"Dermoaros"
+	"Frangokastelo"
+	"Glalos"
+	"Koudouras"
+	"Lentas"
+	"Matala"
+	"Paleochora"
+	"Papadogiannis"
+	"Plakias"
+	"Sougia"
+}

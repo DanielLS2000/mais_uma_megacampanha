@@ -1,0 +1,19 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 245 80 5 }
+monarch_names = {
+	"Bawo #1" = 10
+	"Bisi #1" = 10
+	"Deye #0" = -1
+	"Dimbi #1" = -1
+	"Fatima #1" = -1
+	"Kodama #1" = 10
+	"Magira #1" = -1
+	"Nasraddin #0" = 0
+	"Niki #1" = -1
+	"Nuri #0" = 0
+	"Samsou-Beri #1" = 10
+	"Sandaki #0" = 0
+	"Soumaoro #0" = 0
+	"Ya'qub #0" = 0
+}

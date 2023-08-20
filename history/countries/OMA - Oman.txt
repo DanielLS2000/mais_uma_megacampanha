@@ -1,0 +1,57 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 1
+technology_group = muslim
+religion = sunni
+primary_culture = omani_culture
+capital = 398
+mercantilism = 15
+religious_school = hanbali_school
+1444.11.11= {
+	monarch = {
+		name = "Muhammad II"
+		dynasty = "Samirid"
+		adm = 4
+		dip = 3
+		mil = 3
+		birth_date = 1412.12.12
+		religion = sunni
+		culture = omani_culture
+	}
+	add_ruler_personality = embezzler_personality
+	add_ruler_personality = fertile_personality
+	queen = {
+		name = "Thana"
+		dynasty = "Mutawakkilid"
+		adm = 4
+		dip = 5
+		mil = 4
+		country_of_origin = OMA
+		birth_date = 1407.11.17
+		death_date = 1467.11.17
+		female = yes
+		religion = sunni
+		culture = al_suryah_arabic
+	}
+	add_queen_personality = drunkard_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Samir"
+		monarch_name = "Samir II"
+		dynasty = "Samirid"
+		adm = 4
+		dip = 4
+		mil = 4
+		birth_date = 1434.2.18
+		death_date = 1499.2.18
+		claim = 89
+		religion = sunni
+		culture = bedouin_arabic
+	}
+	add_heir_personality = calm_personality
+	add_heir_personality = tactical_genius_personality
+}
+1444.11.11= {
+	add_prestige = 67
+	add_treasury = 53
+}

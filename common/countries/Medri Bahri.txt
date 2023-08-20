@@ -1,0 +1,71 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 23 114 60 }
+revolutionary_colors = { 10 5 14 }
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	religious_ideas
+	offensive_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	quality_ideas
+}
+historical_units = {
+	african_abyssinian_cavalry
+	african_abyssinian_light_cavalry
+	african_dragoon
+	african_hussar
+	african_mossi_horsemen
+	african_somali_cavalry
+	african_spearmen
+	bantu_tribal_warfare
+	ethiopian_guerilla_warfare
+	ethiopian_gunpowder_warfare
+	ethiopian_mountain_warfare
+	westernized_ethiopian
+}
+monarch_names = {
+	"Alaso #0" = -1
+	"Ali #1" = 10
+	"Ghobad #0" = 0
+	"Hadab #1" = 10
+	"Hamalmal #0" = 0
+	"Hamam #0" = -1
+	"Hamar #0" = 0
+	"Haqq #1" = 10
+	"Irir #0" = 0
+	"Mahammad #0" = 0
+	"Naleye #1" = 10
+	"Nazaneen #0" = -1
+	"Nizam #0" = 0
+	"Qol #0" = 0
+	"Umardin #0" = 0
+	"Xuršîd #0" = 0
+}
+leader_names = {
+	"Ambo"
+	"Asfaw"
+	"Asres"
+	"Bayisa"
+	"Degife"
+	"Dereje"
+	"Eshete"
+	"Eyob"
+	"Ezana"
+	"Wami"
+}
+ship_names = {
+	"Kedus Harbe"
+	"Lalibela"
+	"Mara Takla"
+	"Na'akueto La'ab"
+	"Seyum"
+	"Shewa"
+	"Tatadum"
+	"Tigray"
+	"Yekuno Amlak"
+	"Yetbarak"
+	"Yodit"
+}

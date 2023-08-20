@@ -1,0 +1,24 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 198 88 208 }
+monarch_names = {
+	"Aasha #0" = -1
+	"Amare #0" = 0
+	"Ayana #1" = -1
+	"Azmera #0" = 0
+	"Bekele #0" = 0
+	"Daniachew #0" = 0
+	"Dhidhin #0" = 0
+	"Haeran #0" = 0
+	"Hakym #2" = 10
+	"Kâvus #0" = 0
+	"Mamo #0" = 0
+	"Mekonnen #1" = 10
+	"Semer #1" = 10
+	"Tariku #1" = 10
+	"Tefere #1" = 10
+	"Teferi #0" = 0
+	"Tekle #0" = 0
+	"Teru #0" = -1
+	"Tewodros #1" = 10
+}

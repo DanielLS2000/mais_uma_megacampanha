@@ -1,0 +1,117 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 230 240 255 }
+revolutionary_colors = { 5 0 8 }
+historical_idea_groups = {
+	religious_ideas
+	offensive_ideas
+	economic_ideas
+	diplomatic_ideas
+	trade_ideas
+	maritime_ideas
+	defensive_ideas
+	administrative_ideas
+}
+historical_units = {
+	adal_guerilla_warfare
+	adal_gunpowder_warfare
+	african_abyssinian_cavalry
+	african_abyssinian_light_cavalry
+	african_dragoon
+	african_hill_warfare
+	african_hussar
+	african_somali_cavalry
+	african_spearmen
+	bantu_tribal_warfare
+	westernized_adal
+}
+monarch_names = {
+	"Aasha #0" = -1
+	"Abu-Bakr #0" = 0
+	"Adila #0" = -1
+	"Ahmed #0" = 0
+	"Asiya #0" = -1
+	"Awal #1" = 10
+	"Aydahis #0" = 0
+	"Azam #0" = 0
+	"Basr #0" = -1
+	"Berkan #0" = 0
+	"Canab #0" = -1
+	"Ekber #0" = 0
+	"Haeran #0" = 0
+	"Hamalmal #0" = 0
+	"Hamar #0" = 0
+	"Hamid #0" = 0
+	"Ibrahim #0" = 0
+	"Irir #0" = 0
+	"Kadhafo #1" = 10
+	"Kedafu #0" = 0
+	"Khadra #0" = -1
+	"Khalaf #0" = 0
+	"Magol #1" = -1
+	"Mahamed #0" = 0
+	"Mahamud #0" = 0
+	"Mona #0" = -1
+	"Murad #0" = 0
+	"Muslihiddin #0" = 0
+	"Sabba #0" = -1
+	"Sabr #0" = 0
+	"Salomeh #0" = -1
+	"Semeah #0" = -1
+	"Seyfullah #0" = 0
+	"Sheeva #0" = -1
+	"Suji #0" = -1
+	"Tanaz #0" = -1
+	"Ubax #0" = -1
+	"Xalwo #0" = -1
+	"Zaynab #0" = -1
+}
+leader_names = {
+	"Abdallah"
+	"Abdikarim"
+	"Abubakar"
+	"Ahmad"
+	"Ayub"
+	"Dalmar"
+	"Ghedi"
+	"Hassan"
+	"Khalid"
+	"Liban"
+	"Mahad"
+	"Mosa"
+	"Muhammad"
+	"Omar"
+	"Rahim"
+	"Saad"
+	"Sadiq"
+	"Sharif"
+}
+ship_names = {
+	"Afgooye"
+	"Awash"
+	"Baraawe"
+	"Berahle"
+	"Boocame"
+	"Dallol"
+	"Dooloow"
+	"Dubti"
+	"Dulecha"
+	"Elidar"
+	"Ewa"
+	"Geedo"
+	"Gewane"
+	"Gobolka"
+	"Hawo"
+	"Jubbada"
+	"Kalabaydh"
+	"Marka"
+	"Semera"
+	"Simurobi"
+	"Yalo"
+}
+army_names = {
+	"Army of $PROVINCE$"
+}
+fleet_names = {
+	"Fleet of $PROVINCE$"
+}

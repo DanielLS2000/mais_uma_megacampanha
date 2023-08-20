@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = frisian
+capital = 4382
+1444.11.11= {
+	monarch = {
+		name = "Drogo"
+		dynasty = "von Köln"
+		adm = 2
+		dip = 5
+		mil = 2
+		birth_date = 1392.11.4
+		religion = catholic
+		culture = frisian
+	}
+	add_ruler_personality = industrious_personality
+	add_ruler_personality = pious_personality
+	queen = {
+		name = "Sofie"
+		dynasty = "von Köln"
+		adm = 2
+		dip = 4
+		mil = 3
+		country_of_origin = FRI
+		birth_date = 1424.2.22
+		death_date = 1484.2.22
+		female = yes
+		religion = catholic
+		culture = franconian
+	}
+	add_queen_personality = infertile_personality
+	add_queen_personality = lawgiver_personality
+	heir = {
+		name = "Bruno"
+		monarch_name = "Bruno"
+		dynasty = "von Köln"
+		adm = 5
+		dip = 6
+		mil = 5
+		birth_date = 1419.2.20
+		death_date = 1484.2.20
+		claim = 89
+		religion = catholic
+		culture = dutch
+	}
+	add_heir_personality = fertile_personality
+	add_heir_personality = pious_personality
+}
+1444.11.11= {
+	add_prestige = 79
+	add_treasury = 53
+}

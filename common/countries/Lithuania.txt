@@ -1,0 +1,112 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 154 69 116 }
+revolutionary_colors = { 9 0 5 }
+historical_idea_groups = {
+	humanist_ideas
+	trade_ideas
+	economic_ideas
+	quality_ideas
+	diplomatic_ideas
+	administrative_ideas
+	aristocracy_ideas
+	quantity_ideas
+}
+historical_units = {
+	bardiche_infantry
+	eastern_carabinier
+	eastern_knights
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	hungarian_hussar
+	polish_hussar
+	polish_musketeer
+	polish_tercio
+	polish_winged_hussar
+	russian_cuirassier
+	russian_lancer
+	russian_mass
+	slavic_stradioti
+}
+monarch_names = {
+	"Cirulis #1" = 10
+	"Colella #0" = -1
+	"Eilífr #0" = 0
+	"Gaudimante #0" = -1
+	"Gedivilas #2" = 10
+	"Halla #0" = -1
+	"Iakov #0" = 0
+	"Ihalemb #0" = 0
+	"Imanta #1" = 10
+	"Liis #0" = -1
+	"Manvydas #1" = 10
+	"Palemon #1" = 10
+	"Päevalemb #1" = 10
+	"Svitrigaila #0" = 0
+	"Tarva #1" = 10
+	"Tiiu #0" = -1
+	"Toom #0" = 0
+	"Visvaldis #0" = 0
+	"Vykintas #2" = 10
+}
+leader_names = {
+	"Alseniskis"
+	"Astikas"
+	"Chodkevicius"
+	"Daukantas"
+	"Dauksa"
+	"Denhofas"
+	"Giedraitis"
+	"Gosevskis"
+	"Gostautas"
+	"Kesgaila"
+	"Kiska"
+	"Kosakovskis"
+	"Kulvietis"
+	"Lietuvis"
+	"Masalskis"
+	"Mazvydas"
+	"Nemirovicius"
+	"Oginskis"
+	"Ostrogiskis"
+	"Pacas"
+	"Pociejus"
+	"Radvila"
+	"Rapolionis"
+	"Rimsa"
+	"Sanguska"
+	"Sapiega"
+	"Simonavicius"
+	"Sirvydas"
+	"Skorina"
+	"Sluska"
+	"Sosnovskis"
+	"Svyriskis"
+	"Tiskevicius"
+	"Valancius"
+	"Valavicius"
+	"Visniovieckis"
+	"Zabiela"
+}
+ship_names = {
+	"Alytus"
+	"Birzai"
+	"Druskininkai"
+	"Gardinas"
+	"Jonava"
+	"Kaunas"
+	"Kretinga"
+	"Kreva"
+	"Lazdijai"
+	"Naugardukas"
+	"Palanga"
+	"Raseiniai"
+	"Siauliai"
+	"Sventoji"
+	"Taurage"
+	"Telsiai"
+	"Trakai"
+	"Utena"
+	"Vilkmerge"
+}

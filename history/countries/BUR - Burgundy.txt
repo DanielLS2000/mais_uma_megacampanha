@@ -1,0 +1,14 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+technology_group = western
+religion = catholic
+primary_culture = dynamic-basque-norse-occitain-culture-num1
+capital = 102
+add_accepted_culture = burgundian
+add_accepted_culture = occitain
+1444.11.11= {
+	add_prestige = 118
+	add_treasury = 57
+	excommunicate = BUR
+}

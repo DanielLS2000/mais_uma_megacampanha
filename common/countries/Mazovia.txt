@@ -1,0 +1,81 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 195 149 155 }
+revolutionary_colors = { 5 0 5 }
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	offensive_ideas
+	diplomatic_ideas
+	economic_ideas
+	spy_ideas
+	innovativeness_ideas
+	administrative_ideas
+}
+historical_units = {
+	bardiche_infantry
+	eastern_carabinier
+	eastern_knights
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	hungarian_hussar
+	polish_hussar
+	polish_musketeer
+	polish_tercio
+	polish_winged_hussar
+	russian_cuirassier
+	russian_lancer
+	russian_mass
+	slavic_stradioti
+}
+monarch_names = {
+	"Alicja #1" = -1
+	"Boguchwal #0" = 0
+	"Bozydar #1" = 10
+	"Budziwuj #0" = 0
+	"Helene #0" = -1
+	"Ioulia #0" = -1
+	"Irmele #0" = -1
+	"Janko #0" = 0
+	"Karol #0" = 0
+	"Mikolaj #1" = 10
+	"Milzas #0" = 0
+	"Pechna #0" = -1
+	"Piskla #0" = 0
+	"Sevar #0" = 0
+	"Spytko #1" = 10
+	"Tomasz #0" = 0
+	"Usciech #1" = 10
+	"Vasilisa #0" = -1
+	"Ástríðr #0" = -1
+	"Zegota #1" = 10
+}
+leader_names = {
+	"Jagiellon"
+	"Kedzierzawy"
+	"Leszczynski"
+	"Lubomirski"
+	"Piast"
+	"Poniatowski"
+	"Premyslid"
+	"Radziwill"
+	"Sapieha"
+	"Wisniowiecki"
+}
+ship_names = {
+	"Biebrza"
+	"Bug"
+	"Bzura"
+	"Kolno"
+	"Liwiec"
+	"Lowicz"
+	"Mlawa"
+	"Narew"
+	"Pilica"
+	"Radomka"
+	"Warszawa"
+	"Wisla"
+	"Wizna"
+	"Wkra"
+}

@@ -1,0 +1,7 @@
+capital = "Tara"
+culture = dynamic-ostyaki-kirgiz-culture-num1
+religion = siberian_pagan
+trade_goods = fur
+base_tax = 2
+base_production = 2
+base_manpower = 2
