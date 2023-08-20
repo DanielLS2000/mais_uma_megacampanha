@@ -1,0 +1,33 @@
+pagan = {
+	converted_dynamic_faith_109 = {
+		color = { 46 38 196 }
+		icon =  175
+		country = {
+ 
+		global_tax_modifier = 0.15
+	
+
+		leader_naval_manuever = 1
+		global_ship_trade_power = 0.1
+	
+
+		ae_impact = -0.15
+	
+
+		heir_chance = 0.5
+	
+}
+		country_as_secondary = {
+ 
+		global_tax_modifier = 0.1
+	
+
+		global_trade_power = 0.1
+	
+}
+		
+	heretic = { GOAT_SKULL }
+
+	}
+}
+

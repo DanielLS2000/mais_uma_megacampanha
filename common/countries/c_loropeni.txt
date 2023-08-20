@@ -1,0 +1,18 @@
+ck2_converter_generated = yes
+graphical_culture = africangfx
+color = { 198 38 0 }
+monarch_names = {
+	"Chizoba #1" = 10
+	"Demba #0" = -1
+	"Djenly #0" = -1
+	"Gane #1" = 10
+	"Kaba #1" = 10
+	"Kaijaah #0" = 0
+	"Labidiedo #0" = 0
+	"Mukhtar #0" = 0
+	"Salimata #1" = -1
+	"Sikam #0" = 0
+	"Sogolon #0" = -1
+	"Tandian #1" = 10
+	"Zala #1" = 10
+}

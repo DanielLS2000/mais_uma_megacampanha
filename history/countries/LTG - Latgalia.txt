@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = grand_duchy_reform
+government_rank = 1
+technology_group = eastern
+religion = catholic
+primary_culture = estonian
+capital = 4241
+add_accepted_culture = lithuanian
+1444.11.11= {
+	monarch = {
+		name = "Susi"
+		dynasty = "kohta Valmiera"
+		adm = 2
+		dip = 4
+		mil = 3
+		birth_date = 1402.5.3
+		religion = catholic
+		culture = estonian
+	}
+	add_ruler_personality = intricate_web_weaver_personality
+	add_ruler_personality = silver_tongue_personality
+	queen = {
+		name = "Kaili"
+		dynasty = "L‰‰nemaa"
+		adm = 4
+		dip = 3
+		mil = 4
+		country_of_origin = LTG
+		birth_date = 1403.4.27
+		death_date = 1463.4.27
+		female = yes
+		religion = catholic
+		culture = estonian
+	}
+	add_queen_personality = industrious_personality
+	add_queen_personality = midas_touched_personality
+	heir = {
+		name = "Uru"
+		monarch_name = "Uru"
+		dynasty = "kohta Valmiera"
+		adm = 4
+		dip = 5
+		mil = 5
+		birth_date = 1427.7.29
+		death_date = 1492.7.29
+		claim = 89
+		religion = catholic
+		culture = estonian
+	}
+	add_heir_personality = silver_tongue_personality
+	add_heir_personality = tolerant_personality
+}
+1444.11.11= {
+	add_prestige = 78
+	add_treasury = 50
+}

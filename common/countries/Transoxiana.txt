@@ -1,0 +1,105 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 49 185 191 }
+revolutionary_colors = { 1 5 1 }
+historical_idea_groups = {
+	administrative_ideas
+	religious_ideas
+	defensive_ideas
+	trade_ideas
+	economic_ideas
+	offensive_ideas
+	maritime_ideas
+	quantity_ideas
+}
+historical_units = {
+	reformed_steppe_rifles
+	steppe_cavalry
+	steppe_footmen
+	steppe_infantry
+	steppe_lancers
+	steppe_mounted_raiders
+	steppe_musketeers
+	steppe_raiders
+	steppe_riders
+	steppe_rifles
+	steppe_uhlans
+}
+monarch_names = {
+	"Ahmad #1" = 10
+	"Akgul #0" = -1
+	"Awo #0" = -1
+	"Bawan #0" = -1
+	"Berdar #0" = -1
+	"Bharkhuman #0" = 0
+	"Chat #0" = -1
+	"Chaxren #0" = 0
+	"Darab #0" = 0
+	"Darya #0" = -1
+	"Dengîn #0" = -1
+	"Ehsan #0" = 0
+	"Esfandyar #0" = 0
+	"Fatoumata #0" = -1
+	"Fruhar #1" = 10
+	"Golshan #0" = -1
+	"Hormazd #1" = 10
+	"Hormoz #0" = 0
+	"Kang #0" = -1
+	"Khosrow #0" = 0
+	"Khwatawch #0" = 0
+	"Kopulch #0" = 0
+	"Mehrzad #0" = 0
+	"Merve #0" = -1
+	"Nasr #1" = 10
+	"Naveed #0" = 0
+	"Noushin #0" = -1
+	"Pulcheria #0" = -1
+	"Ronak #0" = -1
+	"Roxana #0" = -1
+	"Sall #0" = -1
+	"Shafnoshak #0" = 0
+	"Shahrzad #0" = -1
+	"Shahrukh #2" = 10
+	"Sheeftah #0" = -1
+	"Vasudeva #0" = 0
+	"Vishtasb #1" = 10
+	"Yena #0" = -1
+	"Šarvin #0" = 0
+}
+leader_names = {
+	"Abbâs"
+	"Abû"
+	"Akbar"
+	"Bakr"
+	"Jahagir"
+	"Jalâl"
+	"Jâmî"
+	"Khalil"
+	"Mohsin"
+	"Zaman"
+	"ud-Dîn"
+}
+ship_names = {
+	"Ardabil"
+	"Bakhura"
+	"Balkh"
+	"Baluches"
+	"Herat"
+	"Ispahan"
+	"Kandahar"
+	"Kharesm"
+	"Kirman"
+	"Kish"
+	"Lahore"
+	"Merv"
+	"Nishupur"
+	"Ormuz"
+	"Rustam"
+	"Samarqand"
+	"Sebzewar"
+	"Shah Rukh"
+	"Sikandar"
+	"Slurax"
+	"Tahriz"
+	"Tamerlane"
+}

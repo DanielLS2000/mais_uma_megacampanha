@@ -1,0 +1,21 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 35 190 35 }
+monarch_names = {
+	"Ananadeva #1" = 10
+	"Bhavadeva #1" = 10
+	"Bhavashankari #0" = -1
+	"Devakhadga #1" = 10
+	"Dharmapala #1" = 10
+	"Dhireshwar #1" = 10
+	"Hariyamandal #0" = 0
+	"Jatakhadga #1" = 10
+	"Kantideva #4" = 10
+	"Khadgodyama #1" = 10
+	"Narayana #0" = 0
+	"Prithvivarman #0" = 0
+	"Rajarabhata #1" = 10
+	"Rambhadra Singh Dev #1" = 10
+	"Samant Sen #0" = 0
+	"Viradeva #1" = 10
+}

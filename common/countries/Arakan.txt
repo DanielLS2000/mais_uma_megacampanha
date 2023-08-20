@@ -1,0 +1,115 @@
+ck2_converter_generated = yes
+graphical_culture = indiangfx
+color = { 212 211 151 }
+revolutionary_colors = { 0 13 5 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	spy_ideas
+	quantity_ideas
+	administrative_ideas
+	religious_ideas
+}
+historical_units = {
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	asian_musketeer
+	east_asian_spearmen
+	eastern_bow
+	reformed_asian_cavalry
+	reformed_asian_musketeer
+}
+monarch_names = {
+	"Abhiyaza #0" = 0
+	"Alaungpaya #0" = 0
+	"Bawk #1" = -1
+	"Champey #0" = -1
+	"Dhamma Dewi #0" = -1
+	"Hein #0" = 0
+	"Hmauk #0" = 0
+	"Kalataingchandra #1" = 10
+	"Kanchani #0" = -1
+	"Kywe #0" = 0
+	"Mahataingchandra #1" = 10
+	"Mawlataingchandra #1" = 10
+	"Mru #0" = -1
+	"Pawlataingchandra #1" = 10
+	"Rani #0" = -1
+	"Suriyataingchandra #1" = 10
+	"Thandar #0" = -1
+	"Thang #0" = 0
+	"Thaun #1" = 10
+	"Theinhko #0" = 0
+	"Thihathu #1" = 10
+	"Thurein #0" = 0
+	"Tulataingchandra #1" = 10
+	"Uzana #0" = 0
+	"Vakula #0" = -1
+	"Vikrama #0" = 0
+	"Wah #0" = -1
+	"Yarzar #0" = 0
+}
+leader_names = {
+	"Ashin"
+	"Banya"
+	"Binnya"
+	"Bo"
+	"Bogyoke"
+	"Daw"
+	"Duwa"
+	"Khun"
+	"Ko"
+	"Ma"
+	"Mahn"
+	"Mai"
+	"Maung"
+	"Me"
+	"Mi"
+	"Min"
+	"Minh"
+	"Nai"
+	"Nang"
+	"Naw"
+	"Sai"
+	"Salai"
+	"Sao"
+	"Saw"
+	"Sawbwa"
+	"Saya"
+	"Sayadaw"
+	"Sayama"
+	"Shin"
+	"Tekkatho"
+	"Thakin"
+	"Theippan"
+	"U"
+}
+ship_names = {
+	"Alaumaphru"
+	"Athinkhara Raza"
+	"Candasuriya"
+	"Datharaza"
+	"Foonthan"
+	"Gandakudi"
+	"Koliya"
+	"Lakkyamunnan"
+	"Mahamuni"
+	"Mahataing Candra"
+	"Mong Ba"
+	"Mong Khaki"
+	"Mong Razagree"
+	"Mong Saw Mon"
+	"Mrauk U"
+	"Ngahnaloon"
+	"Suriya"
+	"Suriya Candra"
+	"Thakyawangree"
+	"Thakyawannge"
+	"Thiharaza"
+	"Ukkabala"
+	"Waradhamma"
+}
+special_unit_culture = south_east_asian_special

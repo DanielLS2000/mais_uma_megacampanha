@@ -1,0 +1,75 @@
+ck2_converter_generated = yes
+graphical_culture = asiangfx
+color = { 23 110 90 }
+revolutionary_colors = { 8 10 0 }
+historical_idea_groups = {
+	offensive_ideas
+	trade_ideas
+	defensive_ideas
+	economic_ideas
+	spy_ideas
+	religious_ideas
+	diplomatic_ideas
+	administrative_ideas
+}
+historical_units = {
+	indian_archers
+	indian_arquebusier
+	indian_footsoldier
+	indian_rifle
+	sikh_hit_and_run
+	tipu_sultan_rocket
+}
+monarch_names = {
+	"Brij #0" = 0
+	"Gyerme #1" = 10
+	"Gösé #0" = 0
+	"Göwar #1" = 10
+	"Hrido #1" = 10
+	"Kyeshe #1" = 10
+	"Kyile #1" = 10
+	"Madan #0" = 0
+	"Muwer #1" = 10
+	"Nonika #1" = -1
+	"Nyimadé #0" = 0
+	"Padmavati #0" = -1
+	"Pebon #1" = 10
+	"Pelkye #0" = 0
+	"Rameshwar #0" = 0
+	"Shebu #1" = 10
+	"Sumnang #0" = 0
+	"Tenzin #1" = -1
+	"Thinley #0" = 0
+	"Wal #1" = 10
+	"Wangmo #1" = -1
+	"Yéshégyeltsen #2" = 10
+	"Zhyelmo #1" = -1
+	"Ökar #1" = 10
+}
+leader_names = {
+	"Balti"
+	"Heniskat"
+	"Kartse"
+	"Khaplu"
+	"Mulbek"
+	"Phokar"
+	"Purig"
+	"Rupshu"
+	"Shigar"
+	"Sot"
+	"Zanskar"
+}
+ship_names = {
+	"Balti"
+	"Heniskat"
+	"Kartse"
+	"Khaplu"
+	"Leh"
+	"Mulbek"
+	"Phokar"
+	"Purig"
+	"Rupshu"
+	"Shigar"
+	"Sot"
+	"Zanskar"
+}

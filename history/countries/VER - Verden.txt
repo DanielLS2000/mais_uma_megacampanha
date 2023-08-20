@@ -1,0 +1,57 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = lower_saxon
+capital = 54
+fixed_capital = 54
+mercantilism = 25
+1444.11.11= {
+	monarch = {
+		name = "Richenza"
+		dynasty = "von Köln"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 1396.7.2
+		female = yes
+		religion = catholic
+		culture = lower_saxon
+	}
+	add_ruler_personality = architectural_visionary_personality
+	add_ruler_personality = midas_touched_personality
+	queen = {
+		name = "Heinrich"
+		dynasty = "Konradiner"
+		adm = 2
+		dip = 3
+		mil = 4
+		country_of_origin = VER
+		birth_date = 1395.4.17
+		death_date = 1455.4.17
+		religion = catholic
+		culture = franconian
+	}
+	add_queen_personality = craven_personality
+	add_queen_personality = obsessive_perfectionist_personality
+	heir = {
+		name = "Amadeus"
+		monarch_name = "Amadeus"
+		dynasty = "Konradiner"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1420.1.20
+		death_date = 1485.1.20
+		claim = 89
+		religion = catholic
+		culture = franconian
+	}
+	add_heir_personality = intricate_web_weaver_personality
+	add_heir_personality = secretive_personality
+}
+1444.11.11= {
+	add_prestige = 74
+	add_treasury = 38
+}

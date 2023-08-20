@@ -1,0 +1,42 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = bulgarian
+capital = 2746
+add_accepted_culture = romanian
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Trpimir"
+		dynasty = "ot Vidin"
+		adm = 2
+		dip = 5
+		mil = 3
+		birth_date = 1387.7.20
+		religion = orthodox
+		culture = bulgarian
+	}
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = intricate_web_weaver_personality
+	heir = {
+		name = "Jerolim"
+		monarch_name = "Jerolim"
+		dynasty = "ot Vidin"
+		adm = 6
+		dip = 6
+		mil = 5
+		birth_date = 1412.6.26
+		death_date = 1477.6.26
+		claim = 89
+		religion = orthodox
+		culture = bulgarian
+	}
+	add_heir_personality = craven_personality
+	add_heir_personality = free_thinker_personality
+}
+1444.11.11= {
+	add_prestige = 61
+	add_treasury = 51
+}

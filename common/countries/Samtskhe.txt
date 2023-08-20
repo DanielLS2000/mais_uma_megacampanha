@@ -1,0 +1,123 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 22 157 57 }
+historical_idea_groups = {
+	defensive_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	economic_ideas
+	religious_ideas
+	quantity_ideas
+}
+historical_units = {
+	eastern_carabinier
+	eastern_knights
+	eastern_medieval_infantry
+	eastern_militia
+	eastern_skirmisher
+	eastern_uhlan
+	muscovite_caracolle
+	muscovite_cossack
+	muscovite_musketeer
+	muscovite_soldaty
+	russian_cuirassier
+	russian_green_coat
+	russian_lancer
+	russian_mass
+	russian_petrine
+	slavic_stradioti
+}
+monarch_names = {
+	"Ali #1" = 10
+	"Ashot #3" = 10
+	"Ashraf #1" = 10
+	"Atrnerseh #1" = 10
+	"Avedis #1" = 10
+	"Az'ar #0" = 0
+	"Bagrat #2" = 10
+	"Bahar #0" = -1
+	"Bahman #0" = 0
+	"Bakur #0" = 0
+	"Behrad #0" = 0
+	"Donya #0" = -1
+	"Epiphania #0" = -1
+	"Farroukh #0" = 0
+	"Farrukhzad #0" = 0
+	"Farzaneh #0" = -1
+	"Ghazal #0" = -1
+	"Grigor #1" = 10
+	"Hovhannes #1" = 10
+	"Humayun #0" = 0
+	"Ishkhan #1" = 10
+	"Morteza #0" = 0
+	"Pashang #0" = 0
+	"Peroz #0" = 0
+	"Ruhollah #0" = 0
+	"Smbat #1" = 10
+	"Soraya #0" = -1
+	"Taplo #0" = -1
+	"Tornik #1" = 10
+	"Tourandokht #0" = -1
+	"Varaz-Tiroc #1" = 10
+	"Vasak #1" = 10
+	"Yekta #0" = -1
+}
+leader_names = {
+	"Amilakhori"
+	"Avilishvili"
+	"Diasamidze"
+	"Gaganidze"
+	"Gogibashvili"
+	"Gogorishvili"
+	"Khildirbegashvili"
+	"Kobulisdze"
+	"Kopasdze"
+	"Palavandishvili"
+	"Panaskerteli"
+	"Shalikashvili"
+	"Sologashvili"
+	"Sumbatishvili"
+	"Tavdgiridze"
+	"Tukhareli"
+}
+ship_names = {
+	"Aghbugha"
+	"Amirani"
+	"Anakopia"
+	"Apsaros"
+	"Argo"
+	"Armazi"
+	"Artaani"
+	"Avtandil"
+	"Beka"
+	"Beshken"
+	"Bichvinta"
+	"Colchis"
+	"Davit Aghmashenebeli"
+	"Demetre Tavdadebuli"
+	"Didgori"
+	"Dioscurias"
+	"Jvari"
+	"Jvari Vazisa"
+	"Khornabuji"
+	"Lasharisjvari"
+	"Ninotsminda"
+	"Okros Satsmisi"
+	"Parnavaz"
+	"Petre Iberi"
+	"Phasis"
+	"Pityus"
+	"Sargis"
+	"Shota Rustaveli"
+	"Svetitskhoveli"
+	"Tamar"
+	"Tetri Giorgi"
+	"Tsminda Giorgi"
+	"Tsotne Dadiani"
+	"Uplistsikhe"
+	"Vakhtang Gorgasali"
+	"Vardzia"
+	"Venakhi"
+}

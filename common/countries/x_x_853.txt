@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = westerngfx
+color = { 106 96 104 }
+monarch_names = {
+	"A Voz da Verdade, O Espelho #1" = 10
+	"Almeida, o sorvetero #1" = 10
+	"Anselm #0" = 0
+	"Beto Bruce, O futuro rei da Escócia #0" = 0
+	"Emich #0" = 0
+	"Emma #0" = -1
+	"Eu almadiçou a té a nossa décima ter #0" = 0
+	"Hedwig #0" = -1
+	"Jailson Calvius #1" = 10
+	"José Bonitinho #1" = 10
+	"Kannon de Dragão Marinho #0" = 0
+	"Kaspar #0" = 0
+	"Ruprecht #0" = 0
+	"Super Fredão, o ultimo chad da terra #1" = 10
+	"Ursula #0" = -1
+	"Wolfgang #0" = 0
+	"Ximena #0" = -1
+}

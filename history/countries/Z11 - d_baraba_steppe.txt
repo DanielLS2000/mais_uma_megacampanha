@@ -1,0 +1,58 @@
+government = tribal
+add_government_reform = siberian_tribe
+government_rank = 1
+technology_group = eastern
+religion = tengri_pagan
+primary_culture = dynamic-ostyaki-kirgiz-culture-num1
+capital = 4688
+add_accepted_culture = ostyaki
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Kezhapa"
+		dynasty = "Laktanid"
+		adm = 2
+		dip = 3
+		mil = 3
+		birth_date = 1421.1.7
+		religion = tengri_pagan
+		culture = dynamic-ostyaki-kirgiz-culture-num1
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = zealot_personality
+	queen = {
+		name = "Ariuna"
+		dynasty = "Mergid"
+		adm = 3
+		dip = 3
+		mil = 2
+		country_of_origin = Z11
+		birth_date = 1420.4.24
+		death_date = 1480.4.24
+		female = yes
+		religion = tengri_pagan
+		culture = buryat
+	}
+	add_queen_personality = obsessive_perfectionist_personality
+	add_queen_personality = tolerant_personality
+	heir = {
+		name = "Toyaksha"
+		monarch_name = "Toyaksha"
+		dynasty = "Laktanid"
+		adm = 2
+		dip = 2
+		mil = 3
+		birth_date = 1439.5.21
+		death_date = 1504.5.21
+		female = yes
+		claim = 89
+		religion = tengri_pagan
+		culture = dynamic-ostyaki-kirgiz-culture-num1
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 70
+	add_treasury = 39
+}

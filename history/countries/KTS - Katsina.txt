@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+government_rank = 1
+technology_group = sub_saharan
+religion = ibadi
+primary_culture = dynamic-hausa-al_suryah_arabic-culture-num1
+capital = 1149
+add_accepted_culture = hausa
+1444.11.11= {
+	monarch = {
+		name = "Adisa"
+		dynasty = "Oduduwa"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1406.10.18
+		religion = ibadi
+		culture = dynamic-hausa-al_suryah_arabic-culture-num1
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = tactical_genius_personality
+	queen = {
+		name = "Jaida"
+		dynasty = "Zaydid"
+		adm = 4
+		dip = 3
+		mil = 5
+		country_of_origin = KTS
+		birth_date = 1394.2.27
+		death_date = 1454.2.27
+		female = yes
+		religion = ibadi
+		culture = berber
+	}
+	add_queen_personality = malevolent_personality
+	add_queen_personality = obsessive_perfectionist_personality
+	heir = {
+		name = "Bakr"
+		monarch_name = "Bakr"
+		dynasty = "Oduduwa"
+		adm = 4
+		dip = 5
+		mil = 4
+		birth_date = 1431.4.8
+		death_date = 1496.4.8
+		claim = 89
+		religion = ibadi
+		culture = dynamic-hausa-al_suryah_arabic-culture-num1
+	}
+	add_heir_personality = secretive_personality
+	add_heir_personality = silver_tongue_personality
+}
+1444.11.11= {
+	add_prestige = 72
+	add_treasury = 34
+}
