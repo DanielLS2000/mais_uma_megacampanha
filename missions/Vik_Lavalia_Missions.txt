@@ -1,0 +1,241 @@
+early_naval_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+	Arsenal_des_galeres = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	develop_languedoc = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { Arsenal_des_galeres }
+		trigger = { }
+		effect = { }
+	}
+	toulon_dockyards = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { develop_languedoc }
+		trigger = { }
+		effect = { }
+	}
+	la_marseillaise = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { toulon_dockyards }
+		trigger = { }
+		effect = { }
+	}
+}
+
+conquest_branch1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+	palace_bordoux = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	take_south_islands = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { palace_bordoux port_mont_crist }
+		trigger = { }
+		effect = { }
+	}
+	crow_laval = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { take_south_islands }
+		trigger = { }
+		effect = { }
+	}
+	mediterrainian_authority = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { crow_laval }
+		trigger = { }
+		effect = { }
+	}
+	take_catalonia = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { mediterrainian_authority }
+		trigger = { }
+		effect = { }
+	}
+	throne_of_aragon = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { take_catalonia }
+		trigger = { }
+		effect = { }
+	}
+	kingdom_of_laveria = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { throne_of_aragon }
+		trigger = { }
+		effect = { }
+	}
+}
+
+conquest_branch2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+	push_the_french_line = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { la_marseillaise mediterrainian_authority }
+		trigger = { }
+		effect = { }
+	}
+	king_of_the_franks = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { push_the_french_line }
+		trigger = { }
+		effect = { }
+	}
+	crown_of_lavalia_magna = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { king_of_the_franks }
+		trigger = { }
+		effect = { }
+	}
+}
+
+conquest_branch_italy1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+	port_mont_crist = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	secure_alpine_pass = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { mediterrainian_authority }
+		trigger = { }
+		effect = { }
+	}
+	secure_north_italy = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { secure_alpine_pass }
+		trigger = { }
+		effect = { }
+	}
+	restore_house_of_god = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { secure_north_italy }
+		trigger = { }
+		effect = { }
+	}
+	kingdom_of_lavalia = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { restore_house_of_god }
+		trigger = { }
+		effect = { }
+	}
+}
+
+conquest_branch_italy2 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+	signoria_of_genoa = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { secure_alpine_pass }
+		trigger = { }
+		effect = { }
+	}
+	genoese_commerce = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { secure_north_italy signoria_of_genoa }
+		trigger = { }
+		effect = { }
+	}
+}
+
+colonial1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+	lavonia_antarctique = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	trade_whit_nativies = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+}
+
+colonial2 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+}
+
+colonial3 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		always = yes
+	}
+
+}
+
