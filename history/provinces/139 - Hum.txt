@@ -1,5 +1,5 @@
-owner = Z1F
-controller = Z1F
+owner = CRO
+controller = CRO
 capital = "Mostar"
 is_city = yes
 culture = bosnian
@@ -9,8 +9,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 add_core = BOS
-add_core = Z1F
-add_permanent_claim = CRO
+add_core = CRO
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

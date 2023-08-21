@@ -1,5 +1,5 @@
-owner = PAP
-controller = PAP
+owner = LIE
+controller = LIE
 capital = "Jülich"
 is_city = yes
 culture = dynamic-franconian-cosmopolitan_french-culture-num2
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 3
 base_manpower = 2
-add_core = PAP
+add_core = LIE
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

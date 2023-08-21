@@ -1,5 +1,5 @@
-owner = Z70
-controller = Z70
+owner = BOH
+controller = BOH
 capital = "Amberg"
 is_city = yes
 culture = dynamic-bavarian-culture-num1
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 3
 base_manpower = 3
-add_core = Z70
+add_core = BOH
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

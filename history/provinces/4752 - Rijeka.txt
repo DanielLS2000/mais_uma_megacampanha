@@ -1,5 +1,5 @@
-owner = Z1F
-controller = Z1F
+owner = CRO
+controller = CRO
 capital = "Rijeka"
 is_city = yes
 culture = croatian
@@ -11,8 +11,7 @@ base_production = 4
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = Z1F
-add_permanent_claim = CRO
+add_core = CRO
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

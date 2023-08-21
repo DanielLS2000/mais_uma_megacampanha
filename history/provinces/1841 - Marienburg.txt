@@ -1,5 +1,5 @@
-owner = Z0I
-controller = Z0I
+owner = TEU
+controller = TEU
 capital = "Marienburg"
 is_city = yes
 culture = dynamic-franconian-culture-num2
@@ -9,7 +9,7 @@ fort_15th = yes
 base_tax = 4
 base_production = 4
 base_manpower = 3
-add_core = Z0I
+add_core = TEU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

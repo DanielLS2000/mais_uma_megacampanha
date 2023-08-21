@@ -1,5 +1,5 @@
-owner = Z0I
-controller = Z0I
+owner = POM
+controller = POM
 capital = "Stralsund"
 is_city = yes
 culture = sorbian
@@ -10,8 +10,7 @@ base_production = 2
 base_manpower = 2
 extra_cost = 8
 center_of_trade = 1
-add_core = Z0I
-add_permanent_claim = POM
+add_core = POM
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

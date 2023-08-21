@@ -1,5 +1,5 @@
-owner = Z5P
-controller = Z5P
+owner = BOH
+controller = BOH
 capital = "Straubing"
 is_city = yes
 culture = dynamic-bavarian-culture-num1
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 3
 base_manpower = 3
-add_core = Z5P
+add_core = BOH
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

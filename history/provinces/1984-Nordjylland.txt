@@ -1,5 +1,5 @@
-owner = NOR
-controller = NOR
+owner = DAN
+controller = DAN
 capital = "Aalborg"
 is_city = yes
 culture = dynamic-anglosaxon-danish-norse-culture-num1
@@ -8,7 +8,7 @@ trade_goods = fish
 base_tax = 3
 base_production = 3
 base_manpower = 1
-add_core = NOR
+add_core = DAN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = Z0N
-controller = Z0N
+owner = SYR
+controller = SYR
 capital = "Hama"
 is_city = yes
 culture = al_suryah_arabic
@@ -8,8 +8,7 @@ trade_goods = cotton
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = Z0N
-add_permanent_claim = SYR
+add_core = SYR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,8 +1,8 @@
-government = tribal
-add_government_reform = feudal_tribe
+government = monarchy
+add_government_reform = principality
 government_rank = 2
 technology_group = eastern
-religion = catholic
+religion = orthodox
 primary_culture = dynamic-uralic-russian_culture-culture-num1
 capital = 308
 1444.11.11= {

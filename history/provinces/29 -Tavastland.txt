@@ -1,5 +1,5 @@
-owner = Z38
-controller = Z38
+owner = FIN
+controller = FIN
 capital = "Tavastehus"
 is_city = yes
 culture = finnish
@@ -8,7 +8,7 @@ trade_goods = fur
 base_tax = 1
 base_production = 1
 base_manpower = 1
-add_core = Z38
+add_core = FIN
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

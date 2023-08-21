@@ -1,5 +1,5 @@
-owner = SLZ
-controller = SLZ
+owner = HAB
+controller = HAB
 capital = "Steyr"
 is_city = yes
 culture = austrian
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 2
 base_production = 4
 base_manpower = 2
-add_core = SLZ
+add_core = HAB
 add_core = Z5M
 discovered_by = east_african
 discovered_by = eastern

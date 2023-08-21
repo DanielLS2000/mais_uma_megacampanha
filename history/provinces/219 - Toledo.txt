@@ -1,5 +1,5 @@
-owner = ADU
-controller = ADU
+owner = ARA
+controller = ARA
 capital = "Toledo"
 is_city = yes
 culture = aragonese
@@ -10,7 +10,7 @@ base_production = 5
 base_manpower = 4
 extra_cost = 8
 center_of_trade = 1
-add_core = ADU
+add_core = ARA
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

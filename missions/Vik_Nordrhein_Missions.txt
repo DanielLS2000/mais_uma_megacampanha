@@ -5,7 +5,7 @@ first_branch = {
 	has_country_shield = yes
 	potential = {
 		OR = {
-			tag = AAC
+			tag = LIE
 			tag = LOT
 		}
 	}
@@ -108,7 +108,7 @@ second_branch = {
 	has_country_shield = yes
 	potential = {
 		OR = {
-			tag = AAC
+			tag = LIE
 			tag = LOT
 		}
 	}
@@ -255,7 +255,7 @@ third_branch = {
 	has_country_shield = yes
 	potential = {
 		OR = {
-			tag = AAC
+			tag = LIE
 			tag = LOT
 		}
 	}
@@ -376,7 +376,7 @@ fourth_branch = {
 	has_country_shield = yes
 	potential = {
 		OR = {
-			tag = AAC
+			tag = LIE
 			tag = LOT
 		}
 	}
@@ -512,7 +512,7 @@ fifth_branch = {
 	has_country_shield = yes
 	potential = {
 		OR = {
-			tag = AAC
+			tag = LIE
 			tag = LOT
 		}
 	}

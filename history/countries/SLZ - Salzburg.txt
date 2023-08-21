@@ -6,7 +6,6 @@ religion = catholic
 primary_culture = bavarian
 capital = 76
 fixed_capital = 76
-elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Alebrand"

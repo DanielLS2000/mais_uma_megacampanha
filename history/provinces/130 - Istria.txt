@@ -1,5 +1,5 @@
-owner = MVA
-controller = MVA
+owner = CRO
+controller = CRO
 capital = "Pula"
 is_city = yes
 culture = croatian
@@ -11,7 +11,7 @@ base_production = 3
 base_manpower = 3
 extra_cost = 8
 center_of_trade = 1
-add_core = MVA
+add_core = CRO
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
