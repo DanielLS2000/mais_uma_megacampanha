@@ -1,0 +1,170 @@
+l_english:
+
+ #---------------------------------------------------------
+ # Early Naval Branch
+ #---------------------------------------------------------
+
+ Arsenal_des_galeres_title: "Arsenal Des Galeres"
+ Arsenal_des_galeres_desc: ""
+ develop_languedoc_title: "Develop Languedoc"
+ develop_languedoc_desc: ""
+ toulon_dockyards_title: "Toulon Dockyards"
+ toulon_dockyards_desc: ""
+ la_marseillaise_title: "La Marseillaise"
+ la_marseillaise_desc: ""
+
+ #---------------------------------------------------------
+ # Conquest Branch1
+ #---------------------------------------------------------
+
+ palace_bordoux_title: "Palace Bordoux"
+ palace_bordoux_desc: ""
+ take_south_islands_title: "Take South Islands"
+ take_south_islands_desc: ""
+ crow_laval_title: "Crow Laval"
+ crow_laval_desc: ""
+ mediterrainian_authority_title: "Mediterrainian Authority"
+ mediterrainian_authority_desc: ""
+ take_catalonia_title: "Take Catalonia"
+ take_catalonia_desc: ""
+ throne_of_aragon_title: "Throne Of Aragon"
+ throne_of_aragon_desc: ""
+ kingdom_of_laveria_title: "Kingdom Of Laveria"
+ kingdom_of_laveria_desc: ""
+
+ #---------------------------------------------------------
+ # Conquest Branch2
+ #---------------------------------------------------------
+
+ push_the_french_line_title: "Push The French Line"
+ push_the_french_line_desc: ""
+ king_of_the_franks_title: "King Of The Franks"
+ king_of_the_franks_desc: ""
+ crown_of_lavalia_magna_title: "Crown Of Lavalia Magna"
+ crown_of_lavalia_magna_desc: ""
+
+ #---------------------------------------------------------
+ # Conquest Branch Italy1
+ #---------------------------------------------------------
+
+ port_mont_crist_title: "Port Mont Crist"
+ port_mont_crist_desc: ""
+ secure_alpine_pass_title: "Secure Alpine Pass"
+ secure_alpine_pass_desc: ""
+ secure_north_italy_title: "Secure North Italy"
+ secure_north_italy_desc: ""
+ restore_house_of_god_title: "Restore House Of God"
+ restore_house_of_god_desc: ""
+ kingdom_of_lavalia_title: "Kingdom Of Lavalia"
+ kingdom_of_lavalia_desc: ""
+
+ #---------------------------------------------------------
+ # Conquest Branch Italy2
+ #---------------------------------------------------------
+
+ signoria_of_genoa_title: "Signoria Of Genoa"
+ signoria_of_genoa_desc: ""
+ genoese_commerce_title: "Genoese Commerce"
+ genoese_commerce_desc: ""
+
+ #---------------------------------------------------------
+ # Colonial1
+ #---------------------------------------------------------
+
+ lavonia_antarctique_title: "Lavonia Antarctique"
+ lavonia_antarctique_desc: ""
+ trade_whit_nativies_title: "Trade Whit Nativies"
+ trade_whit_nativies_desc: ""
+
+ #---------------------------------------------------------
+ # Colonial2
+ #---------------------------------------------------------
+
+ discover_america_title: "Discover America"
+ discover_america_desc: ""
+ bases_in_north_america_title: "Bases In North America"
+ bases_in_north_america_desc: ""
+ lavalini_river_company_title: "Lavalini River Company"
+ lavalini_river_company_desc: ""
+ Indian_domination_title: "Indian Domination"
+ Indian_domination_desc: ""
+
+ #---------------------------------------------------------
+ # Colonial3
+ #---------------------------------------------------------
+
+ colonial_expansion_title: "Colonial Expansion"
+ colonial_expansion_desc: ""
+ Laval_east_indies_title: "Laval East Indies"
+ Laval_east_indies_desc: ""
+ lalian_indochina_title: "Lalian Indochina"
+ lalian_indochina_desc: ""
+
+ #---------------------------------------------------------
+ # Dev1
+ #---------------------------------------------------------
+
+ a_title: "A"
+ a_desc: ""
+ b_title: "B"
+ b_desc: ""
+ c_title: "C"
+ c_desc: ""
+
+ #---------------------------------------------------------
+ # Dev2
+ #---------------------------------------------------------
+
+ a2_title: "A2"
+ a2_desc: ""
+ b2_title: "B2"
+ b2_desc: ""
+ c2_title: "C2"
+ c2_desc: ""
+ d2_title: "D2"
+ d2_desc: ""
+ e2_title: "E2"
+ e2_desc: ""
+
+ #---------------------------------------------------------
+ # Dev3
+ #---------------------------------------------------------
+
+ a3_title: "A3"
+ a3_desc: ""
+ b3_title: "B3"
+ b3_desc: ""
+ c3_title: "C3"
+ c3_desc: ""
+ d3_title: "D3"
+ d3_desc: ""
+ e3_title: "E3"
+ e3_desc: ""
+
+ #---------------------------------------------------------
+ # Dev4
+ #---------------------------------------------------------
+
+ c4_title: "C4"
+ c4_desc: ""
+ b4_title: "B4"
+ b4_desc: ""
+ d4_title: "D4"
+ d4_desc: ""
+ e4_title: "E4"
+ e4_desc: ""
+ f4_title: "F4"
+ f4_desc: ""
+ g4_title: "G4"
+ g4_desc: ""
+
+ #---------------------------------------------------------
+ # Dev5
+ #---------------------------------------------------------
+
+ a5_title: "A5"
+ a5_desc: ""
+ b5_title: "B5"
+ b5_desc: ""
+ c5_title: "C5"
+ c5_desc: ""

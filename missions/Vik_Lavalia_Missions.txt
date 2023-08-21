@@ -1,0 +1,494 @@
+early_naval_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	Arsenal_des_galeres = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	develop_languedoc = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { Arsenal_des_galeres }
+		trigger = { }
+		effect = { }
+	}
+	toulon_dockyards = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { develop_languedoc }
+		trigger = { }
+		effect = { }
+	}
+	la_marseillaise = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { toulon_dockyards }
+		trigger = { }
+		effect = { }
+	}
+}
+
+conquest_branch1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	palace_bordoux = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	take_south_islands = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { palace_bordoux port_mont_crist }
+		trigger = { }
+		effect = { }
+	}
+	crow_laval = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { take_south_islands }
+		trigger = { }
+		effect = { }
+	}
+	mediterrainian_authority = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { crow_laval }
+		trigger = { }
+		effect = { }
+	}
+	take_catalonia = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { mediterrainian_authority }
+		trigger = { }
+		effect = { }
+	}
+	throne_of_aragon = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { take_catalonia }
+		trigger = { }
+		effect = { }
+	}
+	kingdom_of_laveria = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { throne_of_aragon }
+		trigger = { }
+		effect = { }
+	}
+}
+
+conquest_branch2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	push_the_french_line = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { la_marseillaise mediterrainian_authority }
+		trigger = { }
+		effect = { }
+	}
+	king_of_the_franks = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { push_the_french_line }
+		trigger = { }
+		effect = { }
+	}
+	crown_of_lavalia_magna = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { king_of_the_franks }
+		trigger = { }
+		effect = { }
+	}
+}
+
+conquest_branch_italy1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	port_mont_crist = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	secure_alpine_pass = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { mediterrainian_authority }
+		trigger = { }
+		effect = { }
+	}
+	secure_north_italy = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { secure_alpine_pass }
+		trigger = { }
+		effect = { }
+	}
+	restore_house_of_god = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { secure_north_italy }
+		trigger = { }
+		effect = { }
+	}
+	kingdom_of_lavalia = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { restore_house_of_god }
+		trigger = { }
+		effect = { }
+	}
+}
+
+conquest_branch_italy2 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	signoria_of_genoa = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { secure_alpine_pass }
+		trigger = { }
+		effect = { }
+	}
+	genoese_commerce = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { secure_north_italy signoria_of_genoa }
+		trigger = { }
+		effect = { }
+	}
+}
+
+colonial1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	lavonia_antarctique = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { discover_america }
+		trigger = { }
+		effect = { }
+	}
+	trade_whit_nativies = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { bases_in_north_america }
+		trigger = { }
+		effect = { }
+	}
+}
+
+colonial2 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	discover_america = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	bases_in_north_america = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { discover_america }
+		trigger = { }
+		effect = { }
+	}
+	lavalini_river_company = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { bases_in_north_america }
+		trigger = { }
+		effect = { }
+	}
+	Indian_domination = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { Laval_east_indies }
+		trigger = { }
+		effect = { }
+	}
+}
+
+colonial3 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	colonial_expansion = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	Laval_east_indies = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { colonial_expansion }
+		trigger = { }
+		effect = { }
+	}
+	lalian_indochina = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { Laval_east_indies }
+		trigger = { }
+		effect = { }
+	}
+}
+
+dev1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	a = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	b = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { a }
+		trigger = { }
+		effect = { }
+	}
+	c = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = { c2 }
+		trigger = { }
+		effect = { }
+	}
+}
+
+dev2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	a2 = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	b2 = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { a2 }
+		trigger = { }
+		effect = { }
+	}
+	c2 = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = { b b2 }
+		trigger = { }
+		effect = { }
+	}
+	d2 = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = { c2 }
+		trigger = { }
+		effect = { }
+	}
+	e2 = {
+		icon = mission_build_up_to_force_limit
+		position = 14
+		required_missions = { d2 }
+		trigger = { }
+		effect = { }
+	}
+}
+
+dev3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	a3 = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = { c2 c5 }
+		trigger = { }
+		effect = { }
+	}
+	b3 = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = { a3 }
+		trigger = { }
+		effect = { }
+	}
+	c3 = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = { b3 }
+		trigger = { }
+		effect = { }
+	}
+	d3 = {
+		icon = mission_build_up_to_force_limit
+		position = 14
+		required_missions = { c3 }
+		trigger = { }
+		effect = { }
+	}
+	e3 = {
+		icon = mission_build_up_to_force_limit
+		position = 15
+		required_missions = { e2 g4 }
+		trigger = { }
+		effect = { }
+	}
+}
+
+dev4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	c4 = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	b4 = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { c4 }
+		trigger = { }
+		effect = { }
+	}
+	d4 = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		required_missions = { c2 c5 }
+		trigger = { }
+		effect = { }
+	}
+	e4 = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = { d4 }
+		trigger = { }
+		effect = { }
+	}
+	f4 = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = { e4 }
+		trigger = { }
+		effect = { }
+	}
+	g4 = {
+		icon = mission_build_up_to_force_limit
+		position = 14
+		required_missions = { f4 }
+		trigger = { }
+		effect = { }
+	}
+}
+
+dev5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = GUY
+	}
+
+	a5 = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = {  }
+		trigger = { }
+		effect = { }
+	}
+	b5 = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { a5 }
+		trigger = { }
+		effect = { }
+	}
+	c5 = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = { b4 b5 }
+		trigger = { }
+		effect = { }
+	}
+}
+
