@@ -1,9 +1,13 @@
-owner = Z7U
-controller = Z7U
+owner = VEN
+controller = VEN
 capital = "Venezia"
 is_city = yes
 culture = venetian
+<<<<<<< Updated upstream
 religion = dynamic-greek-italian-culture-num1
+=======
+religion = catholic
+>>>>>>> Stashed changes
 trade_goods = glass
 base_tax = 10
 base_production = 12
@@ -11,7 +15,6 @@ base_manpower = 5
 extra_cost = 24
 center_of_trade = 3
 add_core = VEN
-add_core = Z7U
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
