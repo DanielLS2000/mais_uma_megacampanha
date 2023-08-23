@@ -4,6 +4,7 @@ government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = austrian
+elector = yes
 capital = 133
 1444.11.11= {
 	monarch = {

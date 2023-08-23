@@ -6,7 +6,6 @@ religion = catholic
 primary_culture = saxon
 capital = 53
 add_accepted_culture = lower_saxon
-elector = yes
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {
