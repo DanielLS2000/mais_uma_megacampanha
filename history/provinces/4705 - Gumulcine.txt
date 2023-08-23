@@ -1,5 +1,5 @@
-owner = Z0D
-controller = Z0D
+owner = BYZ
+controller = BYZ
 capital = "Gumulcine"
 is_city = yes
 culture = greek
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 3
 add_core = GRE
-add_core = Z0D
+add_core = BYZ
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
