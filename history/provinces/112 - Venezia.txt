@@ -3,11 +3,7 @@ controller = VEN
 capital = "Venezia"
 is_city = yes
 culture = venetian
-<<<<<<< Updated upstream
-religion = dynamic-greek-italian-culture-num1
-=======
 religion = catholic
->>>>>>> Stashed changes
 trade_goods = glass
 base_tax = 10
 base_production = 12
