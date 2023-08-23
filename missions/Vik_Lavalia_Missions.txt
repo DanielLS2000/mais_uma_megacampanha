@@ -6,33 +6,184 @@ early_naval_branch = {
 		tag = GUY
 	}
 
-	Arsenal_des_galeres = {
-		icon = mission_build_up_to_force_limit
+	fra_raise_slave_ships = { 
+		icon = mission_combat_barbary_piracy
 		position = 1
 		required_missions = {  }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 201 
+				province_id = 4696 
+			}
+			OR = {
+				has_dock_building_trigger = no 
+				has_shipyard_building_trigger = no 
+			}
+		}
+		trigger = { 
+			num_of_galley = 12 
+			sailors_percentage = 0.8
+			201 = { 
+				country_or_non_sovereign_subject_holds = ROOT 
+				has_dock_building_trigger = yes 
+				has_shipyard_building_trigger = yes 
+			}
+			4696 = { 
+				country_or_non_sovereign_subject_holds = ROOT 
+				has_dock_building_trigger = yes 
+				has_shipyard_building_trigger = yes 
+			}
+		}
+		effect = {
+			country_event = { id = flavor_fra.202 }
+			custom_tooltip = fra_event_insight_202_tt
+			add_country_modifier = { 
+				name = fra_replenished_slave_crews_modifier
+				duration = 7300
+			}
+		}
 	}
-	develop_languedoc = {
-		icon = mission_build_up_to_force_limit
-		position = 2
-		required_missions = { Arsenal_des_galeres }
-		trigger = { }
-		effect = { }
+	emp_pro_marseille = {
+		icon = develop_provence
+		required_missions = { emp_pro_arts }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 201
+					OR = {
+						NOT = { owned_by = ROOT }
+						development = 30
+					}
+				}
+				AND = {
+					area = provence_area
+					OR = {
+						NOT = { owned_by = ROOT }
+						development = 15
+					}
+				}
+			}
+		}
+		trigger = {
+			201 = {
+				development = 30
+				owned_by = ROOT
+			}
+			num_of_owned_provinces_with = {
+				area = provence_area
+				value = 3
+				development = 15
+			}
+		}
+		effect = {
+			201 = {
+				change_province_name = "Marseille"
+				rename_capital = "Marseille"
+				add_province_modifier = {
+					name = "pro_marseille"
+					duration = -1
+				}
+			}
+		}
 	}
-	toulon_dockyards = {
-		icon = mission_build_up_to_force_limit
-		position = 3
-		required_missions = { develop_languedoc }
-		trigger = { }
-		effect = { }
+	fra_toulon_dockyards = {
+		icon = toulon_dockyards 
+		required_missions = { emp_pro_marseille } 
+		provinces_to_highlight = {
+			province_id = 4696
+		}
+		trigger = {
+			4696 = {
+				has_dock_building_trigger = yes 
+				has_shipyard_building_trigger = yes 
+				base_production = 12 
+			}
+		}
+		effect = {
+			custom_tooltip = fra_every_coastal_with_dock_shipyard_gets_tt
+			tooltip = {
+				add_base_production = 1 
+				add_province_modifier = {
+					name = fra_french_dockyard_industry_modifier
+					duration = -1 
+				}
+			}
+			custom_tooltip = fra_alternatively_tt 
+			tooltip = {
+				4696 = {
+					add_base_production = 3
+					add_province_modifier = {
+						name = fra_toulon_dockyards_modifier
+						duration = -1 
+					}
+				}
+			}
+			hidden_effect = {
+				if = { 
+					limit = { 
+						OR = { 
+							full_idea_group = naval_ideas 
+							full_idea_group = maritime_ideas 
+						}
+					}
+					every_owned_province = {
+						limit = { 
+							has_port = yes 
+							has_dock_building_trigger = yes 
+							has_shipyard_building_trigger = yes 
+						}
+						add_base_production = 1 
+						add_province_modifier = {
+							name = fra_french_dockyard_industry_modifier
+							duration = -1 
+						}
+					}
+				}
+				else = {
+					4696 = {
+						add_base_production = 3
+						add_province_modifier = {
+							name = fra_toulon_dockyards_modifier
+							duration = -1 
+						}
+					}
+				}
+			}
+		}
 	}
-	la_marseillaise = {
-		icon = mission_build_up_to_force_limit
-		position = 4
-		required_missions = { toulon_dockyards }
-		trigger = { }
-		effect = { }
+	emp_pro_la_marseillaise = {
+		icon = la_marseillaise
+		required_missions = { fra_toulon_dockyards }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				army_professionalism = 0.8
+			}
+			else = {
+				army_tradition = 90
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				add_country_modifier = {
+					name = "pro_la_marseillaise"
+					duration = -1
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = "pro_la_marseillaise_2"
+					duration = -1
+				}
+			}
+		}
 	}
 }
 
@@ -44,54 +195,318 @@ conquest_branch1 = {
 		tag = GUY
 	}
 
-	palace_bordoux = {
-		icon = mission_build_up_to_force_limit
-		position = 1
-		required_missions = {  }
-		trigger = { }
-		effect = { }
+	fra_chateux_loire_valley = { 
+		icon = develop_the_po_valley
+		required_missions = { }
+		position = 1 
+		provinces_to_highlight = { 
+			OR = {
+				province_id = 174 
+				province_id = 194 
+				province_id = 198 
+				province_id = 4112
+			}
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+				NOT = { num_of_times_improved = 3 } 
+			}
+		}
+		trigger = { 
+			loire_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			if = {
+				limit = { ai = no }
+				OR = { 
+					174 = { num_of_times_improved = 3 } 
+					194 = { num_of_times_improved = 3 }
+					198 = { num_of_times_improved = 3 }  
+					4112 = { num_of_times_improved = 3 } 
+				}
+			}
+		}
+		effect = { 
+			country_event = { id = flavor_fra.103 }
+			baleares_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
 	}
 	take_south_islands = {
 		icon = mission_build_up_to_force_limit
 		position = 2
 		required_missions = { palace_bordoux port_mont_crist }
-		trigger = { }
-		effect = { }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = baleares_area
+					area = corsica_sardinia_area
+				}
+				value = 4
+			}
+		 }
+		effect = { 			
+			country_event = { id = flavor_fra.104 }
+		}
 	}
 	crow_laval = {
-		icon = mission_build_up_to_force_limit
+		icon = king_of_france
 		position = 3
 		required_missions = { take_south_islands }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = { 
+			region = france_region
+			region = iberia_region
+			region = italy_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+		trigger = { 
+			num_of_cities = 30
+		}
+		effect = { 
+			add_power_projection = {
+				type = fra_crown_of_france
+				amount = 10
+			}
+			custom_tooltip = zim_amongst_the_great_powers_tt
+			
+			add_prestige_or_monarch_power = { amount = 25 }
+		}
 	}
 	mediterrainian_authority = {
-		icon = mission_build_up_to_force_limit
+		icon = end_the_habsburgs
 		position = 4
 		required_missions = { crow_laval }
-		trigger = { }
-		effect = { }
-	}
+		provinces_to_highlight = { 
+			area = provence_area 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+		trigger = { 
+	
+			owns_all_provinces = {
+				area = provence_area
+			}
+			if = {
+				limit = { ai = no }
+				OR = { 
+					is_emperor = yes 
+					NOT = { hre_size = 1 } 
+					emperor = { 
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = scornfully_insulted
+						}
+					}
+					emperor = { 
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = insulted
+						}
+					}
+				}
+				OR = { 
+					emperor = { is_rival = ROOT } 
+					military_strength = {
+						who = emperor
+						value = 2.0
+					}
+					power_projection = 80 
+				}
+			}
+			if = {
+				limit = { ai = yes }
+				grown_by_development = 150
+			}
+		}
+		effect = { 
+			country_event = { id = flavor_fra.102 } 
+			
+			custom_tooltip = fra_event_insight_102_tt
+
+			catalonia_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			savoy_dauphine_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+			france_region =	{ 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+				}
+			}
+		}
 	take_catalonia = {
 		icon = mission_build_up_to_force_limit
 		position = 5
 		required_missions = { mediterrainian_authority }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = { 
+			OR = { 
+				AND = { 
+					OR = { 	
+						area = sicily_area 
+						area = western_sicily_area 
+						province_id = 125
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+				}
+				AND = {
+					province_id = 125 
+					OR = { 
+						has_shipyard_building_trigger = no
+						NOT = { num_of_times_improved = 5 }
+					}
+				}
+			}
+		}
+		trigger = { 
+			catalonia_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			213 = { 
+				num_of_times_improved = 5 
+				has_shipyard_building_trigger = yes
+			}
+		}
+		effect = { 
+			custom_tooltip = fra_upgrade_buildings_tt
+			hidden_effect = { 
+				213 = { 
+					remove_building = dock 
+					add_building = drydock
+				}
+				213 = { 
+					remove_building = shipyard
+					add_building = grand_shipyard
+				}
+			}
+			create_admiral = { tradition = 80 } 
+			custom_tooltip = fra_if_knights_exist_gain_tt
+			tooltip = { 
+				country_event = { id = flavor_fra.112 } 
+			}
+			custom_tooltip = fra_alternatively_tt
+			custom_tooltip = fra_organize_raid_parties_for_20_years_tt
+			hidden_effect = { 
+				if = { 
+					limit = { 
+						KNI = { exists = yes } 
+					}
+					add_country_modifier = {
+						name = fra_french_raiding_parties_modifier
+						duration = 7300
+					}
+				}
+				else = { 
+					country_event = { id = flavor_fra.112 }
+				}
+			}
+			aragon_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
 	}
 	throne_of_aragon = {
 		icon = mission_build_up_to_force_limit
 		position = 6
 		required_missions = { take_catalonia }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = { 
+			OR = { 
+				area = aragon_area 
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+		trigger = { 
+					aragon_area = { 
+						type = all 
+						country_or_non_sovereign_subject_holds = ROOT 
+					}
+			}
+		effect = { 
+			country_event = { id = flavor_fra.113 } 
+			custom_tooltip = fra_event_insight_113_tt
+		}
 	}
 	kingdom_of_laveria = {
 		icon = mission_build_up_to_force_limit
 		position = 7
 		required_missions = { throne_of_aragon }
-		trigger = { }
-		effect = { }
+		provinces_to_highlight = { 
+			region = iberia_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+		trigger = { 
+			development_in_provinces = {
+				value = 400 
+				region = iberia_region
+			}
+			OR = { 
+				AND = { 
+					accepted_culture = castillian
+					accepted_culture = aragonese
+					accepted_culture = portugese
+				}
+				iberia_region = {
+					type = all 
+					culture = ROOT 
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					region = iberia_region 
+					num_of_units_in_province = { 
+						who = ROOT 
+						amount = 50 
+					}
+					value = 4 
+				}
+			}
+		}
+		effect = { 
+			add_country_modifier = {
+				name = fra_iberian_domination_modifier 
+				duration = -1 
+			}
+			if = { 
+				limit = { 
+					SPA = { 
+						is_subject_of = ROOT 
+						total_development = 500
+					}
+				}
+				SPA = { 
+					change_country_color = { 
+						color = { 95 158 160 }
+					}
+					override_country_name = NPI
+					set_country_flag = change_name_NPI_flag  
+					set_country_flag = has_overriden_name_flag
+					set_country_flag = has_overriden_color_flag
+				}
+			}
+		}
 	}
 }
 
@@ -107,22 +522,64 @@ conquest_branch2 = {
 		icon = mission_build_up_to_force_limit
 		position = 5
 		required_missions = { la_marseillaise mediterrainian_authority }
-		trigger = { }
-		effect = { }
+		trigger = { 			
+			num_of_provinces_owned_or_owned_by_subjects_with = { 
+				region = france_region 
+				value = 40 
+		}
+	}
+	effect = {
+		add_country_modifier = {
+			name = fra_victory_germany_modifier
+			duration = 9125 
+		}
+		custom_tooltip = fra_every_required_area_gains_tt
+		tooltip = {
+			add_province_modifier = {
+				name = fra_french_buffer_modifier
+				duration = 7300
+			}
+		}
+		hidden_effect = {
+			france_region = { 
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = fra_french_buffer_modifier
+					duration = 7300
+					}
+				}
+			}
+		}
 	}
 	king_of_the_franks = {
 		icon = mission_build_up_to_force_limit
 		position = 6
 		required_missions = { push_the_french_line }
-		trigger = { }
+		trigger = { 		
+			num_of_provinces_owned_or_owned_by_subjects_with = { 
+			region = france_region 
+			value = 55
+	}}
 		effect = { }
 	}
 	crown_of_lavalia_magna = {
 		icon = mission_build_up_to_force_limit
 		position = 7
 		required_missions = { king_of_the_franks }
-		trigger = { }
-		effect = { }
+		trigger = { 			
+			france_region = {
+				type = all 
+				NOT = { average_autonomy_above_min = 5 }
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = { 			
+			add_country_modifier = {
+			name = fra_cultural_hegemony_modifier
+			duration = -1 
+		}
+			custom_tooltip = fra_enable_mil_hegemony_tt
+			set_country_flag = fra_enable_mil_hegemony_flag}
 	}
 }
 
@@ -138,36 +595,213 @@ conquest_branch_italy1 = {
 		icon = mission_build_up_to_force_limit
 		position = 1
 		required_missions = {  }
-		trigger = { }
-		effect = { }
+		trigger = { 
+			87 = { country_or_non_sovereign_subject_holds = ROOT } 
+			if = {
+				limit = { ai = no }
+				navy_size_percentage = 0.8
+				heavy_ship_fraction = 0.2
+			}
+			else = {
+				navy_size_percentage = 0.5
+				navy_size = 25
+			}
+		}
+		effect = {
+			174 = { 
+				if = { 
+					limit = { has_building = shipyard } 
+					remove_building = shipyard
+					add_building = grand_shipyard
+				}
+				else_if = { 
+					limit = { has_building = grand_shipyard } 
+					add_base_production = 2 
+				}
+				else = { custom_tooltip = fra_upgrade_shipyard_tt } 
+			}
+			
+			custom_tooltip = fra_enable_staple_port_decision_tt
+			set_country_flag = enable_staple_port_flag 
+			
+			custom_tooltip = fra_claim_coastal_dutch_provinces_tt
+			hidden_effect = { 
+				low_countries_region = {
+					limit = { 
+						has_port = yes 
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						NOT = { is_core = ROOT } 
+					} 
+					add_permanent_claim = ROOT 
+				}
+			}
+			1744 = {
+				owner = {
+					add_opinion = { who = ROOT modifier = opinion_designated_staple_port }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = gained_mercantilism_from_calais }
+				}
+				add_mercantilism = 10
+				set_country_flag = gained_mercantilism_from_calais
+			}
+			add_adm_power = -40
+			174 = {
+				add_province_modifier = {
+					name = "the_staple_port"
+					duration = -1
+				}
+			}
+		}
 	}
-	secure_alpine_pass = {
-		icon = mission_build_up_to_force_limit
-		position = 5
+	fra_secure_alpine_pass = { 
+		icon = unify_piedmont
 		required_missions = { mediterrainian_authority }
-		trigger = { }
-		effect = { }
-	}
-	secure_north_italy = {
-		icon = mission_build_up_to_force_limit
-		position = 6
-		required_missions = { secure_alpine_pass }
-		trigger = { }
-		effect = { }
-	}
-	restore_house_of_god = {
-		icon = mission_build_up_to_force_limit
-		position = 7
-		required_missions = { secure_north_italy }
-		trigger = { }
-		effect = { }
-	}
+		position = 5
+		provinces_to_highlight = {
+			area = piedmont_area 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+		}
+		trigger = { 
+				piedmont_area = {
+					type = all 
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
+		}
+		effect = {
+				italy_region = { 
+					limit = { 
+						NOT = { owned_by = ROOT } 
+						NOT = { is_core = ROOT } 
+					}
+					add_permanent_claim = ROOT 
+				}
+				add_country_modifier = {
+					name = fra_entry_in_italy_modifier 
+					duration = 7300
+				}
+				if = { 
+					limit = { has_estate = estate_nobles }
+					add_estate_loyalty = { 
+						estate = estate_nobles 
+						loyalty = 20 
+					}
+				}
+			}
+		}
+	
+		fra_italian_heartland = {
+			icon = seize_lombardy
+			required_missions = { fra_secure_alpine_pass }
+			position = 6
+			provinces_to_highlight = { 
+				area = lombardy_area 
+				NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			}
+			trigger = { 
+					lombardy_area = { 
+						type = all 
+						country_or_non_sovereign_subject_holds = ROOT 
+					}
+			}
+			effect = { 
+				custom_tooltip = fra_if_lapdog_reward_tt
+				tooltip = {
+					lombardy_area = { 
+						limit = { country_or_non_sovereign_subject_holds = ROOT } 
+						remove_core = ROOT 
+						add_core = PAP 
+						cede_province = PAP 
+					}
+					if = { 
+						limit = { has_dlc = "Leviathan" }
+						104 = { 
+							add_great_project_tier = { 
+								type = duomo_milano
+								tier = 1 
+							}
+						}
+					}
+					else = { 
+						104 = { add_base_tax = 3 } 
+					}
+					add_country_modifier = { 
+						name = fra_influx_of_milanese_engineers_modifier
+						duration = 9125
+					}
+				}
+				custom_tooltip = fra_if_completed_via_conquest_tt
+				tooltip = { 
+					country_event = { id = flavor_fra.118 } 
+					if = { 
+						limit = { has_dlc = "Leviathan" }
+						104 = { 
+							add_great_project_tier = {
+								type = duomo_milano
+								tier = 1 
+							}
+						}
+					}
+				}
+			}
+		}		
+		
+		fra_house_god = {
+			icon = answer_the_roman_question
+			required_missions = { fra_throne_naples fra_golden_march }
+			position = 7
+			provinces_to_highlight = {
+				if = { 
+					limit = { has_country_flag = fra_papal_lap_dop_flag } 
+					area = lazio_area 
+					NOT = { 
+						OR = { 
+							country_or_non_sovereign_subject_holds = ROOT 
+							country_or_non_sovereign_subject_holds = PAP 
+						}
+					}
+				}
+				else = { 
+					area = lazio_area 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+				}
+			}
+			trigger = {
+					lazio_area = { 
+						type = all 
+						country_or_non_sovereign_subject_holds = ROOT 
+					}
+					118 = { 
+						owned_by = ROOT 
+						development = 30 
+						has_tax_building_trigger = yes 
+					}
+			}
+			effect = { 
+
+						add_country_modifier = { 
+							name = fra_golden_march2_modifier
+							duration = -1 
+						}
+					}
+				}
+			
 	kingdom_of_lavalia = {
-		icon = mission_build_up_to_force_limit
+		icon = establish_client_states
 		position = 8
 		required_missions = { restore_house_of_god }
-		trigger = { }
-		effect = { }
+		trigger = { 			
+			italy_region = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+		}
+	}
+		effect = {
+			italy_region ={ add_core = ITA } 
+			
+		}
 	}
 }
 
