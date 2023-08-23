@@ -159,7 +159,12 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = HOL
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		owns = 97
 	}
 

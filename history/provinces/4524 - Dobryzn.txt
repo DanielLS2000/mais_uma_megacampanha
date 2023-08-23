@@ -1,5 +1,5 @@
-owner = Z0I
-controller = Z0I
+owner = TEU
+controller = TEU
 capital = "Dobrzyn"
 is_city = yes
 culture = polish
@@ -10,7 +10,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 add_core = POL
-add_core = Z0I
+add_core = TEU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

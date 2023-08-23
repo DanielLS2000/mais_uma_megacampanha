@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = nomad_group
 religion = orthodox
-primary_culture = dynamic-avar-culture-num1
+primary_culture = transylvanian
 capital = 4128
 1444.11.11= {
 	monarch = {
@@ -14,7 +14,7 @@ capital = 4128
 		birth_date = 1.1.1
 		regent = yes
 		religion = orthodox
-		culture = dynamic-avar-culture-num1
+		culture = transylvanian
 	}
 	heir = {
 		name = "Ayasun"
@@ -27,7 +27,7 @@ capital = 4128
 		female = yes
 		claim = 89
 		religion = orthodox
-		culture = dynamic-avar-culture-num1
+		culture = transylvanian
 	}
 }
 1444.11.11= {

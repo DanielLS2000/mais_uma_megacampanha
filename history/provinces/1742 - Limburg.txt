@@ -1,5 +1,5 @@
-owner = Z26
-controller = Z26
+owner = LIE
+controller = LIE
 capital = "Roermond"
 is_city = yes
 culture = dynamic-franconian-cosmopolitan_french-culture-num2
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 5
 base_production = 5
 base_manpower = 4
-add_core = Z26
+add_core = LIE
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

@@ -1,5 +1,5 @@
-owner = LUX
-controller = LUX
+owner = LIE
+controller = LIE
 capital = "Liège"
 is_city = yes
 culture = dynamic-franconian-cosmopolitan_french-culture-num2
@@ -10,7 +10,7 @@ hre = yes
 base_tax = 6
 base_production = 6
 base_manpower = 3
-add_core = LUX
+add_core = LIE
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

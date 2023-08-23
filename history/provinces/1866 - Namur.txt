@@ -1,5 +1,5 @@
-owner = LUX
-controller = LUX
+owner = LIE
+controller = LIE
 capital = "Namur"
 is_city = yes
 culture = dynamic-franconian-cosmopolitan_french-culture-num2
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 7
 base_production = 7
 base_manpower = 3
-add_core = LUX
+add_core = LIE
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

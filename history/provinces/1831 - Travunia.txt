@@ -1,5 +1,5 @@
-owner = Z1F
-controller = Z1F
+owner = CRO
+controller = CRO
 capital = "Herceg Novi"
 is_city = yes
 culture = serbian
@@ -8,8 +8,7 @@ trade_goods = wool
 base_tax = 2
 base_production = 3
 base_manpower = 2
-add_core = Z1F
-add_permanent_claim = CRO
+add_core = CRO
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

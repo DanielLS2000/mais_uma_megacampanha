@@ -6,7 +6,6 @@ religion = catholic
 primary_culture = saxon
 capital = 58
 add_accepted_culture = dynamic-sorbian-culture-num2
-elector = yes
 1444.11.11= {
 	monarch = {
 		name = "Eggerd"

@@ -1,5 +1,5 @@
-owner = MEI
-controller = MEI
+owner = Z47
+controller = Z47
 capital = "Zwickau"
 is_city = yes
 culture = dynamic-sorbian-culture-num1
@@ -9,7 +9,7 @@ hre = yes
 base_tax = 2
 base_production = 3
 base_manpower = 2
-add_core = MEI
+add_core = Z47
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

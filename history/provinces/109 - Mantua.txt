@@ -1,5 +1,5 @@
-owner = Z0H
-controller = Z0H
+owner = MLO
+controller = MLO
 capital = "Mantova"
 is_city = yes
 culture = lombard
@@ -10,7 +10,7 @@ base_production = 8
 base_manpower = 3
 extra_cost = 8
 center_of_trade = 1
-add_core = Z0H
+add_core = MLO
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

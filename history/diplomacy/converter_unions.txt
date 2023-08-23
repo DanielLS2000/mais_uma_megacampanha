@@ -48,7 +48,7 @@ union=
 
 union=
 {
-	first="Z0I"
+	first="TEU"
 	second="POM"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -160,7 +160,7 @@ union=
 
 union=
 {
-	first="FLA"
+	first="LIE"
 	second="BRB"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -168,7 +168,7 @@ union=
 
 union=
 {
-	first="FLA"
+	first="LIE"
 	second="GEL"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
@@ -290,22 +290,6 @@ union=
 {
 	first="ICE"
 	second="Z2W"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="Z26"
-	second="LUX"
-	start_date="1444.11.11"
-	end_date="1836.1.1"
-}
-
-union=
-{
-	first="Z26"
-	second="Z4N"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

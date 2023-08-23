@@ -1,5 +1,5 @@
-owner = Z0I
-controller = Z0I
+owner = TEU
+controller = TEU
 capital = "Tuchel"
 is_city = yes
 culture = old_pommeranian
@@ -8,7 +8,7 @@ trade_goods = grain
 base_tax = 3
 base_production = 4
 base_manpower = 3
-add_core = Z0I
+add_core = TEU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

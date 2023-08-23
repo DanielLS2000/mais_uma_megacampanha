@@ -1,5 +1,5 @@
-owner = Z0I
-controller = Z0I
+owner = TEU
+controller = TEU
 capital = "Breslau"
 is_city = yes
 culture = schlesian
@@ -11,7 +11,7 @@ base_manpower = 3
 extra_cost = 8
 center_of_trade = 1
 add_core = SIL
-add_core = Z0I
+add_core = TEU
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

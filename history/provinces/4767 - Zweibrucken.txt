@@ -1,5 +1,5 @@
-owner = Z76
-controller = Z76
+owner = LOR
+controller = LOR
 capital = "Zweibrücken"
 is_city = yes
 culture = hessian
@@ -9,8 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 3
 base_manpower = 2
-add_core = Z76
-add_permanent_claim = LOR
+add_core = LOR
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

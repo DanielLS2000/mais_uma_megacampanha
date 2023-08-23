@@ -1,8 +1,8 @@
 government = republic
 government_rank = 1
 technology_group = eastern
-religion = converted_dynamic_faith_109
-primary_culture = dynamic-greek-culture-num3
+religion = catholic
+primary_culture = dynamic-greek-italian-culture-num1
 capital = 112
 fixed_capital = 112
 add_accepted_culture = venetian

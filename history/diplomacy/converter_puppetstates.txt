@@ -115,18 +115,19 @@ dependency=
 	end_date="1836.1.1"
 }
 
-vassal=
+dependency=
 {
-	first="BNG"
-	second="Z3Z"
+	subject_type = appanage
+	first="GUY"
+	second="DAU"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }
 
 vassal=
 {
-	first="BUR"
-	second="DAU"
+	first="BNG"
+	second="Z3Z"
 	start_date="1444.11.11"
 	end_date="1836.1.1"
 }

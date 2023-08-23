@@ -1,5 +1,5 @@
-owner = Z5G
-controller = Z5G
+owner = HAB
+controller = HAB
 capital = "Krems"
 is_city = yes
 culture = austrian
@@ -9,8 +9,7 @@ hre = yes
 base_tax = 3
 base_production = 3
 base_manpower = 4
-add_core = Z5G
-add_permanent_claim = HAB
+add_core = HAB
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

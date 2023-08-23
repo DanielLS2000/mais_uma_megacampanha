@@ -1,5 +1,5 @@
-owner = CRO
-controller = CRO
+owner = SER
+controller = SER
 capital = "Visegrad"
 is_city = yes
 culture = bosnian
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 add_core = BOS
-add_core = CRO
+add_core = SER
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian

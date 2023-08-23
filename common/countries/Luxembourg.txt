@@ -1,9 +1,13 @@
 ck2_converter_generated = yes
 graphical_culture = westerngfx
-color = { 53 140 73 }
-revolutionary_colors = { 16 0 14 }
+color = {
+	145 125 195 
+}
+revolutionary_colors = {
+	16 0 14 
+}
 historical_idea_groups = {
-	trade_ideas
+	 trade_ideas
 	defensive_ideas
 	diplomatic_ideas
 	economic_ideas
@@ -13,7 +17,7 @@ historical_idea_groups = {
 	spy_ideas
 }
 historical_units = {
-	anglofrench_line
+	 anglofrench_line
 	dutch_maurician
 	french_bluecoat
 	french_caracolle
@@ -29,33 +33,54 @@ historical_units = {
 	western_men_at_arms
 }
 monarch_names = {
-	"Alexander #0" = 0
-	"Azur #0" = 0
-	"Bonifacio #0" = 0
-	"Béatrice #0" = -1
-	"Béatrix #0" = -1
-	"Christine #0" = -1
-	"Engeltraud #0" = -1
-	"Evrard #0" = 0
-	"Gargamel #1" = 10
-	"Gauthier #0" = 0
-	"Giselbert #0" = 0
-	"Guillaume #0" = 0
-	"Gwerfyl #0" = -1
-	"Kaspar #0" = 0
-	"Marthe #0" = -1
-	"Muadhnait #0" = -1
-	"Mélusine #0" = -1
-	"Perinne #0" = -1
-	"Sigismund #1" = 10
-	"Étiennette #0" = -1
-	"Úlfkell #1" = 10
+	 "Alexander #0"
+	0
+	"Azur #0"
+	0
+	"Bonifacio #0"
+	0
+	"Beatrice #0"
+	-1
+	"Beatrix #0"
+	-1
+	"Christine #0"
+	-1
+	"Engeltraud #0"
+	-1
+	"Evrard #0"
+	0
+	"Gargamel #1"
+	10
+	"Gauthier #0"
+	0
+	"Giselbert #0"
+	0
+	"Guillaume #0"
+	0
+	"Gwerfyl #0"
+	-1
+	"Kaspar #0"
+	0
+	"Marthe #0"
+	-1
+	"Muadhnait #0"
+	-1
+	"Milusine #0"
+	-1
+	"Perinne #0"
+	-1
+	"Sigismund #1"
+	10
+	"ï¿½tiennette #0"
+	-1
+	"Ulfkell #1"
+	10
 }
 leader_names = {
-	"Biberen"
+	 "Biberen"
 	"Borchert"
 	"Bourscheidt"
-	"Bültel"
+	"Bï¿½ltel"
 	"Cemmerer"
 	"Clees"
 	"Croye"
@@ -91,7 +116,7 @@ leader_names = {
 	"von Sommerfeld"
 }
 ship_names = {
-	"Capellen"
+	 "Capellen"
 	"Clervaux"
 	"Diekirch"
 	"Echternach"

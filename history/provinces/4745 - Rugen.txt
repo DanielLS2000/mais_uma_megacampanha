@@ -1,5 +1,5 @@
-owner = Z0I
-controller = Z0I
+owner = TEU
+controller = TEU
 capital = "Bergen auf Rügen"
 is_city = yes
 culture = sorbian
@@ -8,7 +8,7 @@ trade_goods = fish
 base_tax = 2
 base_production = 1
 base_manpower = 1
-add_core = Z0I
+add_core = TEU
 add_permanent_claim = POM
 discovered_by = east_african
 discovered_by = eastern
