@@ -1,0 +1,598 @@
+first_branch = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { always = yes } 
+
+	ara_the_port_of_ceuta = {
+		icon = mission_retake_ceuta
+		position = 2
+		required_missions = { ara_prepare_the_royal_army } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_reales_atarazanas = {
+		icon = fortify_malta
+		position = 3
+		required_missions = { ara_the_port_of_ceuta } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_consulate_of_the_seas = {
+		icon = mission_consulate_of_the_sea
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_across_gibraltar = {
+		icon = mission_rb_take_gibraltar
+		position = 8
+		required_missions = { ara_consulate_of_the_seas } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_invade_morroco = {
+		icon = mission_moroccan_ports
+		position = 9
+		required_missions = { ara_across_gibraltar } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_consolidate_the_colonies = {
+		icon = knights_of_the_new_world
+		position = 11
+		required_missions = { ara_the_aztec_empire } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_reform_the_hacienda = {
+		icon = mission_rb_monopolize_the_channel
+		position = 12
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_a_new_capital = {
+		icon = spa_new_capital
+		position = 13
+		required_missions = { ara_reform_the_hacienda } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_system_of_councils = {
+		icon = mission_noble_council
+		position = 14
+		required_missions = { ara_a_new_capital } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { always = yes } 
+
+	ara_prepare_the_royal_army = {
+		icon = mission_assemble_an_army
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_the_atlantic_coastline = {
+		icon = mission_portuguese_interference
+		position = 2
+		required_missions = { ara_prepare_the_royal_army } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_law_and_order = {
+		icon = law_of_the_pious
+		position = 3
+		required_missions = {
+			ara_the_port_of_ceuta
+			ara_the_atlantic_coastline
+			ara_the_islamic_revolt
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_iberian_power = {
+		icon = spread_the_von_wettins
+		position = 4
+		required_missions = { ara_law_and_order } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_mediterranean_supremacy = {
+		icon = mission_dominate_the_mediterranean
+		position = 6
+		required_missions = {
+			ara_iberian_power
+			ara_consulate_of_the_seas
+			ara_dominate_iberian_trade
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_fecho_do_imperio = {
+		icon = mission_imperial_spain
+		position = 7
+		required_missions = { ara_mediterranean_supremacy } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_casa_de_contratacion = {
+		icon = mission_dominate_genoa
+		position = 9
+		required_missions = {
+			ara_across_gibraltar
+			ara_plus_ultra
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_the_aztec_empire = {
+		icon = mission_iberian_conquistador
+		position = 10
+		required_missions = { ara_discover_the_caribbean } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_floods_of_gold = {
+		icon = mission_zambezi_gold
+		position = 11
+		required_missions = { ara_the_aztec_empire } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_zacatecan_mines = {
+		icon = mission_potosi_silver
+		position = 12
+		required_missions = { ara_floods_of_gold } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_the_silver_trade = {
+		icon = mission_african_gold
+		position = 14
+		required_missions = {
+			ara_zacatecan_mines
+			ara_viceroyalty_of_peru
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { always = yes } 
+
+	ara_the_islamic_revolt = {
+		icon = dom_ara_remensa_war
+		position = 2
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_holy_see_diplomats = {
+		icon = catholic_confraternity
+		position = 3
+		required_missions = { ara_the_islamic_revolt } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_convert_iberia = {
+		icon = mission_religious
+		position = 4
+		required_missions = { ara_holy_see_diplomats } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_dominate_iberian_trade = {
+		icon = spa_dominate_sevilla
+		position = 5
+		required_missions = { ara_mediterranean_ambitions } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_industrial_districts = {
+		icon = mission_industrial_forging
+		position = 6
+		required_missions = { ara_table_of_exchange } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_plus_ultra = {
+		icon = mission_plus_ultra
+		position = 8
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_discover_the_caribbean = {
+		icon = mission_colonize_the_caribbean
+		position = 9
+		required_missions = { ara_plus_ultra } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_caribbean_colony = {
+		icon = explore_caribbean
+		position = 10
+		required_missions = { ara_discover_the_caribbean } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_caribbean_ports = {
+		icon = mission_caribbean_cn
+		position = 11
+		required_missions = { ara_caribbean_colony } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_muiscan_conquest = {
+		icon = mission_mayan_conquest
+		position = 12
+		required_missions = { ara_caribbean_ports } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { always = yes } 
+
+	ara_aragonese_navy = {
+		icon = mission_aragonese_navy
+		position = 2
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_mediterranean_ambitions = {
+		icon = mission_rb_mediterranean_authority
+		position = 4
+		required_missions = {
+			ara_aragonese_navy
+			ara_the_balearic_islands
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_table_of_exchange = {
+		icon = mission_dominate_home_trade_node
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_valencian_silk = {
+		icon = mission_valencian_silk
+		position = 6
+		required_missions = { ara_table_of_exchange } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_aragonese_armada = {
+		icon = mission_spanish_armada
+		position = 8
+		required_missions = { ara_armies_of_iberia } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_sails_of_exploration = {
+		icon = mission_exploration
+		position = 9
+		required_missions = { ara_plus_ultra } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_charter_the_seas = {
+		icon = mission_establish_high_seas_navy
+		position = 10
+		required_missions = { ara_sails_of_exploration } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_found_cartagena = {
+		icon = mission_new_kingdom_of_granada
+		position = 11
+		required_missions = { ara_caribbean_colony } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_incan_conquest = {
+		icon = dominant_economy
+		position = 12
+		required_missions = { ara_found_cartagena } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_viceroyalty_of_peru = {
+		icon = mission_golden_century
+		position = 13
+		required_missions = {
+			ara_muiscan_conquest
+			ara_incan_conquest
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { always = yes } 
+
+	ara_the_balearic_islands = {
+		icon = mission_invade_island
+		position = 3
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_combat_barbary_piracy = {
+		icon = mission_combat_barbary_piracy
+		position = 5
+		required_missions = { ara_mediterranean_ambitions } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_guilds_of_barcelona = {
+		icon = mission_guilds_of_barcelona
+		position = 6
+		required_missions = { ara_table_of_exchange } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_armies_of_iberia = {
+		icon = army_reforms
+		position = 7
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_assemble_the_tercios = {
+		icon = spa_tercios_system
+		position = 8
+		required_missions = { ara_armies_of_iberia } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_refine_the_tercios = {
+		icon = spa_reform_tercios
+		position = 9
+		required_missions = { ara_assemble_the_tercios } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_ports_in_west_africa = {
+		icon = mission_west_african_ports
+		position = 10
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_sail_to_the_east_indies = {
+		icon = mission_sail_to_the_east_indies
+		position = 11
+		required_missions = {
+			ara_charter_the_seas
+			ara_ports_in_west_africa
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_las_islas_filipinas = {
+		icon = mission_las_islas_filipinas
+		position = 12
+		required_missions = { ara_sail_to_the_east_indies } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	ara_native_reductions = {
+		icon = mission_native_reductions
+		position = 14
+		required_missions = { ara_viceroyalty_of_peru } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
