@@ -195,7 +195,11 @@ conquest_branch1 = {
 		tag = GUY
 	}
 
+<<<<<<< Updated upstream
 	fra_chateux_gascony = { 
+=======
+	fra_chateux_loire_valley = { 
+>>>>>>> Stashed changes
 		icon = develop_the_po_valley
 		required_missions = { }
 		position = 1 
@@ -241,7 +245,11 @@ conquest_branch1 = {
 	take_south_islands = {
 		icon = mission_build_up_to_force_limit
 		position = 2
+<<<<<<< Updated upstream
 		required_missions = { fra_chateux_gascony port_mont_crist }
+=======
+		required_missions = { fra_chateux_loire_valley port_mont_crist }
+>>>>>>> Stashed changes
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
@@ -426,6 +434,17 @@ conquest_branch1 = {
 				}
 				add_permanent_claim = ROOT 
 			}
+<<<<<<< Updated upstream
+=======
+			valencia_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+>>>>>>> Stashed changes
 		}
 	}
 	throne_of_aragon = {
@@ -434,7 +453,12 @@ conquest_branch1 = {
 		required_missions = { take_catalonia }
 		provinces_to_highlight = { 
 			OR = { 
+<<<<<<< Updated upstream
 				area = aragon_area 
+=======
+				area = aragon_area
+				area = valencia_area
+>>>>>>> Stashed changes
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
@@ -443,6 +467,13 @@ conquest_branch1 = {
 						type = all 
 						country_or_non_sovereign_subject_holds = ROOT 
 					}
+<<<<<<< Updated upstream
+=======
+					valencia_area = { 
+						type = all 
+						country_or_non_sovereign_subject_holds = ROOT 
+					}
+>>>>>>> Stashed changes
 			}
 		effect = { 
 			country_event = { id = flavor_fra.113 } 
@@ -459,6 +490,7 @@ conquest_branch1 = {
 		}
 		trigger = { 
 			development_in_provinces = {
+<<<<<<< Updated upstream
 				value = 400 
 				region = iberia_region
 			}
@@ -482,11 +514,18 @@ conquest_branch1 = {
 				}
 			}
 		}
+=======
+				value = 600 
+				region = iberia_region
+				}
+			}
+>>>>>>> Stashed changes
 		effect = { 
 			add_country_modifier = {
 				name = fra_iberian_domination_modifier 
 				duration = -1 
 			}
+<<<<<<< Updated upstream
 			if = { 
 				limit = {
 					iberia_region ={ add_core = SPA} 
@@ -498,12 +537,22 @@ conquest_branch1 = {
 				SPA = { 
 					change_country_color = { 
 						color = { 95 158 160 }
+=======
+			 iberia_region ={ add_core = SPA} 
+			 SPA = {
+				override_country_name = "lavéria"
+				change_country_color = { 
+				color = { 95 158 160 }
+>>>>>>> Stashed changes
 					}
 				}
 			}
 		}
 	}
+<<<<<<< Updated upstream
 }
+=======
+>>>>>>> Stashed changes
 
 conquest_branch2 = {
 	slot = 1
@@ -1645,11 +1694,16 @@ dev2 = {
 			crown_land_share = 50 
 		}
 		effect = { 
+<<<<<<< Updated upstream
 			if = {
 				limit = { has_reform = feudal_france_reform }
 				#remove_government_reform = feudal_france_reform 
 				add_government_reform = absolutist_france_reform
 			}
+=======
+				#remove_government_reform = feudal_france_reform 
+				add_government_reform = absolutist_france_reform
+>>>>>>> Stashed changes
 			else = { change_government_reform_progress = 100 }
 			hidden_effect = {
 				unlock_government_reform = {

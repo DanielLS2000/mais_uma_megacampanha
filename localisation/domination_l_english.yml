@@ -6,7 +6,11 @@
  fra_burg_succession_desc:0 "The upstart Dukes of Burgundy fancy themselves a great power in their own right, yet in truth they are a mere vassal. We should remind them of this fact." #old 
  fra_border_empire_title:0 "Face the Empire"
  fra_border_empire_desc:0 "The Holy Roman Empire is the greatest barrier to French expansion, and a constant thorn in our side. The Empire must either be abolished, paving the way for our ambitions, or else brought under French control." #old  
+<<<<<<< Updated upstream
  fra_chateux_loire_valley_title:0 "Loire Valley Châteaux"
+=======
+ fra_chateux_loire_valley_title:0 "Gascony Châteaux"
+>>>>>>> Stashed changes
  fra_chateux_loire_valley_desc:0 "The dawn of the 15th century has seen many advancements in the field of architecture within our borders. We should put our knowledge to good use and develop the many beautiful views of our country."
  fra_armorican_peninsula_title:0 "The Armorican Peninsula"
  fra_armorican_peninsula_desc:0 "The Duchy of Brittany is not recognizing their proper relationship with the French Crown. We should persuade them to return to the fold." #old
@@ -164,17 +168,29 @@
  fra_religious_settlement_desc:0 "The institutions of old may be archaic and of little use, however religion is a powerful tool in the hands of the ruler, and therefore we should investigate its potential uses. According to Napoleon himself, religion excels at preventing the common folk from deposing the rich."
  fra_invade_italy_title:0 "Invade Italy"
  fra_invade_italy_desc:0 "The lands of Italy shall be our next campaign as we sweep across Europe. The seat of pretentious men of God and affluence will make a fine addition to our collection of provinces."
+<<<<<<< Updated upstream
  fra_national_bank_title:1 "Institute the Bank of France"
  fra_national_bank_desc:0 "The dawn of the Revolution saw our nation destabilized and destitute. To combat this we must enforce and nationalize a very important pillar to assist towards our economic recovery, our own national bank."
  fra_grande_armee_title:0 "La Grande Armée"
  fra_grande_armee_desc:0 "Our army is glorious and serves the people! The banners we carry into war, in combination with our superior military maneuvers and discipline shall catch any enemy by surprise."
  fra_civil_code_title:0 "Napoleonic Code"
+=======
+ fra_national_bank_title:1 "Institute the Bank of Lavonia"
+ fra_national_bank_desc:0 "The dawn of the Revolution saw our nation destabilized and destitute. To combat this we must enforce and nationalize a very important pillar to assist towards our economic recovery, our own national bank."
+ fra_grande_armee_title:0 "La Grande Armée"
+ fra_grande_armee_desc:0 "Our army is glorious and serves the people! The banners we carry into war, in combination with our superior military maneuvers and discipline shall catch any enemy by surprise."
+ fra_civil_code_title:0 "Lavoleonic Code"
+>>>>>>> Stashed changes
  fra_civil_code_desc:0 "Our society cannot withstand internal and external litmus tests if we do not introduce a central civil code to rule over our society's norms."
  fra_enlarge_ports_title:0 "Coastal Infrastructure"
  fra_enlarge_ports_desc:0 "The dawn of the 18th century saw an increased shift towards maintaining a robust naval presence. To achieve that goal we must attend to our naval infrastructure needs."
  fra_low_countries_title:1 "Dutch Revolts"
  fra_low_countries_desc:0 "The Low Countries have a history of revolutions and revolts against their masters. Therefore, we must assist them and bring them under our protective wing."
+<<<<<<< Updated upstream
  fra_educational_reforms_title:1 "Condorcet's Grandes Écoles"
+=======
+ fra_educational_reforms_title:1 "Lucael's Grandes Écoles"
+>>>>>>> Stashed changes
  fra_educational_reforms_desc:0 "Knowledge can no longer be a noble man's privilege. By funding brave ideas when it comes to granting access to education, it is clear that educating our population is of utmost importance."
  fra_road_connectivity_title:0 "Renewed Infrastructure"
  fra_road_connectivity_desc:0 "The era of coal and manufactured goods is dawning upon Europe and the world. If we are to keep up with the times we must make sure our infrastructure is of the highest quality, to assist with both our internal and external agenda."
@@ -188,10 +204,37 @@
  dom_fra_france_discovers_north_america_desc:0 "Our Navigators are beseeching the crown to underwrite a mission to explore the seas to the west of us. They have heard rumors of rich lands that they wish to claim for the glory of France." #old 
  dom_fra_indian_dominance_title:0 "Indian Dominance"
  dom_fra_indian_dominance_desc:0 "The riches of India shall be reserved only for the [Root.GetAdjective]. All other European nations with a presence in India must be ejected, by force if necessary." #old
+<<<<<<< Updated upstream
  
  
  
  
+=======
+ take_south_islands_title:0"Secure our Garden"
+ take_south_islands_desc:0"Turizaum, duvido que você leia esses textos que estou colocando, então vou deixar como se fosse um easter Egg pra ti. Sendo bem sincero eu não to muito animado pra suceder o flame no servidor, especialmente com o Whihelm e o Pret constantemente enchendo meu saco, acredito que o sucessor ideal a coroa de Jãoão e flame seja você"
+ crow_laval_title:0"The Crown of the Lavals"
+ mediterrainian_authority_title:0"Mediterranian Authority"
+ take_catalonia_title:0"Invade Catalonia"
+ throne_of_aragon_title:0"The Throne of Aragon"
+ kingdom_of_laveria_title:0"Kingdom of Lavéria"
+ push_the_french_line_title:0"Push the French Line"
+ king_of_the_franks_title:0"The King of The Franks"
+ crown_of_lavonia_magna_title:0"Magna Lavonia"
+ port_mont_crist_title:0"The Port of Monter Christ"
+ kingdom_of_lavalia_title:0"Kingdom of Lavalia"
+ crow_laval_desc:0"Turizaum, duvido que você leia esses textos que estou colocando, então vou deixar como se fosse um easter Egg pra ti. Sendo bem sincero eu não to muito animado pra suceder o flame no servidor, especialmente com o Whihelm e o Pret constantemente enchendo meu saco, acredito que o sucessor ideal a coroa de Jãoão e flame seja você"
+ mediterrainian_authority_desc:0"Turizaum, duvido que você leia esses textos que estou colocando, então vou deixar como se fosse um easter Egg pra ti. Sendo bem sincero eu não to muito animado pra suceder o flame no servidor, especialmente com o Whihelm e o Pret constantemente enchendo meu saco, acredito que o sucessor ideal a coroa de Jãoão e flame seja você"
+ take_catalonia_desc:0"Turizaum, duvido que você leia esses textos que estou colocando, então vou deixar como se fosse um easter Egg pra ti. Sendo bem sincero eu não to muito animado pra suceder o flame no servidor, especialmente com o Whihelm e o Pret constantemente enchendo meu saco, acredito que o sucessor ideal a coroa de Jãoão e flame seja você"
+ throne_of_aragon_desc:0"Turizaum, duvido que você leia esses textos que estou colocando, então vou deixar como se fosse um easter Egg pra ti. Sendo bem sincero eu não to muito animado pra suceder o flame no servidor, especialmente com o Whihelm e o Pret constantemente enchendo meu saco, acredito que o sucessor ideal a coroa de Jãoão e flame seja você"
+ kingdom_of_laveria_desc:0"Turizaum, duvido que você leia esses textos que estou colocando, então vou deixar como se fosse um easter Egg pra ti. Sendo bem sincero eu não to muito animado pra suceder o flame no servidor, especialmente com o Whihelm e o Pret constantemente enchendo meu saco, acredito que o sucessor ideal a coroa de Jãoão e flame seja você"
+ push_the_french_line_desc:0"Turizaum, duvido que você leia esses textos que estou colocando, então vou deixar como se fosse um easter Egg pra ti. Sendo bem sincero eu não to muito animado pra suceder o flame no servidor, especialmente com o Whihelm e o Pret constantemente enchendo meu saco, acredito que o sucessor ideal a coroa de Jãoão e flame seja você"
+ king_of_the_franks_desc:0"Turizaum, duvido que você leia esses textos que estou colocando, então vou deixar como se fosse um easter Egg pra ti. Sendo bem sincero eu não to muito animado pra suceder o flame no servidor, especialmente com o Whihelm e o Pret constantemente enchendo meu saco, acredito que o sucessor ideal a coroa de Jãoão e flame seja você"
+ crown_of_lavonia_magna_desc:0"Turizaum, duvido que você leia esses textos que estou colocando, então vou deixar como se fosse um easter Egg pra ti. Sendo bem sincero eu não to muito animado pra suceder o flame no servidor, especialmente com o Whihelm e o Pret constantemente enchendo meu saco, acredito que o sucessor ideal a coroa de Jãoão e flame seja você"
+ port_mont_crist_desc:0"Turizaum, duvido que você leia esses textos que estou colocando, então vou deixar como se fosse um easter Egg pra ti. Sendo bem sincero eu não to muito animado pra suceder o flame no servidor, especialmente com o Whihelm e o Pret constantemente enchendo meu saco, acredito que o sucessor ideal a coroa de Jãoão e flame seja você"
+ kingdom_of_lavalia_desc:0"Turizaum, duvido que você leia esses textos que estou colocando, então vou deixar como se fosse um easter Egg pra ti. Sendo bem sincero eu não to muito animado pra suceder o flame no servidor, especialmente com o Whihelm e o Pret constantemente enchendo meu saco, acredito que o sucessor ideal a coroa de Jãoão e flame seja você"
+ 
+  
+>>>>>>> Stashed changes
  #Events
  flavor_fra.102.t:1 "The [Emperor.Monarch.Dynasty.GetName] Ring"
  flavor_fra.102.d:0 "The growing influence of our rivals in Germany has led to their pitiful attempts at isolating us both territorially and diplomatically. By striking political marriages and expanding our influence beyond our borders, we will surely come to inevitable conflict as well as create border tensions with the overlords of the Germanic territories."
@@ -223,7 +266,11 @@
  flavor_fra.109.b:0 "We shall unite against our common foes!"
  flavor_fra.109.c:0 "Italy belongs to us!"
  
+<<<<<<< Updated upstream
  flavor_fra.113.t:0 "The Fate of Naples"
+=======
+ flavor_fra.113.t:0 "The Fate of Aragon"
+>>>>>>> Stashed changes
  flavor_fra.113.d:0 "Installing our head of state as the prime ruler of the Neapolitan lands is certainly a bold move that shall not go unnoticed. Despite uproar created abroad, we must look within and determine how to handle the newly-acquired lands which are not only many but also extremely prosperous. The trade port of Napoli alone may be a key part to gaining access to the markets of Genoa, and thus we must be cautious and measure our moves accordingly."
  flavor_fra.113.a:0 "An equal member of the French dominion!"
  flavor_fra.113.b:0 "They exist to serve the crown!"
@@ -480,7 +527,11 @@
  fra_organize_raid_parties_for_20_years_tt:0 "We will be able to organize §YCoastal Raid§! parties for the next §G20§! years"
  fra_if_knights_exist_gain_tt:0 "If the Knights of St. John @KNI do §Rnot§! exist:"
  fra_alternatively_tt:0 "\n§TAlternatively§!:"
+<<<<<<< Updated upstream
  fra_exploitation_of_neapolitan_lands_tt:0 "The exploitation of our Neapolitan lands may result in a shift of population, as the people of the Neapolitan domain are transferred to mainland France in the form of feudal labor"
+=======
+ fra_exploitation_of_neapolitan_lands_tt:0 "The exploitation of our Aragonese lands may result in a shift of population, as the people of the Neapolitan domain are transferred to mainland France in the form of feudal labor"
+>>>>>>> Stashed changes
  #fra_if_15_prov_tt:1 "If we complete this mission while we or a subject own at least §Y15§! provinces in the §YIberian§! Region:"
  fra_if_diplomacy_tt:1 "If we choose to complete this mission via §Mdiplomacy§! both us and our designated Iberian §Mally§! will gain:"
  fra_as_long_as_we_maintain_the_alliance_desc:0 "as long as we maintain our alliance"
