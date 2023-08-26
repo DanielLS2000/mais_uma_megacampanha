@@ -3,7 +3,12 @@ first_branch = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { always = yes } 
+	potential = {
+		OR = {
+			tag = ARA
+			tag = SPA
+		}
+	}
 
 	ara_the_port_of_ceuta = {
 		icon = mission_retake_ceuta
@@ -107,7 +112,12 @@ branch_2 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { always = yes } 
+	potential = {
+		OR = {
+			tag = ARA
+			tag = SPA
+		}
+	}
 
 	ara_prepare_the_royal_army = {
 		icon = mission_assemble_an_army
@@ -248,7 +258,12 @@ branch_3 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { always = yes } 
+	potential = {
+		OR = {
+			tag = ARA
+			tag = SPA
+		}
+	}
 
 	ara_the_islamic_revolt = {
 		icon = dom_ara_remensa_war
@@ -363,7 +378,12 @@ branch_4 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { always = yes } 
+	potential = {
+		OR = {
+			tag = ARA
+			tag = SPA
+		}
+	}
 
 	ara_aragonese_navy = {
 		icon = mission_aragonese_navy
@@ -484,7 +504,12 @@ branch_5 = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { always = yes } 
+	potential = {
+		OR = {
+			tag = ARA
+			tag = SPA
+		}
+	}
 
 	ara_the_balearic_islands = {
 		icon = mission_invade_island

@@ -3,12 +3,12 @@ first_branch = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
 		OR = {
 			tag = ENG
 			tag = GBR
 		}
-	} 
+	}
 
 	mer_raise_the_vigsmen = {
 		icon = mission_rb_unite_the_clans
@@ -115,12 +115,12 @@ second_branch = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
 		OR = {
 			tag = ENG
 			tag = GBR
 		}
-	} 
+	}
 
 	mer_conquer_vigsland = {
 		icon = mission_rb_into_ireland
@@ -229,12 +229,12 @@ third_branch = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
 		OR = {
 			tag = ENG
 			tag = GBR
 		}
-	} 
+	}
 
 	mer_the_revenge_war = {
 		icon = mission_hundred_years_war
@@ -354,12 +354,12 @@ fourth_branch = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
 		OR = {
 			tag = ENG
 			tag = GBR
 		}
-	} 
+	}
 
 	mer_north_sea_trade = {
 		icon = mission_seize_north_sea_trade
@@ -479,12 +479,12 @@ fifth_branch = {
 	generic = no
 	ai = yes
 	has_country_shield = yes
-	potential = { 
+	potential = {
 		OR = {
 			tag = ENG
 			tag = GBR
 		}
-	} 
+	}
 
 	mer_family_tides = {
 		icon = mission_alliances
