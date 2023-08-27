@@ -1,0 +1,602 @@
+branch1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = EGY } 
+
+	egy_administration_of_the_orders = {
+		icon = support_the_orders
+		position = 2
+		required_missions = { egy_revitalize_land_routes } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_coffee_markets = {
+		icon = mission_dharma_mission_arabian_trade
+		position = 4
+		required_missions = { egy_red_sea_trade } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_coffeea_arabica = {
+		icon = mission_rb_monopolize_the_channel
+		position = 5
+		required_missions = { egy_coffee_markets } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_the_city_of_alexander = {
+		icon = mission_occupy_alexandria
+		position = 6
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_lighthouse_of_alexandria = {
+		icon = mission_conquer_alexandria
+		position = 8
+		required_missions = {
+			egy_the_city_of_alexander
+			egy_mercantile_cooperation
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_knighthood_code = {
+		icon = mission_livonian_knights
+		position = 9
+		required_missions = { egy_relations_with_holy_orders } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_reform_the_military = {
+		icon = mission_modern_knight_army
+		position = 11
+		required_missions = {
+			egy_knighthood_code
+			egy_a_military_caste
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_influence_tripolitania = {
+		icon = mission_conquer_tunisia
+		position = 13
+		required_missions = { egy_dreams_of_an_empire } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_crusade_against_piracy = {
+		icon = crusader_fleet
+		position = 14
+		required_missions = { egy_influence_tripolitania } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+branch2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = EGY } 
+
+	egy_revitalize_land_routes = {
+		icon = mission_saharan_route
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_red_sea_trade = {
+		icon = mission_arabian_sea_trade
+		position = 3
+		required_missions = { egy_revitalize_land_routes } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_into_the_indian_ocean = {
+		icon = mission_south_indian_trade
+		position = 4
+		required_missions = { egy_red_sea_trade } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_spice_trade_monopoly = {
+		icon = mission_rb_colonise_spice_islands
+		position = 5
+		required_missions = {
+			egy_into_the_indian_ocean
+			egy_protect_the_gulf
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_mercantile_cooperation = {
+		icon = mission_diplomatic_relation
+		position = 7
+		required_missions = { egy_strategic_alliances } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_relations_with_holy_orders = {
+		icon = mission_united_knight_order
+		position = 8
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_a_military_caste = {
+		icon = mission_knight
+		position = 10
+		required_missions = { egy_relations_with_holy_orders } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_dreams_of_an_empire = {
+		icon = mission_golden_century
+		position = 12
+		required_missions = { egy_soldiers_of_christ } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_lands_down_the_nile = {
+		icon = mission_establish_the_black_guard
+		position = 13
+		required_missions = { egy_dreams_of_an_empire } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_the_ark_of_the_covenant = {
+		icon = ark_of_the_covenant
+		position = 14
+		required_missions = { egy_lands_down_the_nile } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+branch3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = EGY } 
+
+	egy_trade_of_alexandria = {
+		icon = sources_of_trade
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_support_urban_centers = {
+		icon = mission_metropolis_of_the_deccan
+		position = 2
+		required_missions = { egy_trade_of_alexandria } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_trade_with_europe = {
+		icon = mission_african_gold
+		position = 3
+		required_missions = { egy_support_urban_centers } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_protect_the_gulf = {
+		icon = mission_envoy_to_ethiopia
+		position = 4
+		required_missions = { egy_red_sea_trade } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_strategic_alliances = {
+		icon = mission_alliances
+		position = 6
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_galleys_of_the_mediterranean = {
+		icon = mission_galleys_in_port
+		position = 8
+		required_missions = { egy_strategic_alliances } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_recruit_from_the_bedouins = {
+		icon = mission_bedouins
+		position = 9
+		required_missions = { egy_relations_with_holy_orders } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_soldiers_of_christ = {
+		icon = kingdom_of_heaven
+		position = 11
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_take_the_holy_land = {
+		icon = jerusalem
+		position = 12
+		required_missions = { egy_soldiers_of_christ } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_the_conquest_of_syria = {
+		icon = mission_hundred_years_war
+		position = 13
+		required_missions = { egy_take_the_holy_land } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_forts_of_syria = {
+		icon = mission_arabian_fort
+		position = 14
+		required_missions = { egy_the_conquest_of_syria } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_kingdom_of_prester_john = {
+		icon = holy_state
+		position = 15
+		required_missions = {
+			egy_crusade_against_piracy
+			egy_the_ark_of_the_covenant
+			egy_forts_of_syria
+			egy_spread_the_word
+			egy_king_of_arabia
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+branch4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = EGY } 
+
+	egy_luxuries_of_egypt = {
+		icon = mission_egyptian_mamluk_soldier
+		position = 2
+		required_missions = {
+			egy_trade_of_alexandria
+			egy_renovate_cairo
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_eastern_dominance = {
+		icon = mission_dominate_the_mediterranean
+		position = 3
+		required_missions = {
+			egy_support_urban_centers
+			egy_luxuries_of_egypt
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_ace_of_all_trades = {
+		icon = mission_restore_trade_superiority
+		position = 5
+		required_missions = {
+			egy_eastern_dominance
+			egy_protect_the_gulf
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_processing_the_grains = {
+		icon = mission_pol_breadbasket_europe
+		position = 6
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_protectors_of_the_cross = {
+		icon = shield_of_christendom
+		position = 8
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_a_religious_caste = {
+		icon = mission_religious
+		position = 10
+		required_missions = { egy_protectors_of_the_cross } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_fund_holy_orders = {
+		icon = restore_the_hospitallers
+		position = 11
+		required_missions = { egy_a_religious_caste } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_lands_of_arabia = {
+		icon = mission_muslim_administrators
+		position = 12
+		required_missions = { egy_soldiers_of_christ } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_end_of_the_peninsula = {
+		icon = mission_mansure_army
+		position = 13
+		required_missions = { egy_lands_of_arabia } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_spread_the_word = {
+		icon = convert_the_holy_lands
+		position = 14
+		required_missions = { egy_end_of_the_peninsula } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+branch5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = EGY } 
+
+	egy_renovate_cairo = {
+		icon = mission_imperial_cities
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_university_of_cairo = {
+		icon = pontifical_universities
+		position = 3
+		required_missions = { egy_renovate_cairo } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_develop_the_delta = {
+		icon = mission_consume_the_baghels
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_enlarged_plantations = {
+		icon = mission_a_million_rice_fields
+		position = 7
+		required_missions = {
+			egy_develop_the_delta
+			egy_processing_the_grains
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_the_heart_of_the_nation = {
+		icon = mission_develop_alhambra
+		position = 8
+		required_missions = { egy_enlarged_plantations } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_patron_of_churches = {
+		icon = mission_european_church
+		position = 9
+		required_missions = { egy_protectors_of_the_cross } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_a_wealthy_nation = {
+		icon = mission_riches_of_golconda
+		position = 11
+		required_missions = { egy_patron_of_churches } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_subjugate_medina = {
+		icon = mission_into_arabia
+		position = 13
+		required_missions = { egy_lands_of_arabia } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	egy_king_of_arabia = {
+		icon = mission_traverse_the_sahara
+		position = 14
+		required_missions = { egy_subjugate_medina } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}

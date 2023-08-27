@@ -1,0 +1,616 @@
+branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = NOR
+			tag = SCA
+		}
+	}
+
+	kal_retake_gotland = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_north_sea_markets = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { kal_retake_gotland } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_expand_the_royal_navy = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { kal_colonial_ambitions } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_monopolize_north_sea_trade = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { kal_north_sea_markets } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_the_lands_of_america = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { kal_discover_the_new_world } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_integrate_the_sami = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_forest_expansion = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { kal_integrate_the_sami } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_revoke_the_privileges = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_kalmarian_absolutism = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = { kal_revoke_the_privileges } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = NOR
+			tag = SCA
+		}
+	}
+
+	kal_expand_the_military = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_reconquer_estonia = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { kal_expand_the_military } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_the_fleet_of_scandinavia = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_colonial_ambitions = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { kal_the_fleet_of_scandinavia } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_discover_the_new_world = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = { kal_colonial_ambitions } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_the_spices_of_malacca = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { kal_discover_the_new_world } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_restore_the_leidang = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { kal_increase_our_income } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_universities_of_kalmar = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { kal_restore_the_leidang } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_the_sjaelland_university = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = { kal_universities_of_kalmar } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_expand_the_leidang = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = { kal_income_worthy_of_a_fleet } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = NOR
+			tag = SCA
+		}
+	}
+
+	kal_familial_tides = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_subjugate_finland = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = {
+			kal_expand_the_military
+			kal_familial_tides
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_eliminate_novgorod = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = {
+			kal_reconquer_estonia
+			kal_subjugate_finland
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_the_colony_of_greenland = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { kal_discover_the_new_world } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_increase_our_income = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_stora_kopparberget = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { kal_increase_our_income } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_industrialize_scandinavia = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { kal_stora_kopparberget } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_kalmarian_great_power = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = {
+			kal_industrialize_scandinavia
+			kal_iron_mines_of_norway
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_income_worthy_of_a_fleet = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_kingdom_on_the_seas = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = {
+			kal_expand_the_leidang
+			kal_mighty_fleet
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = NOR
+			tag = SCA
+		}
+	}
+
+	kal_the_crown_of_denmark = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_invade_iceland = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { kal_the_crown_of_denmark } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_ratify_the_kalmar_union = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = {
+			kal_invade_iceland
+			kal_the_nobles_of_sweden
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_integrate_denmark = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { kal_ratify_the_kalmar_union } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_unite_scandinavia = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		required_missions = {
+			kal_integrate_denmark
+			kal_integrate_sweden
+		}
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_reform_the_military = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { kal_reforms_of_mussinstein } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_drill_the_midgardians = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { kal_reform_the_military } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_develop_infrastructure = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { kal_increase_our_income } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_iron_mines_of_norway = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { kal_develop_infrastructure } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_mighty_fleet = {
+		icon = mission_build_up_to_force_limit
+		position = 12
+		required_missions = { kal_income_worthy_of_a_fleet } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}
+Branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = NOR
+			tag = SCA
+		}
+	}
+
+	kal_the_crown_of_sweden = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_the_nobles_of_sweden = {
+		icon = mission_build_up_to_force_limit
+		position = 2
+		required_missions = { kal_the_crown_of_sweden } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_integrate_sweden = {
+		icon = mission_build_up_to_force_limit
+		position = 4
+		required_missions = { kal_the_nobles_of_sweden } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_reforms_of_mussinstein = {
+		icon = mission_build_up_to_force_limit
+		position = 5
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_theologian_discussions = {
+		icon = mission_build_up_to_force_limit
+		position = 6
+		required_missions = { kal_reforms_of_mussinstein } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_envoys_of_the_pope = {
+		icon = mission_build_up_to_force_limit
+		position = 7
+		required_missions = { kal_theologian_discussions } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_catholic_bulwark = {
+		icon = mission_build_up_to_force_limit
+		position = 8
+		required_missions = { kal_envoys_of_the_pope } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_the_religious_league = {
+		icon = mission_build_up_to_force_limit
+		position = 9
+		required_missions = { kal_catholic_bulwark } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_defender_of_the_true_faith = {
+		icon = mission_build_up_to_force_limit
+		position = 10
+		required_missions = { kal_the_religious_league } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_jewel_of_the_baltic = {
+		icon = mission_build_up_to_force_limit
+		position = 11
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+
+	kal_dominate_the_baltic_sea = {
+		icon = mission_build_up_to_force_limit
+		position = 13
+		required_missions = { kal_jewel_of_the_baltic } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  } 
+
+		effect = {  } 
+	}
+}

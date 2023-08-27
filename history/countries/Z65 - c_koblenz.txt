@@ -6,7 +6,6 @@ religion = catholic
 primary_culture = dynamic-franconian-cosmopolitan_french-culture-num2
 capital = 1760
 fixed_capital = 1760
-elector = yes
 set_country_flag = ZZZ_generated_converter_nation
 1444.11.11= {
 	monarch = {

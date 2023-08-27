@@ -1,5 +1,5 @@
-owner = Z09
-controller = Z09
+owner = BYZ
+controller = BYZ
 capital = "Eskisehir"
 is_city = yes
 culture = anatolian
@@ -10,7 +10,6 @@ base_production = 4
 base_manpower = 2
 add_core = BYZ
 add_core = PHR
-add_core = Z09
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
