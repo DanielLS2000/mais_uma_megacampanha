@@ -49,8 +49,7 @@ elector = yes
 	}
 	add_heir_personality = conqueror_personality
 	add_heir_personality = expansionist_personality
-}
-1439.1.1 = {
+	
 	leader = {
 		name = "Jean Bureau"
 		type = general

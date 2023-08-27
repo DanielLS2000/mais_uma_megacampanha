@@ -46,7 +46,7 @@ first_branch = {
 			}
 			custom_tooltip = fra_enable_staple_port_decision_tt
 			set_country_flag = enable_staple_port_flag
-			custom_tooltip = fra_claim_coastal_dutch_provinces_tt
+			custom_tooltip = nordrhein_custom_tooltip_1
 			hidden_effect = {
 				low_countries_region = {
 					limit = {
@@ -266,8 +266,7 @@ first_branch = {
 		}
 
 		effect = {
-			country_event = { id = flavor_fra.202 } 
-			custom_tooltip = fra_event_insight_202_tt
+			country_event = { id = flavor_nord.202 } 
 			add_country_modifier = {
 				name = "fra_replenished_slave_crews_modifier"
 				duration = 7300
@@ -538,7 +537,7 @@ second_branch = {
 		effect = {
 			if = {
 				limit = { has_dlc = "Emperor" } 
-				country_event = { id = flavor_fra.100 } 
+				country_event = { id = flavor_nord.100 } 
 			}
 			else = {
 				add_mil_power = 50
@@ -689,7 +688,7 @@ second_branch = {
 		}
 
 		effect = {
-			country_event = { id = flavor_fra.102 } 
+			country_event = { id = flavor_nord.102 } 
 			custom_tooltip = fra_event_insight_102_tt
 		}
 	}
@@ -771,7 +770,11 @@ second_branch = {
 		icon = mission_rb_conquer_brittany
 		position = 7
 		provinces_to_highlight = {
-			OR = { area = brittany_area } 
+			OR = { 
+				area = brittany_area
+				area = loire_area
+				area = normandy_area
+			} 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 
@@ -796,8 +799,7 @@ second_branch = {
 		}
 
 		effect = {
-			country_event = { id = flavor_fra.113 } 
-			custom_tooltip = fra_event_insight_113_tt
+			country_event = { id = flavor_nord.113 } 
 		}
 	}
 
@@ -882,7 +884,7 @@ second_branch = {
 				}
 			}
 			custom_tooltip = pol_alternatively_tt
-			tooltip = { country_event = { id = flavor_fra.114 }  } 
+			tooltip = { country_event = { id = flavor_nord.114 }  } 
 			hidden_effect = {
 				if = {
 					limit = {
@@ -914,7 +916,7 @@ second_branch = {
 							}
 						}
 					}
-					country_event = { id = flavor_fra.114 } 
+					country_event = { id = flavor_nord.114 } 
 					set_country_flag = fra_conquest_iberia_flag
 				}
 				else = {
@@ -922,7 +924,7 @@ second_branch = {
 					random_ally = {
 						limit = {
 							total_development = 450
-							culture_group = iberian
+							culture_group = french
 							has_opinion = {
 								who = ROOT
 								value = 180
@@ -1548,7 +1550,7 @@ third_branch = {
 
 		effect = {
 			1272 = { change_province_name = "La Manche" }
-			1269 = { change_province_name = "Basse-Côte" }
+			1269 = { change_province_name = "Basse-Cote" }
 			add_country_modifier = {
 				name = fra_channel_dominance_modifier
 				duration = -1 
@@ -2249,18 +2251,15 @@ fourth_branch = {
 			}
 			north_rhine_area = { 
 				type = all 
-				OR = { 
-					country_or_non_sovereign_subject_holds = ROOT 
-					country_or_non_sovereign_subject_holds = PAP 
-				}
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
 			PAP = { 
-				alliance_with = ROOT 
+				is_subject_of = ROOT
 				is_at_war = no 
 			}
 			is_at_war = no
 			85 = { 
-				owned_by = ROOT 
+				owned_by = PAP 
 				development = 30 
 				has_tax_building_trigger = yes 
 			}
@@ -2517,7 +2516,7 @@ fourth_branch = {
 		} 
 
 		effect = {
-			country_event = { id = flavor_fra.204 } 
+			country_event = { id = flavor_nord.204 } 
 			custom_tooltip = fra_event_insight_204_tt
 		} 
 	}
@@ -2745,7 +2744,7 @@ fifth_branch = {
 			custom_tooltip = fra_if_alliance_tt
 			tooltip = {
 				LOR = { 
-					country_event = { id = flavor_fra.106 } 
+					country_event = { id = flavor_nord.106 } 
 				}
 			}
 			custom_tooltip = fra_if_conquest_tt
@@ -2756,7 +2755,7 @@ fifth_branch = {
 				}
 				add_prestige = 20 
 			}
-			custom_tooltip = fra_alternatively_if_pro_already_subject_tt
+			custom_tooltip = nordrhein_custom_tooltip_2
 			tooltip = { 
 				change_heir_adm = 1 
 				change_heir_dip = 1 
@@ -2778,7 +2777,7 @@ fifth_branch = {
 						LOR = { alliance_with = ROOT } 
 					}
 					LOR = { 
-						country_event = { id = flavor_fra.106 } 
+						country_event = { id = flavor_nord.106 } 
 					}
 				}
 				else = { 
@@ -2832,7 +2831,6 @@ fifth_branch = {
 		} 
 
 		effect = {
-			custom_tooltip = fra_revolving_missions_based_on_choice
 			custom_tooltip = fra_if_align_with_pope_tt 
 			tooltip = { 
 				add_country_modifier = { 
@@ -2904,13 +2902,6 @@ fifth_branch = {
 					name = fra_resurgence_of_crusader_fervor_modifier
 					duration = 9125
 				}
-				ile_de_france_area = {
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
 				set_country_flag = fu_gain_25_random_pp_and_10_pi_per_bull_flag				
 			}
 			hidden_effect = { 
@@ -2956,7 +2947,9 @@ fifth_branch = {
 						}
 				}
 			}
-			swap_non_generic_missions = yes 
+			PAP = {
+				country_event = { id = flavor_nord.120 }
+			}
 		} 
 	}
 
