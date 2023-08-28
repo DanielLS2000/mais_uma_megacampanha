@@ -1,7 +1,4 @@
-owner = Z13
-controller = Z13
 capital = "Mesurado"
-is_city = yes
 culture = dyola
 religion = shamanism
 trade_goods = unknown

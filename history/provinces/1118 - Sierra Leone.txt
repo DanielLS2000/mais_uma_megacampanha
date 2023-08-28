@@ -1,7 +1,4 @@
-owner = Z35
-controller = Z35
 capital = "Sherbro"
-is_city = yes
 culture = senegambian
 religion = ibadi
 trade_goods = unknown

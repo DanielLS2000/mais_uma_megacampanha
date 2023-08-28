@@ -1,10 +1,7 @@
-owner = BNY
-controller = BNY
 capital = "Pubungo"
-is_city = yes
 culture = acholi
 religion = shamanism
-trade_goods = livestock
+trade_goods = unknown
 base_tax = 1
 base_production = 1
 base_manpower = 2

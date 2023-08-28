@@ -1,10 +1,7 @@
-owner = Z35
-controller = Z35
 capital = "Beafada"
-is_city = yes
 culture = senegambian
 religion = ibadi
-trade_goods = slaves
+trade_goods = unknown
 base_tax = 1
 base_production = 1
 base_manpower = 1
