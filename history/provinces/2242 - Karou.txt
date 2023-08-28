@@ -1,7 +1,4 @@
-owner = Z2L
-controller = Z2L
 capital = "Karou"
-is_city = yes
 culture = senegambian
 religion = ibadi
 trade_goods = unknown

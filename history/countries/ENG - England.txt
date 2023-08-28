@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = english_monarchy
 government_rank = 2
 technology_group = western
 religion = catholic
@@ -53,4 +53,31 @@ capital = 239
 1444.11.11= {
 	add_prestige = 95
 	add_treasury = 85
+}
+
+1453.10.13 = { # Edward of Westminster
+	heir = {
+		name = "Edward"
+		monarch_name = "Edward IV"
+		dynasty = "Mertus"
+		birth_date = 1453.10.13
+		death_date = 1471.5.4
+		claim = 95
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+	remove_estate_privilege = estate_nobles_english_villeinage
+}
+
+1461.3.4 = {
+	monarch = {
+		name = "Edward IV"
+		dynasty = "Af Merkios"
+		birth_date = 1442.4.28
+		adm = 3
+		dip = 2
+		mil = 4
+		leader = {	name = "Edward IV"             	type = general	fire = 2	shock = 4	manuever = 4	siege = 0 }
+	}
 }

@@ -1,10 +1,7 @@
-owner = RWA
-controller = RWA
 capital = "Nduga"
-is_city = yes
 culture = rwandan
 religion = shamanism
-trade_goods = iron
+trade_goods = unknown
 base_tax = 4
 base_production = 4
 base_manpower = 3

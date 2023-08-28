@@ -1,7 +1,4 @@
-owner = Z46
-controller = Z46
 capital = "Al-Junaynahr"
-is_city = yes
 culture = dynamic-daju-zaghawa-culture-num1
 religion = shamanism
 trade_goods = unknown

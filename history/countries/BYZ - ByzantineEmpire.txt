@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = byzantine_autocracy_reform
 government_rank = 2
-technology_group = eastern
+technology_group = ottoman
 religion = converted_dynamic_faith_109
 primary_culture = greek
 accepted_culture = anatolian

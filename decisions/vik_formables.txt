@@ -22,7 +22,7 @@ country_decisions = {
 				area = north_rhine_area
 				area = lorraine_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 		}
 		
 		allow = {
