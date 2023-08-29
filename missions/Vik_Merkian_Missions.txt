@@ -1170,7 +1170,7 @@ third_branch = {
 		trigger = {
 			if = {
 				limit = { ai = no }
-				navy_size = 25
+				navy_size = 26
 				navy_size_percentage = 1
 				num_of_admirals = 1
 			}

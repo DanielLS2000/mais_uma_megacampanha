@@ -126,7 +126,8 @@ country_event = { #Golden Bull Treaty
 	is_triggered_only = yes 
 	
 	option = { 
-		name = flavor_fra.120.a 
+		name = flavor_fra.120.a
+		ai_chance = { factor = 100 }
 		
 		if = { 
 			limit = { is_subject = no }
