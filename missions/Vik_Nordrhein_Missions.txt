@@ -44,8 +44,22 @@ first_branch = {
 				}
 				else = { custom_tooltip = fra_upgrade_shipyard_tt } 
 			}
-			custom_tooltip = fra_enable_staple_port_decision_tt
-			set_country_flag = enable_staple_port_flag
+			
+			if = {
+				limit = {
+					NOT = { has_country_flag = gained_mercantilism_from_calais }
+				}
+				add_mercantilism = 10
+				set_country_flag = gained_mercantilism_from_calais
+			}
+			add_adm_power = -40
+			87 = {
+				add_province_modifier = {
+					name = "the_staple_port"
+					duration = -1
+				}
+			}
+			
 			custom_tooltip = nordrhein_custom_tooltip_1
 			hidden_effect = {
 				low_countries_region = {
@@ -170,7 +184,7 @@ first_branch = {
 			OR = {
 				area = alsace_area
 				area = north_rhine_area
-				area = west_burgundy_area
+				area = bourgogne_area
 				area = north_westphalia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
@@ -185,7 +199,7 @@ first_branch = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			west_burgundy_area = {
+			bourgogne_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -220,7 +234,7 @@ first_branch = {
 						duration = 7300
 					}
 				}
-				west_burgundy_area = {
+				bourgogne_area = {
 					add_province_modifier = {
 						name = "fra_french_buffer_modifier"
 						duration = 7300
@@ -1347,7 +1361,23 @@ third_branch = {
 				amount = 10
 			}
 			custom_tooltip = zim_amongst_the_great_powers_tt
-			add_prestige_or_monarch_power = { amount = 25 } 
+			add_prestige_or_monarch_power = { amount = 25 }
+			
+			change_tag = LOT
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			hidden_effect = {
+				clr_country_flag = ZZZ_generated_converter_nation
+			}
 		}
 	}
 
@@ -1448,14 +1478,12 @@ third_branch = {
 							}
 						}
 					}
-				}
-			}
-			else = {
-				1878 = {
+					1878 = {
 					add_province_modifier = {
 						name = center_mil_matters_strategy_modifier
 						duration = -1 
 					}
+				}
 				}
 			}
 		} 
@@ -1913,7 +1941,7 @@ fourth_branch = {
 				area = lorraine_area 
 				province_id = 80
 				province_id = 4767
-				province_id = 4765
+				province_id = 80
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		} 
@@ -1923,10 +1951,7 @@ fourth_branch = {
 				AND = { 
 					lorraine_area = {
 						type = all 
-						OR = { 
-							province_id = 87 
-							country_or_non_sovereign_subject_holds = ROOT 
-						}
+						country_or_non_sovereign_subject_holds = ROOT 
 					}
 					lower_rhineland_area = { 
 						type = all 

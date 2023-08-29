@@ -1,0 +1,94 @@
+namespace = flavor_spa
+normal_or_historical_nations = yes
+
+#Fate of the Kingdom of Granada
+country_event = {
+	id = flavor_ibe.8
+	title = "flavor_spa.8.t"
+	desc = "flavor_spa.8.d"
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+	
+	
+	trigger = {
+		OR = {
+			has_country_flag = fate_of_granada_mission_flag
+			AND = {
+				NOT = { has_dlc = "Golden Century" }
+				OR = {
+					AND = {
+						tag = CAS
+						NOT = { exists = SPA }
+					}
+					tag = SPA
+				}
+				has_country_flag = alpujarras_revolt_happened
+				NOT = { has_country_flag = end_of_granada }
+				NOT = { exists = Z0O }
+				owns = 223 #Granada
+				NOT = {
+					any_owned_province = {
+						is_core = Z0O
+						controlled_by = REB
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {		# Expulsion or conversion!
+		name = "flavor_spa.8.a"
+		ai_chance = {
+			factor = 1
+		}
+		set_country_flag = end_of_granada
+		add_papal_influence = 25
+		add_stability = -1
+		every_owned_province = {
+			limit = {
+				is_core = Z0O
+			}
+			change_religion = catholic
+			remove_core = Z0O
+		}
+		#Repeat of effect from earlier persecutions:
+		random_country = {
+			limit = {
+				religion_group = muslim
+				any_owned_province = {
+					sea_zone = {
+						any_neighbor_province = {
+							owned_by = ROOT
+						}
+					}
+				}
+			}
+			country_event = {  id = flavor_spa.3151 days = 10 tooltip = "flavor_spa.EVTTOOLTIP3150" }
+		}
+	}
+	option = {		# We must mend these wounds not cut off the limb itself.
+		name = "flavor_spa.8.b"
+		if = {
+			limit = { NOT = { stability = 3 } }
+			add_stability_or_adm_power = yes
+		}
+		add_papal_influence = -25
+		if = {
+			limit = { stability = 3 }
+			every_owned_province = {
+				limit = {
+					is_core = Z0O
+				}
+				add_unrest = -2
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
