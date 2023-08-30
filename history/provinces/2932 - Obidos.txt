@@ -1,7 +1,4 @@
-owner = Z5V
-controller = Z5V
 capital = "Ouara"
-is_city = yes
 culture = dynamic-daju-zaghawa-culture-num1
 religion = ibadi
 trade_goods = unknown

@@ -1,7 +1,4 @@
-owner = NUB
-controller = NUB
 capital = "Kobbe"
-is_city = yes
 culture = daju
 religion = coptic
 trade_goods = unknown

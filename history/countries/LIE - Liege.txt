@@ -49,6 +49,18 @@ elector = yes
 	}
 	add_heir_personality = conqueror_personality
 	add_heir_personality = expansionist_personality
+	
+	leader = {
+		name = "Jean Bureau"
+		type = general
+
+		fire = 4
+		shock = 4
+		manuever = 1
+		siege = 3
+		death_date = 1463.7.5
+		personality = siege_specialist_personality
+	}
 }
 1444.11.11= {
 	add_prestige = 104

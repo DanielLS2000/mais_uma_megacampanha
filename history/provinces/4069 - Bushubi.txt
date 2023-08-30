@@ -1,10 +1,7 @@
-owner = UBH
-controller = UBH
 capital = "Bushubi"
-is_city = yes
 culture = rwandan
 religion = shamanism
-trade_goods = grain
+trade_goods = unknown
 base_tax = 3
 base_production = 3
 base_manpower = 3

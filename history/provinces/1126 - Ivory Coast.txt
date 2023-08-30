@@ -1,7 +1,4 @@
-owner = Z2N
-controller = Z2N
 capital = "Assinie"
-is_city = yes
 culture = dyola
 religion = shamanism
 trade_goods = unknown

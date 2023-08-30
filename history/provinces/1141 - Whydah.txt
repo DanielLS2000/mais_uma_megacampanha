@@ -1,7 +1,4 @@
-owner = OYO
-controller = OYO
 capital = "Whydah"
-is_city = yes
 culture = fon
 religion = shamanism
 trade_goods = unknown

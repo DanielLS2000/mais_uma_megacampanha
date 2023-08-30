@@ -1,10 +1,7 @@
-owner = ASH
-controller = ASH
 capital = "Akyem Kotoko"
-is_city = yes
 culture = aka
 religion = ibadi
-trade_goods = gold
+trade_goods = unknown
 base_tax = 4
 base_production = 4
 base_manpower = 1

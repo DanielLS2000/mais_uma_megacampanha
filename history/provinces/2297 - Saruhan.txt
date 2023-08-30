@@ -1,5 +1,5 @@
-owner = Z09
-controller = Z09
+owner = BYZ
+controller = BYZ
 capital = "Manisa"
 is_city = yes
 culture = anatolian
@@ -9,7 +9,6 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 add_core = BYZ
-add_core = Z09
 discovered_by = east_african
 discovered_by = eastern
 discovered_by = indian
