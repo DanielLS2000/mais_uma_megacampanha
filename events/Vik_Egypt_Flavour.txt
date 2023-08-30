@@ -1,0 +1,79 @@
+namespace = mamluk_events
+
+country_event = {
+	id = vik_Egypt.25
+	title = vik_Egypt.25.t #fire event for coup in a few months
+	desc = vik_Egypt.25.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = vik_Egypt.25.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
+		change_price = {
+			trade_goods = coffee
+			key = EGY_protector_of_the_secret
+			value = 0.25
+			duration = 9125
+		}
+	}
+}
+
+country_event = {
+	id = ME_Mamluks_Events.3
+	title = ME_Mamluks_Events.3.t #Replace bad trade goods
+	desc = ME_Mamluks_Events.3.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			pick_best_provinces = {
+				3 = yes
+				event_target_name = "Mamluks_target"
+				global_trigger = "
+					MAM_has_bad_goods = yes
+					NOT = {
+						OR = {
+							has_province_modifier = MAM_upgraded_granary
+							has_province_modifier = granary_of_the_mediterranean
+						}
+					}
+				"
+				scale = higher_development_than
+				scope = every_owned_province
+			}
+		}
+	}
+	
+	option = {
+		name = ME_Mamluks_Events.3.a
+		
+		ai_chance = { factor = 100 }
+		
+		event_target:Mamluks_target_1 = {
+			change_trade_goods = paper
+		}
+		event_target:Mamluks_target_2 = {
+			change_trade_goods = glass
+		}
+		event_target:Mamluks_target_3 = {
+			change_trade_goods = cloth
+		}
+	}
+	
+	option = {
+		name = ME_Mamluks_Events.3.b
+		
+		ai_chance = { factor = 0 }
+		
+		add_years_of_income = 1
+	}
+}
