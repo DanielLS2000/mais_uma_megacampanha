@@ -1,0 +1,43 @@
+government = monarchy
+add_government_reform = plutocratic_reform
+government_rank = 2
+technology_group = east_african
+religion = coptic
+primary_culture = nubian
+capital = 1229
+mercantilism = 15
+1444.11.11= {
+	monarch = {
+		name = "Eôneille"
+		dynasty = "Marehan"
+		adm = 5
+		dip = 5
+		mil = 5
+		birth_date = 1387.2.9
+		female = yes
+		religion = coptic
+		culture = nubian
+	}
+	add_ruler_personality = just_personality
+	add_ruler_personality = scholar_personality
+	heir = {
+		name = "Ñilesa"
+		monarch_name = "Ñilesa"
+		dynasty = "Marehan"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 1432.8.19
+		death_date = 1497.8.19
+		female = yes
+		claim = 89
+		religion = coptic
+		culture = nubian
+	}
+	add_heir_personality = just_personality
+	add_heir_personality = kind_hearted_personality
+}
+1444.11.11= {
+	add_prestige = 98
+	add_treasury = 0
+}

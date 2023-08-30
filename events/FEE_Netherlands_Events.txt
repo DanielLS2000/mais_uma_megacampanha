@@ -10,7 +10,12 @@ country_event = {
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		OR = {
 			religion = protestant
 			religion = reformed
@@ -65,7 +70,12 @@ country_event = {
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		OR = {
 			religion = protestant
 			religion = reformed
@@ -111,7 +121,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		has_discovered = 624
 	}
 
@@ -166,7 +181,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		has_country_flag = fee_ned_allow_for_founding_of_batavia
 		630 = {
 			owner = {
@@ -246,7 +266,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		has_country_flag = fee_allow_for_formusa
 		taiwan_area = {
 			has_discovered = ROOT
@@ -290,7 +315,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		exists = FRM
 		738 = {
 			owned_by = ROOT
@@ -362,6 +392,8 @@ country_event = {
 
 	trigger = {
 		OR = {
+			tag = LIE
+			tag = LOT
 			tag = HOL
 			tag = NED
 		}
@@ -425,6 +457,8 @@ country_event = {
 
 	trigger = {
 		OR = {
+			tag = LIE
+			tag = LOT
 			tag = HOL
 			tag = NED
 		}
@@ -462,7 +496,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		mil_tech = 14
 	}
 
@@ -512,7 +551,12 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		is_year = 1600
 		NOT = { is_year = 1680 }
 	}
@@ -588,7 +632,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		if = {
 			limit = { exists = GBR }
 			GBR = {
@@ -714,7 +763,12 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		owns = 1177
 		has_idea = quest_for_the_new_world
 		has_idea = colonial_ventures
@@ -926,7 +980,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		is_year = 1600
 		OR = {
 			NOT = { alliance_with = FRA }
@@ -1044,7 +1103,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		is_year = 1610
 		NOT = { religion = catholic }
 		FRA = {
@@ -1116,7 +1180,12 @@ country_event = {
 	picture = WOUNDED_SOLDIERS_eventPicture
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		any_country = { offensive_war_with = ROOT }
 		NOT = { war_score = -50 }
 		num_of_owned_provinces_with = {
@@ -1170,7 +1239,12 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = NED
+		OR = {
+			tag = LIE
+			tag = LOT
+			tag = HOL
+			tag = NED
+		}
 		is_year = 1700
 		calc_true_if = {
 			amount = 1

@@ -1,0 +1,22 @@
+ck2_converter_generated = yes
+graphical_culture = inuitgfx
+color = { 60 55 50 }
+monarch_names = {
+	"Alp Yurek #0" = 0
+	"Alpra #0" = 0
+	"Ariq #0" = 0
+	"Bachman #1" = 10
+	"Bair #1" = 10
+	"Bek #0" = 0
+	"Bilduu #0" = -1
+	"Eljigidei #0" = 0
+	"Engke #1" = 10
+	"Gerelma #1" = -1
+	"Khotsa #1" = 10
+	"Mutlu #0" = -1
+	"Namzila #0" = -1
+	"Osor #0" = 0
+	"Pulad #0" = 0
+	"Tolui #0" = 0
+	"Urana #0" = -1
+}

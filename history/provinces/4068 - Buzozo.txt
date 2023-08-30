@@ -1,0 +1,9 @@
+capital = "Bafuriru"
+culture = rwandan
+religion = shamanism
+trade_goods = unknown
+base_tax = 2
+base_production = 2
+base_manpower = 3
+add_core = RWA
+discovered_by = central_african

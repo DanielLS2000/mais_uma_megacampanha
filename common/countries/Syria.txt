@@ -1,0 +1,89 @@
+ck2_converter_generated = yes
+graphical_culture = muslimgfx
+color = { 125 110 225 }
+revolutionary_colors = { 10 0 1 }
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	trade_ideas
+	spy_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	economic_ideas
+}
+historical_units = {
+	afsharid_reformed
+	afsharid_reformed_infantry
+	muslim_dragoon
+	muslim_mass_infantry
+	persian_cavalry_charge
+	persian_footsoldier
+	persian_rifle
+	persian_shamshir
+	qizilbash_cavalry
+	tofongchis_musketeer
+	topchis_artillery
+}
+monarch_names = {
+	"Abdul-Azeem #0" = 0
+	"Abdul-Lateef #0" = 0
+	"Abdul-Razzaq #0" = 0
+	"Acenith #0" = -1
+	"Ashraf #0" = 0
+	"Asim #0" = 0
+	"Aziz #0" = 0
+	"Bashar #0" = 0
+	"Farshad #0" = 0
+	"Gulnar #0" = -1
+	"Hanifa #0" = -1
+	"Hashmaddin #0" = 0
+	"Ibtisam #0" = -1
+	"Imamaddin #0" = 0
+	"Jalil #0" = 0
+	"Khashayar #0" = 0
+	"Layla #0" = -1
+	"Mahdokht #0" = -1
+	"Mukhtar #0" = 0
+	"Muzaffar #0" = 0
+	"Muzaffaraddin #0" = 0
+	"Muzhdah #0" = -1
+	"Najela #0" = -1
+	"Nastaran #0" = -1
+	"Naveed #0" = 0
+	"Nesir #0" = 0
+	"Niki #0" = -1
+	"Orestes #0" = 0
+	"Radhi #0" = 0
+	"Shayan #0" = 0
+	"Yakta #0" = -1
+	"Youkhanna #0" = 0
+}
+leader_names = {
+	"Damad"
+	"Esad"
+	"Farhad"
+	"Fazil"
+	"Hafiz"
+	"Ismail"
+	"Mehmed"
+	"Murad"
+	"Nasuh"
+	"Osman"
+	"Salih"
+	"Sinan"
+}
+ship_names = {
+	"Arif"
+	"Azmi"
+	"Dervish"
+	"Fuad"
+	"Haci"
+	"Haydar"
+	"Mulish"
+	"Nuri"
+	"Said"
+	"Salih"
+	"Sefveti"
+	"Shukri"
+}

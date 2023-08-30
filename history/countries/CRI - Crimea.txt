@@ -1,0 +1,55 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = muslim
+religion = paulician
+primary_culture = khazar
+capital = 284
+1444.11.11= {
+	monarch = {
+		name = "Itakh"
+		dynasty = "Bulanid"
+		adm = 3
+		dip = 4
+		mil = 3
+		birth_date = 1418.11.21
+		religion = paulician
+		culture = khazar
+	}
+	add_ruler_personality = intricate_web_weaver_personality
+	add_ruler_personality = tactical_genius_personality
+	queen = {
+		name = "Guranduht"
+		dynasty = "Anchabadze"
+		adm = 4
+		dip = 4
+		mil = 4
+		country_of_origin = CRI
+		birth_date = 1415.8.6
+		death_date = 1475.8.6
+		female = yes
+		religion = paulician
+		culture = alan
+	}
+	add_queen_personality = midas_touched_personality
+	add_queen_personality = zealot_personality
+	heir = {
+		name = "Itakh"
+		monarch_name = "Itakh II"
+		dynasty = "Bulanid"
+		adm = 0
+		dip = 1
+		mil = 0
+		birth_date = 1441.3.23
+		death_date = 1506.3.23
+		claim = 89
+		religion = paulician
+		culture = khazar
+	}
+	add_heir_personality = obsessive_perfectionist_personality
+	add_heir_personality = zealot_personality
+}
+1444.11.11= {
+	add_prestige = 63
+	add_treasury = 46
+}

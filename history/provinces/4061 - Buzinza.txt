@@ -1,0 +1,9 @@
+capital = "Buzinza"
+culture = takama
+religion = shamanism
+trade_goods = unknown
+base_tax = 2
+base_production = 2
+base_manpower = 2
+add_core = KRW
+discovered_by = central_african

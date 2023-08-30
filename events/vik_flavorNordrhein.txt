@@ -1,0 +1,436 @@
+namespace = flavor_hol
+normal_or_historical_nations = yes
+
+country_event = {
+	id = flavor_nord.100
+	title = flavor_nord.100.t
+	desc = flavor_nord.100.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_nord.100.a
+		change_estate_land_share = {
+			estate = all
+			share = -5
+		}
+		add_mil_power = 50
+	}
+}
+
+country_event = { #The Habsburg Ring 
+	id = flavor_nord.102 
+	title = flavor_fra.102.t 
+	desc = flavor_nord.102.d 
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		ai_chance = { factor = 0 }
+		name = flavor_nord.102.a 
+		trigger = { hre_size = 1 }
+		add_country_modifier = {
+			name = fra_charlemagne_legacy_modifier
+			duration = 7300
+		}
+		every_elector = {
+			limit = { 
+				has_opinion = { 
+					who = ROOT 
+					value = 0 
+				}
+			}
+			add_opinion = { 
+				who = ROOT 
+				modifier = fra_charlemagne_legacy_opinion_modifier
+			}
+		}
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 25
+		}
+		custom_tooltip = fra_charlemagne_legacy_tt
+	}
+	
+	option = { 
+		name = flavor_nord.102.b
+		ai_chance = { factor = 100 }
+		trigger = { is_emperor = no }
+		add_country_modifier = { 
+			name = fra_war_east_modifier 
+			duration = 5475
+		}
+		if = { 
+			limit = { hre_size = 1 }
+			custom_tooltip = fra_enable_war_on_the_empire_cb_tt
+			hidden_effect = { set_country_flag = fra_enable_war_on_the_empire_cb_flag }
+		}
+		custom_tooltip = fra_destroy_empire_tt
+	}
+	
+	option = { 
+		name = flavor_nord.102.c 
+		
+		trigger = { 
+			NOT = { hre_size = 1 } 
+		}
+		add_country_modifier = { 
+			name = fra_triumph_over_austria_modifier
+			duration = -1 
+		}
+		add_dip_power = 200
+	}
+}
+
+country_event = { #House de Roudrac
+	id = flavor_nord.106
+	title = flavor_fra.106.t
+	desc = flavor_nord.106.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes 
+	major = yes 
+	major_trigger = {
+		capital_scope = { 
+			continent = europe 
+		}
+	}
+	option = { 
+		name = flavor_nord.106.a 
+		
+		ai_chance = { factor = 10 } 
+		LIE = { create_union = LOR }
+		add_stability_or_adm_power = yes 
+	}
+	
+	option = { 
+		name = flavor_nord.106.b 
+		
+		ai_chance = { factor = 0 }
+		break_alliance = LIE 
+		break_marriage = LIE 
+		declare_war_with_cb = {
+			who = LIE
+			casus_belli = cb_insult
+		}
+		add_prestige_or_monarch_power = { amount = 25 }
+	}
+}
+
+country_event = { #Golden Bull Treaty 
+	id = flavor_nord.120
+	title = flavor_fra.120.t 
+	desc = flavor_fra.120.d 
+	picture = PRINCE_BISHOP_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = flavor_fra.120.a
+		ai_chance = { factor = 100 }
+		
+		if = { 
+			limit = { is_subject = no }
+			LIE = { create_march = ROOT }
+		}
+		else = { 
+			LIE = { 
+				add_adm_power = 150 
+				add_dip_power = 150 
+				add_mil_power = 150 
+				add_prestige = 15 
+			}
+		}
+		LIE = { set_country_flag = general_flag_for_FU_Rome_flag }
+		custom_tooltip = fra_no_malus_for_vassalage_of_pope_tt
+		add_country_modifier = {
+			name = fra_integration_french_legal_code_modifier
+			duration = 7300
+		}
+		add_liberty_desire = -100
+		add_historical_friend = LIE 
+		LIE = { add_historical_friend = PAP }
+	}
+	
+	option = { 
+		name = flavor_fra.120.b 
+		
+		trigger = { ai = no } 
+		
+		custom_tooltip = fra_destabilize_tt
+		hidden_effect = { 
+			add_stability = -6 
+			add_prestige = -100 
+			add_devotion = -100 
+			add_corruption = 10
+			add_inflation = 15
+		}
+	}
+}
+
+country_event = { #The Rade of the Toulon Arsenal
+	id = flavor_nord.202
+	title = flavor_nord.202.t 
+	desc = flavor_nord.202.d 
+	picture = HARBOUR_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = flavor_nord.202.a 
+		
+		1744 = {
+			add_province_modifier = {
+				name = pro_natural_anchorage_of_the_mediterranean_modifier
+				duration = -1 
+			}
+		}
+		custom_tooltip = pro_upgrade_dock_and_shipyard_if_possible_tt
+		hidden_effect = {
+			1744 = {
+				if = {
+					limit = { has_building = dock }
+					remove_building = dock 
+					add_building = drydock
+				}
+				if = {
+					limit = { has_building = shipyard }
+					remove_building = shipyard
+					add_building = grand_shipyard
+				}
+			}
+		}
+	}
+}
+
+country_event = { #The Fate of Naples
+	id = flavor_nord.113
+	title = flavor_nord.113.t 
+	desc = flavor_nord.113.d 
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = flavor_nord.113.a 
+		
+		if = {
+			limit = { 
+				BRI = { is_subject_of = ROOT } 
+			}
+			BRI = { 
+				add_country_modifier = {
+					name = fra_sociopolitical_reforms_modifier
+					duration = 7300
+				}
+			}
+		}
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 25
+		}
+		if = { 
+			limit = { 
+				121 = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+			121 = { 
+				add_base_tax = 2 
+				add_base_production = 2 
+				add_base_manpower = 2 
+			}
+		}
+	}
+	
+	option = { 
+		name = flavor_nord.113.b 
+		
+		add_country_modifier = { 
+			name = fra_exploitation_of_neapolitan_estates_modifier
+			duration = 7300
+		}
+		custom_tooltip = fra_exploitation_of_neapolitan_lands_tt
+		hidden_effect = { 
+			if = { 
+				limit = { 
+					brittany_area = { 
+						type = all 
+						country_or_non_sovereign_subject_holds = ROOT 
+					}
+				}
+				brittany_area = { add_base_tax = -1 }
+			}
+		}
+	}
+}
+
+country_event = { #Victory in the Frankish War
+	id = flavor_nord.114
+	title = flavor_nord.114.t 
+	desc = flavor_nord.114.d 
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = flavor_nord.114.a 
+		
+		add_country_modifier = { 
+			name = fra_iberian_campaigns_modifier
+			duration = 7300 
+		}
+		if = { 
+			limit = { 
+				BRI = { is_subject_of = ROOT } 
+			}
+			france_region = { 
+				limit = { 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = BRI } 
+				}
+				add_core = BRI 
+			}
+		}
+		else_if = { 
+			limit = { 
+				FRA = { is_subject_of = ROOT } 
+			}
+			france_region = { 
+				limit = { 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = FRA } 
+				}
+				add_core = FRA 
+			}
+		}
+		else_if = { 
+			limit = { 
+				NRM = { is_subject_of = ROOT } 
+			}
+			france_region = { 
+				limit = { 
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = NRM } 
+				}
+				add_core = NRM 
+			}
+		}
+		else = { 
+			france_region = { 
+				limit = { 
+					NOT = { owned_by = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+	}
+}
+
+country_event = { #La Sorbonne
+	id = flavor_nord.204
+	title = flavor_nord.204.t 
+	desc = flavor_fra.204.d 
+	picture = GREAT_BUILDING_eventPicture
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = flavor_fra.204.a 
+		
+		1878 = {
+			add_province_modifier = {
+				name = fra_university_of_paris_modifier
+				duration = -1 
+			}
+		}
+		
+		if = { 
+			limit = { has_dlc = "Rule Britannia" }
+			custom_tooltip = fra_inno_mana_tt
+			hidden_effect = {
+				85 = {
+					if = { 
+						limit = {
+							OR = { 
+								num_of_times_improved = 5 
+								has_building = university 
+							}
+							num_of_buildings_in_province = 2 
+						}
+						ROOT = { change_innovativeness = 1 add_adm_power = 10 add_dip_power = 10 add_mil_power = 10 } 
+					}
+				}
+				94 = {
+					if = { 
+						limit = {
+							OR = { 
+								num_of_times_improved = 5 
+								has_building = university 
+							}
+							num_of_buildings_in_province = 2 
+						}
+						ROOT = { change_innovativeness = 1 add_adm_power = 10 add_dip_power = 10 add_mil_power = 10 } 
+					}
+				}
+				92 = {
+					if = { 
+						limit = {
+							OR = { 
+								num_of_times_improved = 5 
+								has_building = university 
+							}
+							num_of_buildings_in_province = 2 
+						}
+						ROOT = { change_innovativeness = 1 add_adm_power = 10 add_dip_power = 10 add_mil_power = 10 } 
+					}
+				}
+				89 = {
+					if = { 
+						limit = {
+							OR = { 
+								num_of_times_improved = 5 
+								has_building = university 
+							}
+							num_of_buildings_in_province = 2 
+						}
+						ROOT = { change_innovativeness = 1 add_adm_power = 10 add_dip_power = 10 add_mil_power = 10 } 
+					}
+				}
+				1744 = {
+					if = { 
+						limit = {
+							OR = { 
+								num_of_times_improved = 5 
+								has_building = university 
+							}
+							num_of_buildings_in_province = 2 
+						}
+						ROOT = { change_innovativeness = 1 add_adm_power = 10 add_dip_power = 10 add_mil_power = 10 } 
+					}
+				}
+				97 = {
+					if = { 
+						limit = {
+							OR = { 
+								num_of_times_improved = 5 
+								has_building = university 
+							}
+							num_of_buildings_in_province = 2 
+						}
+						ROOT = { change_innovativeness = 1 add_adm_power = 10 add_dip_power = 10 add_mil_power = 10 } 
+					}
+				}
+				98 = {
+					if = { 
+						limit = {
+							OR = { 
+								num_of_times_improved = 5 
+								has_building = university 
+							}
+							num_of_buildings_in_province = 2 
+						}
+						ROOT = { change_innovativeness = 1 add_adm_power = 10 add_dip_power = 10 add_mil_power = 10 } 
+					}
+				}
+			}
+		}
+	}
+}

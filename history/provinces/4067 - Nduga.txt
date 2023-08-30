@@ -1,0 +1,9 @@
+capital = "Nduga"
+culture = rwandan
+religion = shamanism
+trade_goods = unknown
+base_tax = 4
+base_production = 4
+base_manpower = 3
+add_core = RWA
+discovered_by = central_african

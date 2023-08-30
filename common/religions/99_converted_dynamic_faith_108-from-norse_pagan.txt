@@ -1,0 +1,32 @@
+pagan = {
+	converted_dynamic_faith_108 = {
+		color = { 94 94 95 }
+		icon =  174
+		country = {
+ 
+		global_tax_modifier = 0.15
+	
+
+		ae_impact = -0.15
+	
+
+		heir_chance = 0.5
+	
+
+		tolerance_heathen = -1
+	
+}
+		country_as_secondary = {
+ 
+		global_tax_modifier = 0.1
+	
+
+		ae_impact = -0.1
+	
+}
+		
+	heretic = { OLD_NORSE }
+
+	}
+}
+

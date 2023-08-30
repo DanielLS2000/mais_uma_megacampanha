@@ -1,0 +1,56 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = eastern
+religion = converted_dynamic_faith_109
+primary_culture = anatolian
+capital = 316
+set_country_flag = ZZZ_generated_converter_nation
+1444.11.11= {
+	monarch = {
+		name = "Hrani"
+		dynasty = "Lachanodrakon"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1400.5.3
+		religion = converted_dynamic_faith_109
+		culture = anatolian
+	}
+	add_ruler_personality = benevolent_personality
+	add_ruler_personality = entrepreneur_personality
+	queen = {
+		name = "Alfríðr"
+		dynasty = "Spartacus-Demetrias"
+		adm = 4
+		dip = 5
+		mil = 3
+		country_of_origin = Z09
+		birth_date = 1415.10.11
+		death_date = 1475.10.11
+		female = yes
+		religion = converted_dynamic_faith_109
+		culture = greek
+	}
+	add_queen_personality = charismatic_negotiator_personality
+	add_queen_personality = infertile_personality
+	heir = {
+		name = "Diogenes"
+		monarch_name = "Diogenes"
+		dynasty = "Lachanodrakon"
+		adm = 3
+		dip = 2
+		mil = 4
+		birth_date = 1434.11.4
+		death_date = 1499.11.4
+		claim = 89
+		religion = converted_dynamic_faith_109
+		culture = greek
+	}
+	add_heir_personality = embezzler_personality
+	add_heir_personality = greedy_personality
+}
+1444.11.11= {
+	add_prestige = 78
+	add_treasury = 0
+}
