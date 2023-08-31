@@ -1614,7 +1614,7 @@
 		trigger = {
 			OR = {
 				development_in_provinces = {
-					value = 300 
+					value = 200 
 					region = poland_region
 				}
 				any_subject_country = {
@@ -1636,7 +1636,7 @@
 					create_vassal = POL
 					POL = {
 						set_government_rank = 1
-						override_country_name = "Duchy of Warsaw"
+						override_country_name = "Warsaw"
 					}
 				change_ruler_stat = {
 						stat = dip
@@ -2289,22 +2289,18 @@
 		teu_crusader_mil_reform_1 = {
 			icon = mission_united_knight_order
 			position = 3
-			required_missions = { teu_build_to_force_limit }
+			required_missions = { }
 			provinces_to_highlight = {}
 			trigger = {
-				religion = catholic
-				custom_trigger_tooltip = {
-					tooltip = teu_crusader_mil_reform_1_tt
-					check_variable = {
-						which = num_won_battles
-						value = 20
-					}
+				has_won_war_against = {
+					who = MAZ
+					max_years_since = 100
 				}
-			}
+				}
 			effect = {
 				add_army_tradition = 10
 				add_country_modifier = {
-					name = teu_crusader_mil_reform_1_mod
+					name = teu_crusader_mil_reform_2_mod
 					duration = -1
 				}
 			}
@@ -2741,7 +2737,7 @@
 			has_completed_idea_group_of_category = {
 				mil_ideas = yes
 			}
-			num_of_cavalry = 25
+			num_of_cavalry = 13
 		}
 		effect = {
 			define_advisor = {
@@ -2780,7 +2776,7 @@
 			else = {
 				army_tradition = 95
 			}
-			army_size = 150
+			army_size = 75
 			if = {
 				limit = {
 					has_estate = estate_cossacks
