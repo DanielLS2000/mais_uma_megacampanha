@@ -1,0 +1,121 @@
+EGY_order_administration = {
+	nobles_loyalty_modifier = 0.05
+	global_tax_modifier = 0.15
+}
+
+EGY_citadel = {
+	local_defensiveness = 0.25
+	province_trade_power_modifier = 0.1
+	local_build_cost = -0.1
+	local_manpower = 1
+}
+
+EGY_lighthouse_of_alexandria_modifier = {
+	admiral_cost = -0.5
+	navy_tradition = 1
+}
+
+EGY_knighthood_code = {
+	cavalry_power = 0.15
+	warscore_from_battles_modifier = 0.33
+}
+
+EGY_egyptian_infantry_reforms = {
+	fire_damage = 0.1
+}
+
+EGY_subjugated_arabs = {
+	global_missionary_strength = 0.02
+}
+
+EGY_yemeni_trade_routes = {
+	trade_efficiency = 0.1
+}
+
+EGY_missionaries_of_christ = {
+	papal_influence = 2
+	church_power_modifier = 0.15
+	monthly_fervor_increase = 1
+}
+
+MAM_venturing_ships = {
+	global_ship_trade_power = 0.1
+}
+
+egy_holy_orders = {
+	infantry_power = 0.15
+}
+
+MAM_governing_military = {
+	mil_advisor_cost = -0.2
+	mil_tech_cost_modifier = -0.1
+}
+
+EGY_Kingdom_of_Prester_John = {
+	num_accepted_cultures = 1
+	governing_capacity = 200
+}
+
+egy_ruler_of_nubia = {
+	manpower_in_true_faith_provinces = 0.1
+}
+
+MAM_trade_modifier = {
+	global_prov_trade_power_modifier = 0.1
+}
+
+MAM_trade_modifier_2 = {
+	trade_efficiency = 0.05
+	global_prov_trade_power_modifier = 0.15
+}
+
+egy_european_traders = {
+	province_trade_power_modifier = 0.5
+	province_trade_power_value = 15
+}
+
+MAM_venetian_quarters = {
+	mercantilism_cost = -0.25
+	dip_tech_cost_modifier = -0.05
+}
+
+MAM_naval_cooperation = {
+	naval_morale = 0.1
+	navy_tradition = 0.25
+}
+
+MAM_ld_from_dev = {
+	liberty_desire_from_subject_development = -0.1
+}
+
+MAM_help_vassalize_beyliks = {
+	accept_vassalization_reasons = 10
+}
+
+MAM_securing_the_flank = {
+	nobles_loyalty_modifier = 0.1
+	defensiveness = 0.15
+}
+
+MAM_protectors_of_the_caliph_modifier = {
+	tolerance_own = 1
+	warscore_cost_vs_other_religion = -0.1
+}
+
+MAM_al_azhar_university_modifier = {
+	global_institution_spread = 0.33
+	advisor_pool = 1
+}
+
+MAM_breadbasket_of_egypt = {
+	trade_goods_size_modifier = 0.05 
+}
+
+MAM_heart_of_egypt = {
+	local_prosperity_growth = 0.5
+	local_development_cost = -0.05
+}
+
+MAM_arabia_tamed = {
+	global_autonomy = -0.05
+}

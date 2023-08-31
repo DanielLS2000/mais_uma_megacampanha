@@ -1,0 +1,74 @@
+﻿l_english:
+ # Events
+ Vik_Egypt.25.t: "Well-Guided Secret"
+ vik_Egypt.25.d: "It was once the Yemeni people that maintained the secret of coffee. Now, one way or another, we control the rich valleys of coffee plantations to the point we have attained a monopoly. It is our turn to maintain the secret, and ensure it stays within our borders."
+ vik_Egypt.25.a: "That is fantastic."
+ 
+ ME_Mamluks_Events.3.t: "Luxury Industry Revived"
+ ME_Mamluks_Events.3.d: "In the pasts, we were a titan of luxury goods that the world would throw money hand over fist for. As our influence over the Mediterranean waivered, so did our luxury industry. Craftsmen of luxury goods have pursued other interests, and we have reverted to an agriculturally dominant economy. Now that we have a strong position, we should seek to revive our luxury industries and refurbish the workshops in our nation." 
+ ME_Mamluks_Events.3.a: "Sounds Good!"
+ ME_Mamluks_Events.3.b: "No, stop, reverse this!"
+ 
+ flavor_mam.2.d: "Amidst the vibrant sands of Egypt, an opportunity emerges to reimagine a city's destiny. As the Order of Calatrava ascends to power, their stewardship over Cairo ushers in a new era of expansion and renewal. Tasked with transforming the city's very essence, you embark on a journey of "Architectural Renaissance." Guided by the principles of order, aesthetics, and progress, you orchestrate an urban symphony that expands Cairo's horizons. As streets broaden, monuments rise, and neighborhoods flourish, the city flourishes under your strategic direction. Through your transformative efforts, Cairo evolves into an emblem of grandeur and innovation, honoring its past while embracing a future illuminated by architectural marvels."
+ flavor_mam.2.a: "This is Great."
+
+ #Modifiers
+ EGY_order_administration: "Administration of the Orders"
+ EGY_citadel: "City of Alexander"
+ EGY_lighthouse_of_alexandria_modifier: "Lighthouse of Alexandria"
+ EGY_knighthood_code: "Knighthood Code"
+ EGY_egyptian_infantry_reforms: "Egyptian Infantry Reforms"
+ EGY_subjugated_arabs: "Invasion of Arabia"
+ EGY_yemeni_trade_routes: "Yemeni Trade Routes"
+ EGY_missionaries_of_christ: "Missionaries of Christ"
+ MAM_venturing_ships: "Venturing Ships"
+ egy_holy_orders: "Holy Order Training"
+ MAM_governing_military: "A Military That Governs"
+ EGY_Kingdom_of_Prester_John: "Kingdom of Prester John"
+ egy_ruler_of_nubia: "Ruler of Nubia"
+ MAM_trade_modifier: "Bazaar of the East"
+ MAM_trade_modifier_2: "Bazaar of the East"
+ egy_european_traders: "European Traders"
+ MAM_venetian_quarters: "Foreign Quarters"
+ MAM_naval_cooperation: "Naval Cooperation"
+ MAM_ld_from_dev: "A Game of Chess with Olympia"
+ MAM_help_vassalize_beyliks: "Attempt to Sway Medina"
+ MAM_securing_the_flank: "Securing the Flank"
+ MAM_protectors_of_the_caliph_modifier: "Sworn Protectors of the Pope"
+ MAM_al_azhar_university_modifier: "University of Cairo"
+ MAM_breadbasket_of_egypt: "Breadbasket of Egypt"
+ MAM_heart_of_egypt: "Heart of Egypt"
+ MAM_arabia_tamed: "Arabia Tamed"
+
+ #Opinion Modifiers
+ 
+ 
+ #Decisions
+ 
+
+ #Ideas
+ 
+
+ #ToolTips
+ EGY_developed_tax_at_least_25_times: "Developed §YBase Tax§!¤ at least §G25§! Times. (Currently: [Root.num_of_adm_clicks.GetValue].)"
+ Egy_selling_crownland_gives_more_money: "§YSelling Crownland§! will give §G+50.0%§! more Ducats."
+ MAM_if_we_have_60_burgher_loyalty: "If we have at least §Y60§! Loyalty of the §Y[Root.GetBurghersName]§!:"
+ MAM_random_province_in_each: "Random owned province with a §YShipyard§! building per above area:"
+ MAM_for_every_barrack: "Gain §G5.00§! §YGovernment Reform Progress§! for every province with a §YManpower§! building, for a maximum of §G100.00§! at §Y20§! provinces."
+ MAM_if_completed_while_vassal_holds_at_least_7_of_the_provinces: "Additionally, if the §Ymission§! has been completed while our subjects hold in total of 7 of the §YHighlighted§! provinces, we will gain §G50§! of each §YMonarch§! Power."
+ MAM_distribute_10_manpower_among_bedouin: "Distribute §G10§! §YManpower§! Development among our §YBedouin§! culture provinces."
+ MAM_three_most_developed_provinces: "The §G3§! Most §YDeveloped§! Provinces that do not have '§YGranary of the Mediterranean§!' Modifier might receive either §YCloth§!, §YGlass§!, or §YPaper§! via the following event."
+ MAM_from_production: "from §G2§! years of §YProduction§! Income.\n"
+ MAM_trade_modifier_upgrade_1: "Modify '§YBazaar of the East§!' by:\n    Provincial Trade Power Modifier: §G+5.0%§!\n    Trade Efficiency: §G+5.0%§!"
+ MAM_distribute_10_10_10_dev_amongst_our_trade_centers: "Distribute §G10§! §YBase Tax§!, §G10§! §YBase Production§! and §G10§! §YBase Manpower§! among our provinces with §YCenters of Trade§!."
+ MAM_distribute_10_base_tax: "Distribute §G10§! Base Tax amongst our provinces with a §YTax§! building."
+ 
+ 
+ # Keys
+ EGY_protector_of_the_secret: "Protector of the Secret"
+ MAM_supporting_red_sea_trade: "Supporting Red Sea Trade"
+ MAM_trade_with_india: "Trade with India"
+ MAM_the_gulf_of_aden_secured: "The Gulf of Aden Secured"
+ MAM_strict_control: "Strict Control of Trade"
+ MAM_red_sea_controlled: "Red Sea Control"
+ 
