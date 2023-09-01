@@ -9,6 +9,8 @@
 - Latium
 - Galicia
 - Aragon
+- Kiev
+- Transoxiana
 
 ## Lista de Mods Integrados
 - [Responsible Blobbing](https://steamcommunity.com/sharedfiles/filedetails/?id=2131234936)
