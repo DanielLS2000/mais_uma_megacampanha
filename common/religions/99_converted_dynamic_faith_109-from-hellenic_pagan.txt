@@ -9,9 +9,8 @@ pagan = {
 		country_as_secondary = {
 			global_tax_modifier = 0.1
 		}
-		personal_deity = yes
-		
 		heretic = { GOAT_SKULL }
+		personal_deity = yes
 	}
 }
 

@@ -1837,14 +1837,14 @@ mercenary_ideas = {
 	}
 
 	organised_mercenary_payment = {
-		mercenary_cost = -0.25
+		mercenary_cost = -0.2
 	}
 	war_council = {
-		mil_advisor_cost = -0.25
+		mil_advisor_cost = -0.15
 		merc_independent_from_trade_range = yes
 	}
 	expanded_contracts = {
-		merc_maintenance_modifier = -0.25
+		merc_maintenance_modifier = -0.2
 	}
 	nation_of_war = {
 		mil_tech_cost_modifier = -0.1
@@ -1857,7 +1857,7 @@ mercenary_ideas = {
 		infantry_power = 0.1
 	}
 	organised_mercenary_recruitment = { 
-		mercenary_manpower = 0.3
+		mercenary_manpower = 0.2
 		allow_mercenary_drill = yes
 	}
 

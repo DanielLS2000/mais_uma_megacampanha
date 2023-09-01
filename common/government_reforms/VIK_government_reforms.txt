@@ -1,0 +1,73 @@
+crown_of_nordrhein = {
+	icon = "dutch_republic"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				primary_culture = dynamic-franconian-cosmopolitan_french-culture-num2
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = crown_of_nordrhein
+			}
+		}
+	}
+	trigger = {
+		is_lesser_in_union = no
+	}
+
+	modifiers = {
+		heavy_ship_power = 0.1
+		trade_efficiency = 0.1
+		reduced_liberty_desire_on_other_continent = 10
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.2
+		no_stability_loss_on_monarch_death = yes
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+kingdom_of_egypt = {
+	icon = "holy_state_reform"
+    potential = {
+		OR = {
+			has_reform = kingdom_of_egypt
+			have_had_reform = kingdom_of_egypt
+		}
+    }
+	modifiers = {
+        num_accepted_cultures = 3
+		global_autonomy = -0.025
+		monarch_admin_power = 2
+		same_culture_advisor_cost = -0.25
+		promote_culture_cost = -0.5
+		governing_capacity = 50
+		nobles_influence_modifier = 0.1
+    }
+	allow_normal_conversion = no
+    lock_level_when_selected = yes
+    legacy_equivalent = monastic_order_government
+	monastic = yes
+    rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	custom_attributes = {
+		monastic_order = yes
+	}
+}

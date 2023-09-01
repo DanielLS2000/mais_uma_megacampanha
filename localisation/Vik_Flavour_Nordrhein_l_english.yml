@@ -24,14 +24,13 @@
  flavor_nord.204.t: "Pontifical Universities"
 
  #Modifiers
- fee_por_sebastianism: "Sebastianism"
- desc_fee_por_sebastianism: "Many of our people hope for the return of King Sebastian, who has been lost since his crusade in Morocco. They are not pleased that we exiled a man claiming to be him, even though his claim was certainly false."
-
- fee_por_spice_sail: "Set Sail for Spices"
+ 
 
  #Opinion Modifiers
- fee_por_portuguese_weaponry: "Portuguese Weaponry"
- fee_por_failed_diplomacy: "Failed Diplomacy"
+ 
+ # Government
+ crown_of_nordrhein: "Crown of Nordrhein"
+ crown_of_nordrhein_desc: "The Government of Nordrhein is very unique, having its roots in a mix between rhenish, nordic and dutch influences, it has a legacy of great stewardship and trade policies."
  
  #Decisions
  nordrheinard_nation_title: "Restore Nordrhein"

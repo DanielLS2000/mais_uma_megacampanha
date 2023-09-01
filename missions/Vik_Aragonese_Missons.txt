@@ -490,7 +490,7 @@ branch_2 = {
 
 		effect = {
 			set_country_flag = fate_of_granada_mission_flag 
-			country_event = { id = flavor_ibe.8 }
+			country_event = { id = flavor_spa.8 }
 			126 = {
 				add_permanent_claim = ROOT
 			}

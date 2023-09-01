@@ -10,6 +10,7 @@ jupiter =
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}
@@ -44,6 +45,7 @@ luno =
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}
@@ -74,6 +76,7 @@ neptunus =
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}
@@ -116,6 +119,7 @@ venus =
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}
@@ -146,6 +150,7 @@ mars =
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}
@@ -175,12 +180,13 @@ mars =
 ceres =
 {
 	global_tax_modifier = 0.1
-	development_cost = -0.1
+	development_cost = -0.05
 
 	potential = {
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}
@@ -211,6 +217,7 @@ vulcan =
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}
@@ -235,12 +242,13 @@ vulcan =
 minerva =
 {
 	innovativeness_gain = 0.5
-	idea_cost = -0.15
+	idea_cost = -0.1
 
 	potential = {
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}
@@ -271,6 +279,7 @@ diana =
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}
@@ -305,6 +314,7 @@ apollo =
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}
@@ -335,6 +345,7 @@ mercury =
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}
@@ -359,12 +370,13 @@ mercury =
 vesta =
 {
 	global_unrest = -1
-	advisor_cost = -0.2
+	advisor_cost = -0.1
 
 	potential = {
 		OR = {
 			religion = hellenic_pagan
 			religion = hellenic_pagan_reformed
+			religion = converted_dynamic_faith_109
 		}
 	}
 	trigger = {}

@@ -1,4 +1,4 @@
-namespace = flavor_hol
+namespace = flavor_nord
 normal_or_historical_nations = yes
 
 country_event = {

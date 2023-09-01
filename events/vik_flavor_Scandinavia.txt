@@ -1,4 +1,4 @@
-namespace = flavor_dan
+namespace = flavor_kal
 normal_or_historical_nations = yes
 
 #Norway's Role in the Kalmar Union

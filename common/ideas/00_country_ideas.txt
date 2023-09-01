@@ -398,8 +398,8 @@ DAN_ideas = {
 
 NOR_ideas = {
 	start = {
-		global_sailors_modifier = 0.25
-		ship_durability = 0.10
+		infantry_power = 0.2
+		merc_maintenance_modifier = -0.15
 	}
 	
 	bonus = {
@@ -415,24 +415,23 @@ NOR_ideas = {
 		range = 0.33
 		may_explore = yes
 	}
-	pioneer_spirit = {
-		colonists = 1
+	kung_och_riksdag = {
+		
 	}
-	natural_seamanship = {
-		naval_morale = 0.20		
+	swedish_steel = {
+			
 	}
-	nor_shipbuilding = {
-		global_ship_cost = -0.1
+	dan_naval_heroes = {
+		
 	}
 	seize_the_opportunity = {
  		global_trade_power = 0.1
 	}
-	nor_fishing = {
-		production_efficiency = 0.1
+	dan_royal_mercenaries = {
+		
 	}
-	write_new_sagas = {
-		prestige = 1
-		discipline = 0.025
+	union_and_security_act = {
+		
 	}
 }
 
@@ -597,12 +596,12 @@ GOT_ideas = {
 
 SCA_ideas = {
 	start = {
-		discipline = 0.05
-		global_trade_goods_size_modifier = 0.15
+		infantry_power = 0.2
+		merc_maintenance_modifier = -0.15
 	}
 	
 	bonus = {
-		global_manpower_modifier = 0.2
+		trade_steering = 0.20
 	}
 	
 	trigger = {
@@ -610,31 +609,26 @@ SCA_ideas = {
 	}
 	free = yes
 	
-	sca_united_craftsman = {
-		global_allowed_num_of_buildings = 1
-		build_cost = -0.05
+	call_of_our_forefathers = {
+		
 	}
-	sca_unified_scandinavian = {
-		possible_policy = 1
-		administrative_efficiency = 0.05
+	kung_och_riksdag = {
+		
 	}
-	sca_danish_baltic_fleet = {
-		trade_efficiency = 0.1
-		ship_durability = 0.05
+	swedish_steel = {
+			
 	}
-	sca_norwegian_marines = {
-		naval_morale = 0.2
+	dan_naval_heroes = {
+		
 	}
-	sca_finnish_hakkapeliita = {
-		cavalry_fire = 0.5
-		cavalry_cost = -0.15
+	seize_the_opportunity = {
+ 		
 	}
-	sca_swedish_carolean = {
-		infantry_power = 0.2
+	dan_royal_mercenaries = {
+		
 	}
-	sca_empire_of_the_north = {
-		max_absolutism = 10
-		yearly_absolutism = 1
+	union_and_security_act = {
+		
 	}
 }
 
@@ -2284,8 +2278,8 @@ SIC_ideas = {
 
 ARA_ideas = {
 	start = {
-		galley_power = 0.2
-		trade_efficiency = 0.1
+		land_morale = 0.15 
+		global_ship_trade_power = 0.25 
 	}
 	
 	bonus = {
@@ -2298,7 +2292,7 @@ ARA_ideas = {
 	free = yes
 	
 	mercenary_princes = {
-		merc_maintenance_modifier = -0.15
+		fire_damage_received = -0.15
 	}
 	protection_of_coastlines = {
 		naval_forcelimit_modifier = 0.10
@@ -2308,16 +2302,18 @@ ARA_ideas = {
 		trade_steering = 0.20
 	}
 	consolidation_of_the_estates = {
-		stability_cost_modifier = -0.1
+		idea_cost = -0.1
 	}
 	chartered_merchant_companies = {
-		global_trade_power = 0.20
+		global_manpower_modifier = 0.15
+		core_creation = -0.15
 	}
 	ara_reformed_admin = {
-		global_autonomy = -0.05
+		colonists = 1
 	}
 	protection_of_the_little_folk = {
-		land_morale = 0.10
+		defensiveness = 0.1
+		rival_border_fort_maintenance = -0.25
 	}
 }
 
@@ -2485,11 +2481,11 @@ MLO_ideas = {
 BYZ_ideas = {
 	start = {
 		advisor_cost = -0.10
-		tolerance_own = 3
+		discipline = 0.05
 	}
 	
 	bonus = {
-		prestige = 1
+		land_forcelimit_modifier = 0.25
 	}
 	
 	trigger = {
@@ -2498,26 +2494,30 @@ BYZ_ideas = {
 	free = yes
 	
 	regulations_for_mercenaries = {
-		merc_maintenance_modifier = -0.15
+		core_creation = -0.25
+		num_accepted_cultures = 1
 	}
 	repopulation_of_countryside = {
 		global_trade_goods_size_modifier = 0.05
 		global_manpower_modifier = 0.10
 	}
 	byz_state_admin_reform = {
-		global_tax_modifier = 0.10
+		manpower_recovery_speed = 0.2
 	}
 	byz_admin_power = {
-		stability_cost_modifier = -0.1
+		global_tax_modifier = 0.15
+		reform_progress_growth = 0.1
 	}
 	merchant_class = {
-		global_trade_power = 0.1
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 0.25
 	}
 	new_imperial_army = {
-		discipline = 0.05
+		trade_efficiency = 0.1
 	}
 	ecumenical_patriarch = {
-		global_missionary_strength = 0.03
+		navy_tradition = 0.5
+		global_ship_cost = -0.1
 	}
 }
 
@@ -6244,12 +6244,12 @@ CYA_ideas = {
 
 TEU_ideas = {
 	start = {
-		cavalry_power = 0.1
+		build_cost = -0.15
 		discipline = 0.05
 	}
 	
 	bonus = {
-		global_institution_spread = 0.1
+		state_maintenance_modifier = -0.25
 	}
 	
 	trigger = {
@@ -6258,28 +6258,26 @@ TEU_ideas = {
 	free = yes
 	
 	teu_idea_1 = {
-		cavalry_cost = -0.1	
-		infantry_cost = -0.1
+		cavalry_power = 0.1
 	}
 	teu_idea_2 = {
 		manpower_recovery_speed = 0.15
 	}
 	teu_idea_3 = {
+		global_manpower_modifier = 0.25
 		infantry_power = 0.1
 	}
 	teu_idea_4 = {
-		papal_influence = 1
-		church_power_modifier = 0.05
-		global_missionary_strength = 0.02
+		production_efficiency = 0.1
 	}
 	teu_idea_5 = {
-		defensiveness = 0.15
+		global_tax_modifier = 0.1
 	}
 	teu_idea_6 = {
-		missionaries = 1
+		fabricate_claims_cost = -0.2
 	}
 	teu_idea_7 = {
-		tolerance_own = 1
+		land_morale = 0.15
 	}
 }
 
@@ -12376,11 +12374,11 @@ KHO_ideas = {
 
 TRS_ideas = {
 	start = {
-		land_morale = 0.1
-		cavalry_cost = -0.1
+		shock_damage_received = -0.1
+        advisor_pool = 1
 	}
 	bonus = {
-		idea_cost = -0.1
+		manpower_in_true_faith_provinces = 0.10
 	}
 	trigger = {
 		tag = TRS
@@ -12388,25 +12386,27 @@ TRS_ideas = {
 	free = yes
 	
 	trs_mawarannahr = {
-		cavalry_power = 0.2
+		cavalry_power = 0.15
 	}
 	trs_threshold_of_paradise = {
-		prestige = 1
+		ae_impact = -0.1
 	}
 	trs_adept_diplomacy = {
-		spy_offence = 0.2
+		global_heathen_missionary_strength = 0.02
 	}
 	trs_turkoman_cannoneers = { #Babur's ambition
-		artillery_cost = -0.15
+		defensiveness = 0.15
 	}
 	trs_scientific_patronage = {
-		technology_cost = -0.05
+		leader_land_shock = 1
+        army_tradition_from_battle = 0.5
 	}
 	trs_entrepot_of_the_silk_road = {
-		global_own_trade_power = 0.25
+		build_cost = -0.1
+        build_time = -0.1
 	}
 	chagatai_literature = {
-		#Same as Timurids
+		reserves_organisation = 0.2
 	}
 }
 
