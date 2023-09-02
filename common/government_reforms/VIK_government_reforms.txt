@@ -1,0 +1,421 @@
+crown_of_nordrhein = {
+	icon = "dutch_republic"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			AND = {
+				primary_culture = dynamic-franconian-cosmopolitan_french-culture-num2
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = crown_of_nordrhein
+			}
+		}
+	}
+	trigger = {
+		is_lesser_in_union = no
+	}
+
+	modifiers = {
+		heavy_ship_power = 0.1
+		trade_efficiency = 0.1
+		reduced_liberty_desire_on_other_continent = 10
+		has_voc_indiamen = yes
+		allowed_voc_indiamen_fraction = 0.2
+		no_stability_loss_on_monarch_death = yes
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+kingdom_of_egypt = {
+	icon = "holy_state_reform"
+    potential = {
+		OR = {
+			has_reform = kingdom_of_egypt
+			have_had_reform = kingdom_of_egypt
+		}
+    }
+	modifiers = {
+        num_accepted_cultures = 3
+		global_autonomy = -0.025
+		monarch_admin_power = 2
+		same_culture_advisor_cost = -0.25
+		promote_culture_cost = -0.5
+		governing_capacity = 50
+		nobles_influence_modifier = 0.1
+    }
+	allow_normal_conversion = no
+    lock_level_when_selected = yes
+    legacy_equivalent = monastic_order_government
+	monastic = yes
+    rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	custom_attributes = {
+		monastic_order = yes
+	}
+}
+
+feudal_lavonia_reform = {
+	icon = "feudal_france_reform"
+	allow_normal_conversion = no
+	potential = {
+		has_dlc = "Domination" 
+		OR = {
+			tag = GUY
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = feudal_france_reform
+			}
+		}
+	}
+	fixed_rank = 2
+	lock_level_when_selected = yes
+
+	modifiers = {
+		nobles_influence_modifier = 0.1
+		vassal_income = 0.2
+		max_absolutism = -50
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		has_appanages = yes
+		#need_crownland_to_annex = yes
+		nobility_loyalty_hit_on_integration = yes
+	}
+}
+
+galician_monarchy_reform = {
+	icon = "portuguese_king"
+	allow_normal_conversion = yes
+	potential = {
+		tag = GAL
+	}
+	nation_designer_trigger = {
+		primary_culture = portugese
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		naval_forcelimit_modifier = 0.2
+		global_tax_modifier = 0.1
+		sailors_recovery_speed = 0.2
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+byzantine_autocracy_reform = {
+	icon = "king"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	potential = {
+		OR = {
+			has_reform = byzantine_autocracy_reform
+			have_had_reform = byzantine_autocracy_reform
+		}
+	}
+	modifiers = {
+		max_absolutism = -25
+		prestige = 0.5
+		can_recruit_janissaries = yes
+		allow_janissaries_from_own_faith = yes
+	}
+	
+	#custom_attributes = {
+	#	civil_war_on_every_new_ruler = yes
+	#}
+}
+
+reformed_byzantine_monarchy_reform = {
+	icon = "byzantine_rule"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			has_reform = reformed_byzantine_monarchy_reform
+			have_had_reform = reformed_byzantine_monarchy_reform
+		}
+	}
+	nation_designer_cost = 30
+	valid_for_nation_designer = yes
+	modifiers = {
+		global_autonomy = -0.05
+		culture_conversion_cost = -0.2
+		years_of_nationalism = -5
+		max_possible_parliament_seats = 8
+		can_recruit_janissaries = yes
+		allow_janissaries_from_own_faith = yes
+	}
+	
+	conditional = {
+		allow = { 
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+}
+
+## Generic Reforms
+#Dutch/Flemish
+staatse_leger_reform = {
+	icon = "infantry"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			primary_culture = dynamic-franconian-cosmopolitan_french-culture-num2
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = staatse_leger_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		movement_speed = 0.1
+		drill_gain_modifier = 0.5
+		reinforce_speed = 0.25
+	}
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
+
+#Dutch/Flemish
+watergeuzen_reform = {
+	icon = "landing_marines"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			primary_culture = dynamic-franconian-cosmopolitan_french-culture-num2
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = watergeuzen_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		capture_ship_chance = 0.2
+		allowed_marine_fraction = 0.1
+		sea_repair = yes
+	}
+	
+	ai = {
+		factor = 1000
+	}
+}
+
+pret_monarchy = {
+	icon = "ambrosian_republic"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = pret_monarchy
+			have_had_reform = pret_monarchy
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 25
+	modifiers = {
+		global_tax_modifier = 0.1
+		land_morale = 0.05
+		governing_capacity = 50
+		max_absolutism = 10
+	}
+}
+
+prussian_monarchy = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		NOT = { has_reform = prussian_monarchy_base }
+		OR = {
+			AND = {
+				tag = PRU
+				OR = {
+					has_mission = emp_brapru_army_reforms_2
+					has_mission = emp_brapru_army_reforms_3
+				}
+				NOT = { map_setup = map_setup_random }
+			}
+			has_unlocked_government_reform = {
+				government_reform = prussian_monarchy
+			}
+			has_reform = prussian_monarchy
+			have_had_reform = prussian_monarchy
+		}
+	}
+	trigger = {
+		OR = {
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = anglican
+			has_unlocked_government_reform_tooltip = {
+				government_reform = prussian_monarchy
+			}
+		}
+	}
+	legacy_equivalent = prussian_monarchy_legacy
+
+	modifiers = {
+		war_exhaustion = -0.02
+		global_unrest = -2
+		global_autonomy = -0.075
+		max_absolutism = 10
+		monarch_military_power = 3
+		nobles_loyalty_modifier = 0.1
+		governing_capacity_modifier = -0.25
+	}
+
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_1
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_2
+		}
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			prussian_militarization_mechanic_3
+		}
+	}
+}
+
+prussian_monarchy_base = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_reform = prussian_monarchy }
+		NOT = { have_had_reform = prussian_monarchy }
+		OR = {
+			NOT = { has_dlc = "Domination" }
+			NOT = { has_mission = emp_brapru_army_reforms_2 }
+			NOT = { has_mission = emp_brapru_army_reforms_3 }
+		}
+		OR = {
+			AND = {
+				tag = PRU
+				NOT = { map_setup = map_setup_random }
+			}
+			AND = {
+				tag = GER
+				NOT = { map_setup = map_setup_random }
+				OR = {
+					has_reform = prussian_monarchy_base
+					have_had_reform = prussian_monarchy_base
+					have_had_reform = prussian_republic_reform
+					have_had_reform = prussian_theocratic_reform
+					is_hegemon_of_type = military_hegemon
+					development_in_provinces = {
+						value = 500
+						culture = prussian
+					}
+				}
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				OR = {
+					has_reform = prussian_monarchy_base
+					have_had_reform = prussian_monarchy
+					have_had_reform = prussian_monarchy_base
+					have_had_reform = prussian_republic_reform
+					have_had_reform = prussian_theocratic_reform
+				}
+			}
+			has_unlocked_government_reform = {
+				government_reform = prussian_monarchy_base
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			religion = protestant
+			religion = reformed
+			religion = hussite
+			religion = anglican
+			AND = {
+				is_playing_custom_nation = yes
+				OR = {
+					hidden_trigger = {
+						has_reform = prussian_monarchy_base
+					}
+					have_had_reform = prussian_monarchy_base
+					have_had_reform = prussian_republic_reform
+					have_had_reform = prussian_theocratic_reform
+				}
+			}
+			has_unlocked_government_reform_tooltip = {
+				government_reform = prussian_monarchy_base
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = prussian_monarchy_legacy
+
+	modifiers = {
+		war_exhaustion = -0.02
+		global_unrest = -2
+		global_autonomy = -0.075
+		max_absolutism = 10
+		monarch_military_power = 3
+		nobles_loyalty_modifier = 0.1
+		governing_capacity_modifier = -0.25
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		government_abilities = {
+			militarization_mechanic
+		}
+	}
+}

@@ -1,0 +1,79 @@
+LAV_ideas = {
+	start = {
+		global_manpower_modifier = 0.2
+		morale_damage = 0.1
+	}
+	
+	bonus = {
+		production_efficiency = 0.1
+	}
+	
+	trigger = {
+		tag = GUY
+	}
+	free = yes
+
+	lavals_nile_warfare = {
+		ship_durability = 0.05
+		naval_morale = 0.15
+	}
+	lavonian_devils = {
+		land_morale = 0.15
+		army_tradition = 0.5
+	}
+	galician_wars = {
+		discipline = 0.05
+	}
+	jamalson_heritage = {
+		naval_forcelimit_modifier = 0.33
+	}
+	from_alps_to_pirenees = {
+		defensiveness = 0.15
+	}
+	lavonian_empiricism = {
+		technology_cost = -0.1
+	}
+	gasconian_valley_industry = {
+		development_cost_in_primary_culture = -0.15
+		culture_conversion_cost = -0.1
+	}
+}
+
+EGY_ideas = {
+	start = {
+		global_missionary_strength = 0.02
+		land_morale = 0.15
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = EGY
+	}
+	free = yes
+	
+	egy_idea_1 = {
+		global_trade_power = 0.05
+		trade_range_modifier = 0.1
+	}
+	egy_idea_2 = {
+		army_tradition = 0.5
+	}
+	egy_idea_3 = {
+		production_efficiency = 0.1
+	}
+	egy_idea_4 = {
+		discipline = 0.05
+	}
+	egy_idea_5 = {
+		defensiveness = 0.25
+	}
+	egy_idea_6 = {
+		galley_power = 0.2
+	}
+	egy_idea_7 = {
+		diplomatic_reputation = 2
+	}
+}

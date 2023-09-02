@@ -1,4 +1,4 @@
-first_branch = {
+ara_first_branch = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -423,7 +423,7 @@ first_branch = {
 		} 
 	}
 }
-branch_2 = {
+ara_branch_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -490,7 +490,7 @@ branch_2 = {
 
 		effect = {
 			set_country_flag = fate_of_granada_mission_flag 
-			country_event = { id = flavor_ibe.8 }
+			country_event = { id = flavor_spa.8 }
 			126 = {
 				add_permanent_claim = ROOT
 			}
@@ -1127,7 +1127,7 @@ branch_2 = {
 		} 
 	}
 }
-branch_3 = {
+ara_branch_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1553,7 +1553,7 @@ branch_3 = {
 		} 
 	}
 }
-branch_4 = {
+ara_branch_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -2149,7 +2149,7 @@ branch_4 = {
 		} 
 	}
 }
-branch_5 = {
+ara_branch_5 = {
 	slot = 5
 	generic = no
 	ai = yes

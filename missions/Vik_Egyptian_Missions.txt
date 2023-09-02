@@ -1,4 +1,4 @@
-branch1 = {
+ara_branch1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -349,7 +349,7 @@ branch1 = {
 		} 
 	}
 }
-branch2 = {
+ara_branch2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -846,7 +846,7 @@ branch2 = {
 		} 
 	}
 }
-branch3 = {
+ara_branch3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1504,7 +1504,7 @@ branch3 = {
 		} 
 	}
 }
-branch4 = {
+ara_branch4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -1949,7 +1949,7 @@ branch4 = {
 		} 
 	}
 }
-branch5 = {
+ara_branch5 = {
 	slot = 5
 	generic = no
 	ai = yes

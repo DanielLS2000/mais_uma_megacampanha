@@ -1,0 +1,210 @@
+ME_seljuk_architecture = {
+	build_cost = -0.15
+	development_cost = -0.1
+}
+
+persia_remediation = {
+	local_missionary_strength = 0.01
+	local_unrest = -2
+}
+
+persia_restored_persian_rule = {
+	local_development_cost = -0.10
+	state_maintenance_modifier = -0.15
+}
+
+persia_controlling_silk_road = {
+	province_trade_power_modifier = 0.10
+}
+
+persia_new_silk_road_trade = {
+	trade_efficiency = 0.20
+}
+persia_venetian_trade_partner = {
+	global_trade_goods_size_modifier = 0.10
+}
+persia_genoese_trade_partner = {
+	global_trade_power = 0.15
+}
+persia_iberian_trade_partner = {
+	trade_efficiency = 0.15
+}
+
+persia_new_horizons =  {
+	trade_steering = 0.20
+	global_ship_recruit_speed = -0.10
+}
+
+persia_mediterranean_focus = {
+	trade_steering = 0.20
+}
+persia_brave_new_trade = {
+	trade_steering = 0.20
+	trade_efficiency = 0.10
+}
+
+persia_equal_trade_partnership = {
+	prestige = 1
+	trade_efficiency = 0.10
+}
+
+persia_turks_tajiks = {
+	reform_progress_growth = 0.10
+	advisor_pool = 1
+}
+
+persia_eastern_iranian_people = {
+	state_maintenance_modifier = -0.2
+	local_governing_cost = -0.15
+}
+
+persia_persian_rug = {
+	global_trade_goods_size_modifier = 0.10
+}
+persia_paradaeza = {
+	global_unrest = -0.5
+	monthly_splendor = 1.5
+	local_prosperity_growth = 0.5
+}
+persia_kurdish_fighter = {
+	local_hostile_attrition = 2
+	local_defensiveness = 0.15
+	local_manpower_modifier = 0.15
+}
+persia_fourth_force = {
+	global_unrest = -1
+	num_accepted_cultures = 2
+	promote_culture_cost = -0.15
+}
+ME_heir_of_timur = {
+	land_morale = 0.05
+}
+me_prince_forwards = {
+	movement_speed = 0.1
+	siege_ability = 0.15
+}
+persia_bazaar_tabriz = {
+	trade_goods_size = 1
+	province_trade_power_value = 5
+}
+persia_piracy_protection = {
+	global_ship_trade_power = 0.15
+}
+persia_persian_ports_modifier = {
+	global_sailors_modifier = 0.20
+	global_ship_recruit_speed = -0.25
+}
+PER_shipyard_building = {
+ 	province_trade_power_modifier = 0.2
+ 	local_state_maintenance_modifier = -0.1
+}
+persia_resurgence = {
+	global_missionary_strength = 0.015
+	missionary_maintenance_cost = -0.15
+	prestige_per_development_from_conversion = 0.25
+}
+persia_restoring_iranian_architecture_leviathan = {
+	great_project_upgrade_cost = -0.20
+	build_cost = -0.075
+	global_prosperity_growth = 0.5
+}
+persia_persian_court_modifier_ase = {
+	all_estate_loyalty_equilibrium = 0.05
+}
+persia_persian_court_modifier = {
+	advisor_cost = -0.10
+}
+persia_restored_scholar_knowledge = {
+	local_development_cost = -0.10
+	local_institution_spread = 0.15
+	local_prosperity_growth = 0.5
+}
+persia_expanded_ghulam = {
+	local_regiment_cost = -0.15
+	local_manpower_modifier = 0.15
+	local_culture_conversion_cost = -0.15
+	religion = yes
+}
+persia_reformed_qurchi = {
+	land_maintenance_modifier = 0.10
+	drill_gain_modifier = 0.25
+	drill_decay_modifier = -0.25
+}
+persia_grateful_army = {
+	land_maintenance_modifier = -0.10
+}
+persia_controlling_indian_influence = {
+	trade_efficiency = 0.15
+}
+persia_foes_friends = {
+	spy_offence = 0.10
+	global_spy_defence = 0.25
+}
+persia_caspian_trade_modifier = {
+	global_trade_goods_size_modifier = 0.10
+}
+persia_futuwa = {
+	trade_goods_size_modifier = 0.15
+	local_tax_modifier = 0.15
+}
+persia_marvels_creations = {
+	technology_cost = -0.05
+}
+persia_qizilbash_shiite = {
+	manpower_recovery_speed = 0.15
+	land_forcelimit_modifier = 0.15
+	religion = yes
+}
+persia_qizilbash = {
+	manpower_recovery_speed = 0.075
+	land_forcelimit_modifier = 0.075
+	religion = yes
+}
+persia_gunpowder_empires_zoroastrian = {
+	backrow_artillery_damage = 0.10
+	siege_ability = 0.15
+}
+persia_gunpowder_empires = {
+	fire_damage = 0.10
+	religion = yes
+}
+persia_savaran_sepah_khorasan = {
+	cavalry_shock = 0.5
+}
+persia_eastern_push = {
+	siege_ability = 0.10
+	war_exhaustion = -0.03
+}
+me_prince_islamic_arts = {
+	prestige_decay = -0.01
+	tolerance_own = 2
+}
+me_prince_cultural_centre = {
+	institution_spread_from_true_faith = 0.15
+	local_development_cost = -0.1
+}
+persia_first_contact = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.10
+}
+persia_chinese_porcelain_country_modifier = {
+	trade_efficiency = 0.10
+	prestige = 0.5
+}
+
+persia_silk_road_great = {
+	global_tax_modifier = 0.15
+	stability_cost_modifier = -0.10
+	global_own_trade_power = 0.15
+}
+
+persia_gondishapur = {
+	local_development_cost = -0.10
+	local_institution_spread = 0.5
+	local_prosperity_growth = 0.5
+}
+persia_eastern_ghulams = {
+	local_manpower_modifier = 0.15
+	local_development_cost = -0.05
+	religion = yes
+}

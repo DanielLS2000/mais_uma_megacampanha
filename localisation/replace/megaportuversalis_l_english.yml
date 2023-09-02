@@ -46,3 +46,8 @@
  shadow_kingdom_triggered_modifier_tt:1 "§Y[Root.GetName] will suffer penalties to Prestige, Unrest, and Stability Cost while it remains within the Empire, unless allied to the Emperor.§!"
  shadow_kingdom_result_ia_tooltip:0 "§Y[Root.GetName]§! will gain §Y5§! Imperial Authority for each French nation that remains in the Empire due to being reined in.\n§Y[Root.GetName]§! will lose §Y10§! Imperial Authority for each independent French nation that we did not rein in."
  shadow_kingdom.4.d2:0 "As promised, the Emperor launched a campaign to restore Imperial authority to France. [Root.GetName] was among the states that were forced to accept the rule of the Empire, and our submission is proof that the Emperor’s word is law."
+ # CringeLord
+ pret_monarchy: "Di Pretola Monarchy"
+ # Fred
+ pol_production_of_metal_25_tt: "For the next §Y20 years§!: \nProduction of §YBeer§!: §G+25%§!"
+ pol_swedish_metal_imports_modifier: "Cheap Beer for the Army"

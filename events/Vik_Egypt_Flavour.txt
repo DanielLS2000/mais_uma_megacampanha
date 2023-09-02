@@ -1,4 +1,4 @@
-namespace = mamluk_events
+namespace = vik_Egypt
 
 country_event = {
 	id = vik_Egypt.25
@@ -26,9 +26,9 @@ country_event = {
 }
 
 country_event = {
-	id = ME_Mamluks_Events.3
-	title = ME_Mamluks_Events.3.t #Replace bad trade goods
-	desc = ME_Mamluks_Events.3.d
+	id = vik_Egypt.3
+	title = vik_Egypt.3.t #Replace bad trade goods
+	desc = vik_Egypt.3.d
 	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	is_triggered_only = yes
@@ -54,7 +54,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ME_Mamluks_Events.3.a
+		name = vik_Egypt.3.a
 		
 		ai_chance = { factor = 100 }
 		
@@ -70,7 +70,7 @@ country_event = {
 	}
 	
 	option = {
-		name = ME_Mamluks_Events.3.b
+		name = vik_Egypt.3.b
 		
 		ai_chance = { factor = 0 }
 		

@@ -3,7 +3,7 @@ normal_or_historical_nations = yes
 
 #Fate of the Kingdom of Granada
 country_event = {
-	id = flavor_ibe.8
+	id = flavor_spa.8
 	title = "flavor_spa.8.t"
 	desc = "flavor_spa.8.d"
 	picture = MILITARY_CAMP_eventPicture

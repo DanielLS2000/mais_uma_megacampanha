@@ -1,4 +1,4 @@
-first_branch = {
+nord_first_branch = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -8,6 +8,7 @@ first_branch = {
 			tag = LIE
 			tag = LOT
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 
 	nord_reveillez_vous_picards = {
@@ -521,7 +522,7 @@ first_branch = {
 		}
 	}
 }
-second_branch = {
+nord_second_branch = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -531,6 +532,7 @@ second_branch = {
 			tag = LIE
 			tag = LOT
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 
 	nord_frisian_rebellion = {
@@ -1275,7 +1277,7 @@ second_branch = {
 		}
 	}
 }
-third_branch = {
+nord_third_branch = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1285,6 +1287,7 @@ third_branch = {
 			tag = LIE
 			tag = LOT
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 
 	nord_the_crown_of_nordrhein = {
@@ -1920,7 +1923,7 @@ third_branch = {
 		} 
 	}
 }
-fourth_branch = {
+nord_fourth_branch = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -1930,6 +1933,7 @@ fourth_branch = {
 			tag = LIE
 			tag = LOT
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 
 	nord_a_house_united = {
@@ -2712,7 +2716,7 @@ fourth_branch = {
 		} 
 	}
 }
-fifth_branch = {
+nord_fifth_branch = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -2722,6 +2726,7 @@ fifth_branch = {
 			tag = LIE
 			tag = LOT
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 
 	nord_the_lorranean_question = {

@@ -36,7 +36,10 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		NOT = { is_year = 1454 }
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = GUY
+		}
 		is_at_war = no
 		calc_true_if = {
 			amount = 2
@@ -290,7 +293,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = GUY
+		}
 		has_global_flag = fee_french_feudalism_hundred_years_war
 		NOT = { is_year = 1500 }
 	}
@@ -671,7 +677,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = GUY
+		}
 		NOT = { is_year = 1490 }
 		has_country_flag = french_centralization
 		has_estate = estate_church
@@ -903,7 +912,10 @@ country_event = {
 	major = yes
 
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = GUY
+		}
 		current_age = age_of_discovery
 		religion = catholic
 		is_at_war = no
@@ -947,7 +959,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = GUY
+		}
 		has_country_flag = french_centralization
 		is_at_war = no
 		estate_influence = {
@@ -1098,7 +1113,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = GUY
+		}
 		has_global_flag = fee_surrender_main
 		is_year = 1446
 		NOT = { war_with = ENG }
@@ -1195,7 +1213,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = GUY
+		}
 		has_country_flag = french_centralization
 		exists = PRO
 		alliance_with = PRO
@@ -1259,7 +1280,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = GUY
+		}
 		has_country_flag = french_centralization
 		is_at_war = no
 		is_year = 1455
@@ -1458,7 +1482,10 @@ country_event = {
 
 	trigger = {
 		is_year = 1550
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = GUY
+		}
 		exists = GEN
 		war_with = GEN
 		NOT = { is_year = 1580 }
@@ -1496,7 +1523,10 @@ country_event = {
 
 	trigger = {
 		is_year = 1600
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = GUY
+		}
 		NOT = { is_year = 1800 }
 		num_of_cities = 12
 		is_at_war = no

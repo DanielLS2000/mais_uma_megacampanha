@@ -682,6 +682,7 @@ age_of_absolutism = {
 							primary_culture = dutch
 							primary_culture = flemish
 							primary_culture = frisian
+							primary_culture = dynamic-franconian-cosmopolitan_french-culture-num2
 						}
 					}
 				}

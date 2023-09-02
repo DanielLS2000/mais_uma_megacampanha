@@ -1,0 +1,5 @@
+tripitaka_koreana = {
+	harmonization_speed = 0.1
+	yearly_karma_decay = 0.01
+	monthly_splendor = 1
+}

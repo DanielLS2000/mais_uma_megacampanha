@@ -10,7 +10,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		tag = GAL
 		is_year = 1530
 		NOT = { is_year = 1580 }
 	}
@@ -37,7 +37,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		tag = GAL
 		is_subject = no
 		is_year = 1580
 		NOT = { is_year = 1680 }
@@ -90,7 +90,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		tag = GAL
 		NOT = { exists = BYZ }
 		151 = {
 			owner = {
@@ -161,7 +161,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		tag = GAL
 		current_age = age_of_discovery
 	}
 
@@ -206,7 +206,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		tag = GAL
 		exploration_ideas = 1
 	}
 
@@ -259,7 +259,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = POR
+		tag = GAL
 		has_country_modifier = fee_por_francisco_de_almeida
 		334 = {
 			owned_by = ROOT
@@ -425,7 +425,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		has_country_modifier = fee_por_francisco_de_almeida
 		any_province = {
 			superregion = india_superregion
@@ -623,7 +623,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		has_country_flag = por_to_africa
 		has_country_modifier = fee_por_francisco_de_almeida
 		any_owned_province = {
@@ -783,7 +783,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		has_country_modifier = fee_por_francisco_de_almeida
 		owns = 4413
 		NOT = { owns = 534 }
@@ -886,7 +886,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		has_country_modifier = fee_por_francisco_de_almeida
 		any_owned_province = {
 			superregion = india_superregion
@@ -1019,7 +1019,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		has_estate = estate_burghers
 		num_of_owned_provinces_with = {
 			value = 2
@@ -1144,7 +1144,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		NOT = { exists = GRA }
 		exists = CAS
 	}
@@ -1255,7 +1255,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		has_country_modifier = fee_por_jewish_liberties_granted
 	}
 
@@ -1331,7 +1331,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		owns_core_province = 596
 	}
 
@@ -1388,7 +1388,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		1012 = {
 			has_discovered = ROOT
 			owner = {
@@ -1457,7 +1457,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		is_year = 1550
 		exists = SPA
 	}
@@ -1533,7 +1533,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		any_owned_province = {
 			superregion = india_superregion
 		}
@@ -1631,7 +1631,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = POR
+		tag = GAL
 		pernambuco_area = {
 			country_or_non_sovereign_subject_holds = ROOT
 		}
@@ -1666,7 +1666,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = POR
+		tag = GAL
 		NOT = { current_age = age_of_discovery }
 		has_country_modifier = fee_por_henrique_naval_reforms
 	}
@@ -1695,7 +1695,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		tag = POR
+		tag = GAL
 		4563 = {
 			owner = {
 				NOT = { war_with = ROOT }
