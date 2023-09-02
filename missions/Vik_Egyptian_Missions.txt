@@ -11,41 +11,166 @@ branch1 = {
 		required_missions = { egy_revitalize_land_routes } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			OR = {
+				treasurer = 1
+				has_adm_advisor_2 = yes
+			}
+		
+			custom_trigger_tooltip = {
+				tooltip = EGY_developed_tax_at_least_25_times
+				check_variable = {
+					which = num_of_adm_clicks
+					value = 25
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			change_estate_land_share = {
+				estate = all
+				share = -5
+			}
+			
+			custom_tooltip = " "
+			
+			custom_tooltip = Egy_selling_crownland_gives_more_money
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = EGY_order_administration
+				duration = 9125
+			}
+		} 
 	}
 
 	egy_coffee_markets = {
 		icon = mission_dharma_mission_arabian_trade
 		position = 4
 		required_missions = { egy_red_sea_trade } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			trade_goods = coffee
+			has_discovered = ROOT
+		} 
 
-		trigger = {  } 
+		trigger = {
+			trading_part = {
+				trade_goods = coffee
+				value = 0.5
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_years_of_income = 3.0
+			
+			custom_tooltip = " "
+			
+			add_mercantilism = 3
+			
+			custom_tooltip = " "
+			
+			tooltip = {
+				change_price = {
+					trade_goods = coffee
+					key = EGY_protector_of_the_secret
+					value = 0.25
+					duration = 9125
+				}
+			}
+			country_event_with_effect_insight = { 
+				id = vik_Egypt.25
+				effect = "
+					change_price = {
+						trade_goods = coffee
+						key = EGY_protector_of_the_secret
+						value = 0.25
+						duration = 9125
+					}
+				"
+			}
+		} 
 	}
 
 	egy_coffeea_arabica = {
 		icon = mission_rb_monopolize_the_channel
 		position = 5
 		required_missions = { egy_coffee_markets } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 387
+				province_id = 386
+				province_id = 4280
+				province_id = 4279
+				province_id = 4282
+			}
+			OR = {
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				NOT = { has_production_building_trigger = yes }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			387 = {
+				has_production_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			386 = {
+				has_production_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4280 = {
+				has_production_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4279 = {
+				has_production_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4282 = {
+				has_production_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			387 = { add_base_production = 2 }
+			386 = { add_base_production = 2 }
+			4280 = { add_base_production = 2 }
+			4279 = { add_base_production = 2 }
+			4282 = { add_base_production = 2 }
+		} 
 	}
 
 	egy_the_city_of_alexander = {
 		icon = mission_occupy_alexandria
 		position = 6
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			province_id = 358
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { base_manpower = 6 }
+				NOT = { has_manpower_building_trigger = yes }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			358 = {
+				owned_by = ROOT
+				base_manpower = 6
+				has_manpower_building_trigger = yes 
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			358 = {
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = EGY_citadel
+					duration = -1 
+				}
+			}
+		} 
 	}
 
 	egy_lighthouse_of_alexandria = {
@@ -55,11 +180,29 @@ branch1 = {
 			egy_the_city_of_alexander
 			egy_mercantile_cooperation
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			province_id = 358
+			OR = {
+				NOT = { development = 45 }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			358 = {
+				owned_by = ROOT 
+				development = 45
+				num_of_buildings_in_province = 5
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			358 = {
+				add_province_modifier = {
+					name = EGY_lighthouse_of_alexandria_modifier
+					duration = -1
+				}
+			}
+		} 
 	}
 
 	egy_knighthood_code = {
@@ -68,9 +211,21 @@ branch1 = {
 		required_missions = { egy_relations_with_holy_orders } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			army_tradition = 50
+			army_size = 25
+		} 
 
-		effect = {  } 
+		effect = {
+			create_general_with_pips = { tradition = 80 add_shock = 2 }
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = EGY_knighthood_code
+				duration = 9125
+			}
+		} 
 	}
 
 	egy_reform_the_military = {
@@ -82,31 +237,116 @@ branch1 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				army_professionalism = 0.4
+			}
+			num_of_artillery = 10
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.1
+				extra_shortcut = yes
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = EGY_egyptian_infantry_reforms
+				duration = 14600
+			}
+			
+			add_mil_power = 50
+		} 
 	}
 
 	egy_influence_tripolitania = {
 		icon = mission_conquer_tunisia
 		position = 13
 		required_missions = { egy_dreams_of_an_empire } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = fezzan_area
+				area = tripolitania_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = fezzan_area
+					area = tripolitania_area
+				}
+				value = 4
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			djerba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_saharan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tunisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kabylia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_dip_power = 50
+			add_mil_power = 50
+			add_adm_power = 50
+		
+		} 
 	}
 
 	egy_crusade_against_piracy = {
 		icon = crusader_fleet
 		position = 14
 		required_missions = { egy_influence_tripolitania } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = maghreb_region
+			has_port = yes
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = cruader_piracy_tt
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 20
+					region = maghreb_region
+					has_port = yes
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = "kni_crusade_against_piracy"
+				duration = -1
+			}
+		} 
 	}
 }
 branch2 = {
@@ -119,33 +359,191 @@ branch2 = {
 	egy_revitalize_land_routes = {
 		icon = mission_saharan_route
 		position = 1
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2321
+				province_id = 360
+				province_id = 2315 
+				province_id = 361
+				province_id = 4316
+			}
+			OR = {
+				NOT = {
+					num_of_times_improved = 3
+				}
+				NOT = { owned_by = ROOT }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			2321 = {
+				owned_by = ROOT
+				num_of_times_improved = 3
+			}
+			360 = {
+				owned_by = ROOT
+				num_of_times_improved = 3
+			}
+			2315 = {
+				owned_by = ROOT
+				num_of_times_improved = 3
+			}
+			361 = {
+				owned_by = ROOT
+				num_of_times_improved = 3
+			}
+			4316 = {
+				owned_by = ROOT
+				num_of_times_improved = 3
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			358 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 25
+					key = MAM_supporting_red_sea_trade
+				}
+			}
+			4346 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 25
+					key = MAM_supporting_red_sea_trade
+				}
+			}
+		} 
 	}
 
 	egy_red_sea_trade = {
 		icon = mission_arabian_sea_trade
 		position = 3
 		required_missions = { egy_revitalize_land_routes } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4346
+				AND = {
+					province_id = 2315
+					NOT = { owned_by = ROOT }
+				}
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			4346 = {
+				trade_share = {
+					country = ROOT
+					share = 10 
+				}
+			}
+			owns = 2315
+		} 
 
-		effect = {  } 
+		effect = {
+			2315 = {
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+			}
+			
+			custom_tooltip = " "
+			
+			add_years_of_income = 0.50
+			
+			custom_tooltip = " "
+			
+			custom_tooltip = MAM_if_we_have_60_burgher_loyalty
+			tooltip = {
+				add_years_of_income = 0.5
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						estate_loyalty = {
+							estate = estate_burghers
+							loyalty = 60
+						}
+					}
+					add_years_of_income = 0.5
+				}
+			}
+		} 
 	}
 
 	egy_into_the_indian_ocean = {
 		icon = mission_south_indian_trade
 		position = 4
 		required_missions = { egy_red_sea_trade } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4455
+				if = {
+					limit = {
+						exists = GUJ
+					}
+					owned_by = GUJ
+				}
+				else = {
+					owner = {
+						capital_scope = {
+							region = west_india_region
+						}
+					}
+				}
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			OR = {
+				owns = 4455
+				if = {
+					limit = {
+						exists = GUJ
+					}
+					GUJ = {
+						has_opinion = {
+							who = ROOT
+							value = 85
+						}
+					}
+				}
+				else = {
+					any_country = {
+						capital_scope = {
+							region = west_india_region
+						}
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			504 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 25
+					key = MAM_trade_with_india
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = MAM_venturing_ships
+				duration = -1
+			}
+		} 
 	}
 
 	egy_spice_trade_monopoly = {
@@ -155,32 +553,113 @@ branch2 = {
 			egy_into_the_indian_ocean
 			egy_protect_the_gulf
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			trade_goods = spices
+			NOT = {owned_by = root}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			production_leader = {
+				trade_goods = spices
+			}
+			trade_income_percentage = 0.4
+		} 
 
-		effect = {  } 
+		effect = {
+			4346 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 25
+					key = MAM_the_gulf_of_aden_secured
+				}
+			}
+			361 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 25
+					key = MAM_the_gulf_of_aden_secured
+				}
+			}
+		} 
 	}
 
 	egy_mercantile_cooperation = {
 		icon = mission_diplomatic_relation
 		position = 7
 		required_missions = { egy_strategic_alliances } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = syria_area
+				area = aleppo_area
+				area = delta_area
+			}
+			NOT = {
+				area_for_scope_province = {
+					owned_by = ROOT
+					has_shipyard_building_trigger = yes 
+				}
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			syria_area = {
+				owned_by = ROOT
+				has_shipyard_building_trigger = yes
+			}
+			aleppo_area = {
+				owned_by = ROOT
+				has_shipyard_building_trigger = yes
+			}
+			delta_area = {
+				owned_by = ROOT
+				has_shipyard_building_trigger = yes
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			define_advisor = {
+				type = naval_reformer 
+				skill = 2
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.25
+			}
+		} 
 	}
 
 	egy_relations_with_holy_orders = {
 		icon = mission_united_knight_order
 		position = 8
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			AND = {
+				region = egypt_region
+				has_holy_order_trigger = no
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+				has_holy_order_trigger = yes
+				region = egypt_region
+				value = 3
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_dip_power = 100
+			if = {
+				limit = {
+					government = monarchy
+				}
+				add_legitimacy = 25
+			}
+			add_country_modifier = {
+				name = "egy_holy_orders"
+				duration = 7300
+			}
+		} 
 	}
 
 	egy_a_military_caste = {
@@ -189,42 +668,182 @@ branch2 = {
 		required_missions = { egy_relations_with_holy_orders } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			monthly_mil = 10
+			land_forcelimit = 50
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = MAM_governing_military
+				duration = 10950
+			}
+			
+			if = {
+				limit = {
+					government = monarchy
+				}
+				add_legitimacy = 10
+				custom_tooltip = " "
+			}
+			
+			custom_tooltip = MAM_for_every_barrack
+			hidden_effect = {
+				if = {
+					limit = {
+						num_of_owned_provinces_with = {
+							has_manpower_building_trigger = yes
+							value = 20
+						}
+					}
+					change_government_reform_progress = 100
+				}
+				else = {
+					every_owned_province = {
+						limit = {
+							has_manpower_building_trigger = yes
+						}
+						ROOT = { change_government_reform_progress = 5 }
+					}
+				}
+			}
+		} 
 	}
 
 	egy_dreams_of_an_empire = {
 		icon = mission_golden_century
 		position = 12
 		required_missions = { egy_soldiers_of_christ } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				is_permanent_claim = ROOT
+				is_core = ROOT
+				is_claim = ROOT
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			grown_by_development = 50
+		} 
 
-		effect = {  } 
+		effect = {
+			upper_nubia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dongola_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_nubia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tripolitania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			fezzan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		} 
 	}
 
 	egy_lands_down_the_nile = {
 		icon = mission_establish_the_black_guard
 		position = 13
 		required_missions = { egy_dreams_of_an_empire } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = lower_nubia_area
+				area = upper_nubia_area
+				area = dongola_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			lower_nubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_nubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dongola_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = egy_ruler_of_nubia
+				duration = -1
+			}
+			custom_tooltip = " " #space
+			custom_tooltip = MAM_if_completed_while_vassal_holds_at_least_7_of_the_provinces
+			hidden_effect = {
+				if = {
+					limit = {
+						calc_true_if = {
+							lower_nubia_area = {
+								type = all
+								owner = { is_subject_of = ROOT }
+							}
+							upper_nubia_area = {
+								type = all
+								owner = { is_subject_of = ROOT }
+							}
+							dongola_area = {
+								type = all
+								owner = { is_subject_of = ROOT }
+							}
+							amount = 7
+						}
+					}
+					add_dip_power = 50
+					add_mil_power = 50
+					add_adm_power = 50
+				}
+			}
+		} 
 	}
 
 	egy_the_ark_of_the_covenant = {
 		icon = ark_of_the_covenant
 		position = 14
 		required_missions = { egy_lands_down_the_nile } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			province_id = 1227
+			NOT = { controlled_by = ROOT }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			1227 = { controlled_by = ROOT }
+		} 
 
-		effect = {  } 
+		effect = {
+			country_event = { id = knights_missions.4 }
+		} 
 	}
 }
 branch3 = {
@@ -237,54 +856,333 @@ branch3 = {
 	egy_trade_of_alexandria = {
 		icon = sources_of_trade
 		position = 1
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 361 #Cairo
+				province_id = 362 #Rashid
+				province_id = 358 #Alexandria
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { num_of_times_improved = 1 }
+				NOT = { has_trade_building_trigger = yes }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			361 = {
+				owned_by = ROOT
+				num_of_times_improved = 1
+				has_trade_building_trigger = yes 
+			}
+			362 = {
+				owned_by = ROOT
+				num_of_times_improved = 1
+				has_trade_building_trigger = yes 
+			}
+			358 = {
+				owned_by = ROOT
+				num_of_times_improved = 1
+				has_trade_building_trigger = yes 
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			361 = { add_base_production = 2 }
+			362 = { add_base_production = 1 }
+			358 = { add_base_production = 2 }
+			
+			custom_tooltip = " "
+			
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = { renaissance = 100 }
+					}
+					is_institution_enabled = renaissance
+				}
+				capital_scope = {
+					add_institution_embracement = {
+						which = renaissance
+						value = 25
+					}
+				}
+			}
+		} 
 	}
 
 	egy_support_urban_centers = {
 		icon = mission_metropolis_of_the_deccan
 		position = 2
 		required_missions = { egy_trade_of_alexandria } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 358
+				province_id = 362
+				province_id = 356
+			}
+			NOT = { province_has_center_of_trade_of_level = 2 }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			358 = {
+				province_has_center_of_trade_of_level = 2
+			}
+			362 = {
+				province_has_center_of_trade_of_level = 2
+			}
+			356 = {
+				province_has_center_of_trade_of_level = 2
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			361 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 50
+					key = MAM_strict_control
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = MAM_trade_modifier
+				duration = -1 
+			}
+		} 
 	}
 
 	egy_trade_with_europe = {
 		icon = mission_african_gold
 		position = 3
 		required_missions = { egy_support_urban_centers } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 361
+				province_id = 358
+			}
+			OR = {
+				NOT = { development = 25 }
+				NOT = { has_production_building_trigger = yes }
+				NOT = { has_trade_building_trigger = yes }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			361 = {
+				development = 25
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+			}
+			
+			358 = {
+				development = 25
+				has_production_building_trigger = yes
+				has_trade_building_trigger = yes
+			}
+			
+			num_of_trading_bonuses = 1
+		} 
 
-		effect = {  } 
+		effect = {
+			361 = {
+				add_province_modifier = {
+					name = egy_european_traders
+					duration = -1
+				}
+			}
+			358 = {
+				add_province_modifier = {
+					name = egy_european_traders
+					duration = -1
+				}
+			}
+		} 
 	}
 
 	egy_protect_the_gulf = {
 		icon = mission_envoy_to_ethiopia
 		position = 4
 		required_missions = { egy_red_sea_trade } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { province_id = 4346 } 
 
-		trigger = {  } 
+		trigger = {
+			4346 = {
+				has_most_province_trade_power = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			define_advisor = {
+				type = trader
+				skill = 3
+				culture = yemeni_culture
+				religion = ROOT
+				cost_multiplier = 0.33
+			}
+			custom_tooltip = " "
+			if = {
+				limit = {
+					is_institution_enabled = global_trade 
+				}
+				capital_scope = {
+					add_institution_embracement = {
+						which = global_trade
+						value = 50
+					}
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			361 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 50
+					key = MAM_red_sea_controlled
+				}
+			}
+		} 
 	}
 
 	egy_strategic_alliances = {
 		icon = mission_alliances
 		position = 6
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1308
+				province_id = 1298
+				if = {
+					limit = {
+						exists = TTS
+					}
+					owned_by = TTS
+				}
+				else = { always = no }
+				if = {
+					limit = {
+						exists = Z0H
+					}
+					owned_by = Z0H
+				}
+				else = { always = no }
+				if = {
+					limit = {
+						NOT = {
+							exists = Z0H
+							exists = TTS
+						}
+					}
+					owner = {
+						OR = {
+							1298 = {
+								trade_share = {
+									country = PREV
+									share = 5 
+								}
+							}
+							1308 = {
+								trade_share = {
+									country = PREV
+									share = 5 
+								}
+							}
+						}
+					}
+				}
+				else = { always = no }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			OR = {
+				1308 = {
+					trade_share = { 
+						country = ROOT
+						share = 10
+					}
+				}
+				1298 = {
+					trade_share = { 
+						country = ROOT
+						share = 10
+					}
+				}
+				if = {
+					limit = {
+						exists = TTS
+					}
+					reverse_has_opinion = {
+						who = TTS
+						value = 100
+					}
+				}
+				else = {
+					hidden_trigger = {
+						always = no 
+					}
+				}
+				if = {
+					limit = {
+						exists = Z0H
+					}
+					reverse_has_opinion = {
+						who = Z0H
+						value = 100
+					}
+				}
+				else = {
+					hidden_trigger = {
+						always = no 
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							exists = Z0H
+							exists = TTS
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = MAM_allied_alternative_to_VEN_or_GEN
+						any_country = {
+							OR = {
+								1308 = {
+									trade_share = {
+										country = PREV
+										share = 5 
+									}
+								}
+								1298 = {
+									trade_share = {
+										country = PREV
+										share = 5 
+									}
+								}
+							}
+						}
+					}
+				}
+				else = {
+					hidden_trigger = {
+						always = no 
+					}
+				}
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			358 = {
+				add_province_modifier = {
+					name = MAM_venetian_quarters
+					duration = -1
+				}
+			}
+		} 
 	}
 
 	egy_galleys_of_the_mediterranean = {
@@ -293,20 +1191,63 @@ branch3 = {
 		required_missions = { egy_strategic_alliances } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			num_of_galley = 20
+			sailors_percentage = 0.5
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = MAM_naval_cooperation
+				duration = 7300
+			}
+			create_admiral = { tradition = 40 }
+		} 
 	}
 
 	egy_recruit_from_the_bedouins = {
 		icon = mission_bedouins
 		position = 9
 		required_missions = { egy_relations_with_holy_orders } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			culture = bedouin_arabic
+		} 
 
-		trigger = {  } 
+		trigger = {
+			syrian_desert_area = { 
+				type = all
+				owned_by = ROOT
+			}
+			
+			num_of_owned_provinces_with = {
+				has_forcelimit_building_trigger = yes
+				culture = bedouin_arabic 
+				value = 2 
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_accepted_culture_or_dip_power = { culture = bedouin_arabic }
+			
+			custom_tooltip = " "
+			#distribute 10 manpower
+			custom_tooltip = MAM_distribute_10_manpower_among_bedouin
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								culture = bedouin_arabic
+							}
+							add_base_manpower = 1
+						}
+					"
+				}
+			}
+			custom_tooltip = " "
+			add_yearly_manpower = 0.5
+		} 
 	}
 
 	egy_soldiers_of_christ = {
@@ -314,42 +1255,223 @@ branch3 = {
 		position = 11
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			army_size_percentage = 1 
+		} 
 
-		effect = {  } 
+		effect = {
+			palestine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			trans_jordan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tabuk_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tripolitania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mecca_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			fezzan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = MAM_ld_from_dev
+				duration = -1
+			}
+			add_country_modifier = {
+				name = MAM_help_vassalize_beyliks
+				duration = 7300
+			}
+		} 
 	}
 
 	egy_take_the_holy_land = {
 		icon = jerusalem
 		position = 12
 		required_missions = { egy_soldiers_of_christ } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = palestine_area
+				area = trans_jordan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			palestine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			trans_jordan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_mil_power = 100
+			syria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			syrian_desert_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			al_jazira_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					religion = catholic
+				}
+				country_event = { id = knights_missions.2 }
+			}
+		} 
 	}
 
 	egy_the_conquest_of_syria = {
 		icon = mission_hundred_years_war
 		position = 13
 		required_missions = { egy_take_the_holy_land } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = syria_area
+				area = syrian_desert_area
+				area = aleppo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			syria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			aleppo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			syrian_desert_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_army_tradition_or_mil_power = { amount = 15 }
+			if = {
+				limit = {
+					religion = catholic
+				}
+				add_country_modifier = {
+					name = "kni_kingdom_of_heaven"
+					duration = 7300
+				}
+				country_event = { id = knights_missions.1 }
+			}
+		} 
 	}
 
 	egy_forts_of_syria = {
 		icon = mission_arabian_fort
 		position = 14
 		required_missions = { egy_the_conquest_of_syria } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = syria_area
+				area = aleppo_area
+				area = syrian_desert_area
+			}
+			fort_level = 2
+			NOT = { base_manpower = 7 }
+			NOT = { has_manpower_building_trigger = yes }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					area = syria_area
+					area = aleppo_area
+					area = syrian_desert_area
+				}
+				fort_level = 2
+				OR = {
+					base_manpower = 7
+					has_manpower_building_trigger = yes
+				}
+				value = 2
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_army_tradition_or_mil_power = { amount = 10 }
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = MAM_securing_the_flank
+				duration = 7300
+			}
+			
+			custom_tooltip = " "
+			
+			define_advisor = {
+				type = fortification_expert 
+				skill = 2
+				culture = basque 
+				religion = ROOT
+				cost_multiplier = 0.6
+			}
+		} 
 	}
 
 	egy_kingdom_of_prester_john = {
@@ -364,9 +1486,22 @@ branch3 = {
 		}
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			is_great_power = yes
+			NOT = { great_power_rank = 5 }
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = EGY_Kingdom_of_Prester_John
+				duration = -1
+			}
+			add_stability_or_adm_power = yes
+			
+			custom_tooltip = " "
+			
+			set_government_rank = 3
+		} 
 	}
 }
 branch4 = {
@@ -383,11 +1518,46 @@ branch4 = {
 			egy_trade_of_alexandria
 			egy_renovate_cairo
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+		} 
 
-		trigger = {  } 
+		trigger = {
+			num_of_owned_provinces_with = {
+				num_of_times_improved = 10
+				value = 3 
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = MAM_three_most_developed_provinces
+			country_event_with_option_insight = { 
+				id = ME_Mamluks_Events.3 
+				option_1 = "
+					random_owned_province = {
+						change_trade_goods = paper
+					}
+					random_owned_province = {
+						change_trade_goods = glass
+					}
+					random_owned_province = {
+						change_trade_goods = cloth
+					}
+				"
+				option_2 = "
+					add_years_of_income = 1
+				"
+			}
+			
+			custom_tooltip = " "
+			
+			add_years_of_owned_provinces_production_income = {
+				years = 2
+				trigger = {
+					always = yes 
+				}
+				custom_tooltip = MAM_from_production
+			}
+		} 
 	}
 
 	egy_eastern_dominance = {
@@ -397,11 +1567,29 @@ branch4 = {
 			egy_support_urban_centers
 			egy_luxuries_of_egypt
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { province_id = 358 } 
 
-		trigger = {  } 
+		trigger = {
+			treasury = 1500
+			358 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+				trade_node_value = 15
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = MAM_trade_modifier_upgrade_1
+			hidden_effect = {
+				remove_country_modifier = MAM_trade_modifier
+				add_country_modifier = {
+					name = MAM_trade_modifier_2
+					duration = -1 
+				}
+			}
+		} 
 	}
 
 	egy_ace_of_all_trades = {
@@ -411,21 +1599,101 @@ branch4 = {
 			egy_eastern_dominance
 			egy_protect_the_gulf
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = { province_id = 358 } 
 
-		trigger = {  } 
+		trigger = {
+			358 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+				trade_node_value = 30
+			}
+			monthly_income = 100
+			num_of_centers_of_trade = 20
+		} 
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = MAM_distribute_10_10_10_dev_amongst_our_trade_centers
+			hidden_effect = {
+				for = {
+					amount = 10 
+					effect = "
+						random_owned_province = {
+							limit = {
+								province_has_center_of_trade_of_level = 1
+							}
+							add_base_tax = 1 
+						}
+					"
+				}
+				for = {
+					amount = 10 
+					effect = "
+						random_owned_province = {
+							limit = {
+								province_has_center_of_trade_of_level = 1
+							}
+							add_base_production = 1 
+						}
+					"
+				}
+				for = {
+					amount = 10 
+					effect = "
+						random_owned_province = {
+							limit = {
+								province_has_center_of_trade_of_level = 1
+							}
+							add_base_manpower = 1 
+						}
+					"
+				}
+			}
+		} 
 	}
 
 	egy_processing_the_grains = {
 		icon = mission_pol_breadbasket_europe
 		position = 6
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2316
+				province_id = 4316
+				province_id = 363
+				province_id = 362
+			}
+			OR = { 
+				NOT = { owned_by = ROOT }
+				NOT = { has_production_building_trigger = yes }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			2316 = {
+				has_production_building_trigger = yes
+				owned_by = ROOT
+			}
+			4316 = {
+				has_production_building_trigger = yes
+				owned_by = ROOT
+			}
+			363 = {
+				has_production_building_trigger = yes
+				owned_by = ROOT
+			}
+			362 = {
+				has_production_building_trigger = yes
+				owned_by = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			2316 = { add_base_production = 2 }
+			4316 = { add_base_production = 2 }
+			363 = { add_base_production = 2 }
+			362 = { add_base_production = 2 }
+		} 
 	}
 
 	egy_protectors_of_the_cross = {
@@ -433,9 +1701,37 @@ branch4 = {
 		position = 8
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			is_subject = no
+			if = {
+				limit = {
+					exists = PAP
+					religion = catholic
+				}
+				PAP = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					religion = catholic
+				}
+				papal_influence = 50
+			}
+			else = {
+				grown_by_development = 10
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = MAM_protectors_of_the_caliph_modifier
+				duration = 7300
+			}
+		} 
 	}
 
 	egy_a_religious_caste = {
@@ -444,53 +1740,213 @@ branch4 = {
 		required_missions = { egy_protectors_of_the_cross } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			if = {
+				limit = {
+					religion = catholic
+				}
+				curia_treasury_contribution = 5
+			}
+			else = {
+				religious_unity = 1
+			}
+			custom_trigger_tooltip = {
+				tooltip = obj_convert_30_provinces_tooltip
+				check_variable = { which = num_converted_religion value = 30 }
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			if = {
+				limit = {
+					religion = catholic
+				}
+				add_papal_influence = 50
+			}
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		} 
 	}
 
 	egy_fund_holy_orders = {
 		icon = restore_the_hospitallers
 		position = 11
 		required_missions = { egy_a_religious_caste } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = root
+			has_holy_order_trigger = no
+		} 
 
-		trigger = {  } 
+		trigger = {
+			num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+				has_holy_order_trigger = yes
+				value = 15
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			if = {
+				limit = {
+					religion = catholic
+				}
+				add_country_modifier = {
+					name = "por_padroado"
+					duration = -1
+				}
+			}
+			else = {
+				add_dip_power = 100
+			}
+		} 
 	}
 
 	egy_lands_of_arabia = {
 		icon = mission_muslim_administrators
 		position = 12
 		required_missions = { egy_soldiers_of_christ } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			area = tabuk_area
+		} 
 
-		trigger = {  } 
+		trigger = {
+			tabuk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = EGY_subjugated_arabs
+				duration = 9125
+			}
+			
+			tihama_al_yemen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			asir_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yemen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hadramut_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mahra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_yemen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		} 
 	}
 
 	egy_end_of_the_peninsula = {
 		icon = mission_mansure_army
 		position = 13
 		required_missions = { egy_lands_of_arabia } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = tihama_al_yemen_area
+				area = asir_area
+				area = yemen_area
+				area = hadramut_area
+				area = mahra_area
+				area = upper_yemen_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			tihama_al_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			asir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hadramut_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mahra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = EGY_yemeni_trade_routes
+				duration = 9125
+			}
+			arabia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		} 
 	}
 
 	egy_spread_the_word = {
 		icon = convert_the_holy_lands
 		position = 14
 		required_missions = { egy_end_of_the_peninsula } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = arabia_region
+			religion = root
+		} 
 
-		trigger = {  } 
+		trigger = {
+			arabia_region = {
+				type = all
+				religion = root
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = EGY_missionaries_of_christ
+				duration = -1
+			}
+		} 
 	}
 }
 branch5 = {
@@ -503,32 +1959,110 @@ branch5 = {
 	egy_renovate_cairo = {
 		icon = mission_imperial_cities
 		position = 1
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			province_id = 361
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { development = 30 }
+				NOT = { has_tax_building_trigger = yes }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			361 = {
+				owned_by = ROOT 
+				development = 30 
+				has_tax_building_trigger = yes
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			country_event = { id = flavor_mam.2 }
+			361 = { 
+				add_center_of_trade_level = 1
+			}
+		} 
 	}
 
 	egy_university_of_cairo = {
 		icon = pontifical_universities
 		position = 3
 		required_missions = { egy_renovate_cairo } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			province_id = 361
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { development = 45 }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			361 = {
+				owned_by = ROOT 
+				development = 45 
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			361 = {
+				add_or_upgrade_university_building = yes
+				custom_tooltip = " "
+				add_province_modifier = {
+					name = MAM_al_azhar_university_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				change_innovativeness = 3
+			}
+			else = {
+				add_adm_power = 50 
+			}
+		} 
 	}
 
 	egy_develop_the_delta = {
 		icon = mission_consume_the_baghels
 		position = 5
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2316
+				province_id = 4316
+				province_id = 363
+				province_id = 362
+			}
+			OR = { 
+				NOT = { owned_by = ROOT }
+				NOT = { development = 16 }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			2316 = {
+				development = 16
+				owned_by = ROOT
+			}
+			4316 = {
+				development = 16
+				owned_by = ROOT
+			}
+			363 = {
+				development = 16
+				owned_by = ROOT
+			}
+			362 = {
+				development = 16
+				owned_by = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_mercantilism = 3
+			add_years_of_income = 1
+		} 
 	}
 
 	egy_enlarged_plantations = {
@@ -538,33 +2072,183 @@ branch5 = {
 			egy_develop_the_delta
 			egy_processing_the_grains
 		}
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2316
+				province_id = 4316
+				province_id = 363
+				province_id = 362
+			}
+			OR = { 
+				NOT = { owned_by = ROOT }
+				NOT = { development = 21 }
+				NOT = { has_manpower_building_trigger = yes }
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			2316 = {
+				development = 21
+				has_manufactory_trigger = yes
+				owned_by = ROOT
+			}
+			4316 = {
+				development = 21
+				has_manufactory_trigger = yes
+				owned_by = ROOT
+			}
+			363 = {
+				development = 21
+				has_manufactory_trigger = yes
+				owned_by = ROOT
+			}
+			362 = {
+				development = 21
+				has_manufactory_trigger = yes
+				owned_by = ROOT
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			2316 = {
+				add_province_modifier = {
+					name = MAM_breadbasket_of_egypt
+					duration = -1
+				}
+			}
+			4316 = {
+				add_province_modifier = {
+					name = MAM_breadbasket_of_egypt
+					duration = -1
+				}
+			}
+			363 = {
+				add_province_modifier = {
+					name = MAM_breadbasket_of_egypt
+					duration = -1
+				}
+			}
+			362 = {
+				add_province_modifier = {
+					name = MAM_breadbasket_of_egypt
+					duration = -1
+				}
+			}
+			
+			add_stability_or_adm_power = yes
+		} 
 	}
 
 	egy_the_heart_of_the_nation = {
 		icon = mission_develop_alhambra
 		position = 8
 		required_missions = { egy_enlarged_plantations } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = said_area
+				area = vostani_area
+				area = delta_area
+				area = bahari_area
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			said_area = { 
+				type = all
+				owned_by = ROOT
+			}
+			vostani_area = { 
+				type = all
+				owned_by = ROOT
+			}
+			delta_area = { 
+				type = all
+				owned_by = ROOT
+			}
+			bahari_area = { 
+				type = all
+				owned_by = ROOT
+			}
+			development_in_provinces = {
+				OR = {
+					area = said_area
+					area = vostani_area
+					area = delta_area
+					area = bahari_area
+				}
+				value = 275
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = MAM_highlighted_area
+			tooltip = {
+				add_province_modifier = {
+					name = MAM_heart_of_egypt
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				said_area = {
+					add_province_modifier = {
+						name = MAM_heart_of_egypt
+						duration = -1
+					}
+				}
+				vostani_area = {
+					add_province_modifier = {
+						name = MAM_heart_of_egypt
+						duration = -1
+					}
+				}
+				bahari_area = {
+					add_province_modifier = {
+						name = MAM_heart_of_egypt
+						duration = -1
+					}
+				}
+				delta_area = {
+					add_province_modifier = {
+						name = MAM_heart_of_egypt
+						duration = -1
+					}
+				}
+			}
+		} 
 	}
 
 	egy_patron_of_churches = {
 		icon = mission_european_church
 		position = 9
 		required_missions = { egy_protectors_of_the_cross } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_tax_building_trigger = yes }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_tax_building_trigger = yes
+				value = 10
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			custom_tooltip = MAM_distribute_10_base_tax
+			hidden_effect = {
+				for = {
+					amount = 10
+					effect = "
+						random_owned_province = {
+							limit = {
+								has_tax_building_trigger = yes
+							}
+							add_base_tax = 1
+						}
+					"
+				}
+			}
+		} 
 	}
 
 	egy_a_wealthy_nation = {
@@ -573,30 +2257,84 @@ branch5 = {
 		required_missions = { egy_patron_of_churches } 
 		provinces_to_highlight = {  } 
 
-		trigger = {  } 
+		trigger = {
+			num_of_owned_provinces_with = {
+				num_of_buildings_in_province = 4
+				value = 10 
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_prestige_or_monarch_power = { amount = 30 }
+			
+			custom_tooltip = " "
+			
+			define_advisor = {
+				type = natural_scientist
+				skill = 2
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.25 
+			}
+		} 
 	}
 
 	egy_subjugate_medina = {
 		icon = mission_into_arabia
 		position = 13
 		required_missions = { egy_lands_of_arabia } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			OR = {
+				area = medina_area
+				owned_by = MDA
+			}
+		} 
 
-		trigger = {  } 
+		trigger = {
+			OR = {
+				MDA = { is_subject_of = ROOT }
+				384 = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_dip_power = 50
+			add_mil_power = 50
+			add_army_tradition_or_mil_power = { amount = 10 }
+			add_prestige_or_monarch_power = { amount = 10 }
+		} 
 	}
 
 	egy_king_of_arabia = {
 		icon = mission_traverse_the_sahara
 		position = 14
 		required_missions = { egy_subjugate_medina } 
-		provinces_to_highlight = {  } 
+		provinces_to_highlight = {
+			region = arabia_region
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		} 
 
-		trigger = {  } 
+		trigger = {
+			arabia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		} 
 
-		effect = {  } 
+		effect = {
+			add_country_modifier = {
+				name = MAM_arabia_tamed
+				duration = 10950
+			}
+			
+			add_adm_power = 50
+			
+			custom_tooltip = " "
+			
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}
+		} 
 	}
 }
