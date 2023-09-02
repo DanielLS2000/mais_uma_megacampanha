@@ -148,12 +148,16 @@
 
  gal_arts_and_letters_title:0 "Arts and Letters"
  gal_arts_and_letters_desc:0 ""
- 
- # Modifiers
- anglo_portuguese_alliance: "Jamalson Alliance"
- 
- # Events
- flavor_gal.1.t: "The Trade Center of Porto"
- flavor_gal.1.d: "As the Trade Center of Porto, our dominion over commerce is unparalleled in this bustling city. With its strategic location and thriving markets, Porto has become the epicenter of trade, where merchants from far and wide converge to exchange goods and riches. Under our stewardship, the city's prosperity knows no bounds, and its influence on regional and international trade is undeniable."
- flavor_gal.1.a: "We now have control of our Oversea Trade"
 
+
+ anglo_portuguese_alliance:0 "Jamalson Alliance"
+ flavor_gal.1.t:0 "The Trade Center of Porto"
+ flavor_gal.1.d:0 "As the Trade Center of Porto, our dominion over commerce is unparalleled in this bustling city. With its strategic location and thriving markets, Porto has become the epicenter of trade, where merchants from far and wide converge to exchange goods and riches. Under our stewardship, the city's prosperity knows no bounds, and its influence on regional and international trade is undeniable."
+ flavor_gal.1.a:0 "We now have control of our Oversea Trade"
+ gal_way_of_st_james:0 "Legacy of the Vikings"
+ gal_la_bella:0 "Norse Axes"
+ gal_rein_in_the_cities:0 "Diversity at Court"
+ gal_shipyards:0 "Pioneering Spirit"
+ gal_santiago_y_cierra:0 "Legalize Marijuana"
+ gal_sailors_of_the_cantabrian_sea:0 "Marriage with the Natives"
+ gal_irmandinos:0 "Our People"

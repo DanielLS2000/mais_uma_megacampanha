@@ -77,3 +77,43 @@ EGY_ideas = {
 		diplomatic_reputation = 2
 	}
 }
+
+PRE_ideas = {
+	start = {
+		infantry_power = 0.1
+		development_cost = -0.1
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		tag = Z0H
+	}
+	free = yes
+	
+	pre_idea_1 = {
+		technology_cost = -0.05
+		idea_cost = -0.05
+	}
+	pre_idea_2 = {
+		defensiveness = 0.25
+	}
+	pre_idea_3 = {
+		interest = -0.5
+	}
+	pre_idea_4 = {
+		global_manpower_modifier = 0.1
+		discipline = 0.05
+	}
+	pre_idea_5 = {
+		trade_efficiency = 0.15
+	}
+	pre_idea_6 = {
+		production_efficiency = 0.1
+	}
+	pre_idea_7 = {
+		global_trade_goods_size_modifier = 0.1
+	}
+}
