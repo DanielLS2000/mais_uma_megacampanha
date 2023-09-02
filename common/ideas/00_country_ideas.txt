@@ -6407,8 +6407,8 @@ BUL_ideas = {
 
 KIE_ideas = {
 	start = {
-		global_unrest = -1	
-		global_heretic_missionary_strength = 0.01
+		global_manpower_modifier = 0.33	
+		core_creation = -0.15
 	}
 	
 	bonus = {
@@ -6421,26 +6421,29 @@ KIE_ideas = {
 	free = yes
 	
 	mother_of_all_cities = {
-		prestige = 1
+		ae_impact = -0.15
 	}
 	heritage_of_rus = {
-		diplomatic_reputation = 1		
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes	
 	}
 	fending_off_the_invaders = {
-		defensiveness = 0.15		
+		artillery_cost = -0.1
+		artillery_power = 0.1
 	}
 	chernozem_land = {
-		production_efficiency = 0.1
+		land_forcelimit_modifier = 0.33
 	}
 	center_of_orthodox_church = {
 		global_missionary_strength = 0.01
 		tolerance_own = 1		
 	}
 	support_local_traders = {
-		merchants = 1
+		army_tradition = 0.25
+		advisor_cost = -0.1
 	}
 	centralized_rule = {
-		global_tax_modifier = 0.1
+		fire_damage_received = -0.15
 	}
 }
 

@@ -111,6 +111,9 @@ monarchy = {
 				# MegaCampanha
 				crown_of_nordrhein
 				kingdom_of_egypt
+				feudal_lavonia_reform
+				galician_monarchy_reform
+				pret_monarchy
 			}
 		}
 		hereditary_vs_nobility = {

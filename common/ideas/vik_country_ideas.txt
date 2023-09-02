@@ -5,7 +5,7 @@ LAV_ideas = {
 	}
 	
 	bonus = {
-		development_cost_in_primary_culture = -0.15
+		production_efficiency = 0.1
 	}
 	
 	trigger = {
@@ -34,7 +34,8 @@ LAV_ideas = {
 		technology_cost = -0.1
 	}
 	gasconian_valley_industry = {
-		production_efficiency = 0.1
+		development_cost_in_primary_culture = -0.15
+		culture_conversion_cost = -0.1
 	}
 }
 

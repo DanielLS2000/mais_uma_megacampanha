@@ -214,6 +214,14 @@ vassal=
 
 vassal=
 {
+	first="KIE"
+	second="ZAZ"
+	start_date="1444.11.11"
+	end_date="1836.1.1"
+}
+
+vassal=
+{
 	first="Z0H"
 	second="MLO"
 	start_date="1444.11.11"

@@ -358,15 +358,9 @@ potential = {
 			owns = 2313
 		}
 		effect = {
-			if = {
-				limit = {
-				      tag = BYZ
-				}
-		     add_country_modifier = {
-			 name = "restored_hospitaler_knights"
-			 duration = -1
-		    }
-			}
+			prestige = 10
+			army_tradition = 10
+			
 			syria_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -608,6 +602,7 @@ potential = {
 				name = "byzantium_resurgent"
 				duration = 5475
 			}
+			set_government_rank = 3
 			bulgaria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1159,13 +1154,13 @@ potential = {
 					limit = { has_dlc = "Leviathan" }
 					NOT = {
 						has_great_project = {
-							type = hagia_sophia
+							type = parthenon
 							tier = 2
 						}
 					}
 					NOT = {
 						has_great_project = {
-							type = hagia_sophia
+							type = parthenon
 							tier = 3
 						}
 					}
@@ -1183,11 +1178,11 @@ potential = {
 					}
 					OR = {
 						has_great_project = {
-							type = hagia_sophia
+							type = parthenon
 							tier = 2
 						}
 						has_great_project = {
-							type = hagia_sophia
+							type = parthenon
 							tier = 3
 						}
 					}
@@ -2348,7 +2343,7 @@ potential = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				culture = turkish
+				culture = anatolian
 				value = 30
 			}
 		}
