@@ -1,4 +1,4 @@
-branch1 = {
+gal_branch1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -382,7 +382,7 @@ branch1 = {
 		} 
 	}
 }
-branch2 = {
+gal_branch2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -793,7 +793,7 @@ branch2 = {
 		} 
 	}
 }
-branch3 = {
+gal_branch3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1207,7 +1207,7 @@ branch3 = {
 		} 
 	}
 }
-branch4 = {
+gal_branch4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -1795,7 +1795,7 @@ branch4 = {
 		} 
 	}
 }
-branch5 = {
+gal_branch5 = {
 	slot = 5
 	generic = no
 	ai = yes

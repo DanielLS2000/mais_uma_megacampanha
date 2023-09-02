@@ -1,4 +1,4 @@
-first_branch = {
+mer_first_branch = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -530,7 +530,7 @@ first_branch = {
 		} 
 	}
 }
-second_branch = {
+mer_second_branch = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -973,7 +973,7 @@ second_branch = {
 		} 
 	}
 }
-third_branch = {
+mer_third_branch = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1543,7 +1543,7 @@ third_branch = {
 		} 
 	}
 }
-fourth_branch = {
+mer_fourth_branch = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -2043,7 +2043,7 @@ fourth_branch = {
 		} 
 	}
 }
-fifth_branch = {
+mer_fifth_branch = {
 	slot = 5
 	generic = no
 	ai = yes

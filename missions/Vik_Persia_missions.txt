@@ -1,4 +1,4 @@
-branch_1 = {
+per_branch_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -697,7 +697,7 @@ branch_1 = {
 		}
 	}
 }
-branch_2 = {
+per_branch_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -1239,7 +1239,7 @@ branch_2 = {
 		}
 	}
 }
-branch_3 = {
+per_branch_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1799,7 +1799,7 @@ branch_3 = {
 		effect = { country_event = { id = ME_Persia_Events.3 }  } 
 	}
 }
-branch_4 = {
+per_branch_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -2250,7 +2250,7 @@ branch_4 = {
 		}
 	}
 }
-branch_5 = {
+per_branch_5 = {
 	slot = 5
 	generic = no
 	ai = yes

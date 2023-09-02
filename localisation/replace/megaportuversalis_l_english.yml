@@ -48,4 +48,6 @@
  shadow_kingdom.4.d2:0 "As promised, the Emperor launched a campaign to restore Imperial authority to France. [Root.GetName] was among the states that were forced to accept the rule of the Empire, and our submission is proof that the Emperor’s word is law."
  # CringeLord
  pret_monarchy: "Di Pretola Monarchy"
- 
+ # Fred
+ pol_production_of_metal_25_tt: "For the next §Y20 years§!: \nProduction of §YBeer§!: §G+25%§!"
+ pol_swedish_metal_imports_modifier: "Cheap Beer for the Army"

@@ -1,4 +1,4 @@
-branch_1 = {
+kal_branch_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -10,65 +10,9 @@ branch_1 = {
 		}
 	}
 
-	kal_retake_gotland = {
-		icon = mission_develop_visby
-		position = 1
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					owned_by = ROOT
-					controlled_by = REB
-				}
-				AND = {
-					province_id = 25
-					OR = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-				}
-			}
-		} 
-
-		trigger = {
-			owns_core_province = 25
-			NOT = { num_of_rebel_armies = 1 }
-			NOT = { num_of_rebel_controlled_provinces = 1 }
-			NOT = { exists = GOT }
-		} 
-
-		effect = {
-			if = {
-				limit = {
-					NOT = { is_year = 1460 }	#Eric died in 1459
-				}
-				country_event = {
-					id = flavor_dan.101
-				}
-			}
-			else = {
-				add_stability_or_adm_power = yes
-			}
-			if = {
-				limit = {
-					NOT = { is_permanent_claim = 45 }
-					NOT = { is_core = 45 }
-				}
-				add_permanent_claim = 45
-			}
-			if = {
-				limit = { ai = yes SWE = { is_subject_of = ROOT } }
-				reverse_add_opinion = {
-					who = SWE
-					modifier = dan_early_victories
-				}
-			}
-		} 
-	}
-
 	kal_north_sea_markets = {
 		icon = hungarian_union
-		position = 2
-		required_missions = { kal_retake_gotland } 
+		position = 2 
 		provinces_to_highlight = {  } 
 
 		trigger = {
@@ -545,7 +489,7 @@ branch_1 = {
 		} 
 	}
 }
-Branch_2 = {
+kal_Branch_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -1036,7 +980,7 @@ Branch_2 = {
 		} 
 	}
 }
-Branch_3 = {
+kal_Branch_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1611,7 +1555,7 @@ Branch_3 = {
 		} 
 	}
 }
-Branch_4 = {
+kal_Branch_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -2090,7 +2034,7 @@ Branch_4 = {
 		} 
 	}
 }
-Branch_5 = {
+kal_Branch_5 = {
 	slot = 5
 	generic = no
 	ai = yes

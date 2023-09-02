@@ -1,4 +1,4 @@
-early_naval_branch = {
+lav_early_naval_branch = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -187,7 +187,7 @@ early_naval_branch = {
 	}
 }
 
-conquest_branch1 = {
+lav_conquest_branch1 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -505,7 +505,7 @@ conquest_branch1 = {
 	}
 }
 
-conquest_branch2 = {
+lav_conquest_branch2 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -600,7 +600,7 @@ conquest_branch2 = {
 	}
 }
 
-colonial2 = {
+lav_colonial2 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -736,7 +736,7 @@ colonial2 = {
 	}
 }	
 
-colonial3 = {
+lav_colonial3 = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -879,7 +879,7 @@ colonial3 = {
 	}
 }
 
-conquest_branch_italy1 = {
+lav_conquest_branch_italy1 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -1167,7 +1167,7 @@ conquest_branch_italy1 = {
 	}
 }
 
-conquest_branch_italy2 = {
+lav_conquest_branch_italy2 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -1290,7 +1290,7 @@ conquest_branch_italy2 = {
 		}
 	}
 
-dev1 = {
+lav_dev1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -1544,7 +1544,7 @@ dev1 = {
 	}
 }
 
-dev2 = {
+lav_dev2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -1723,7 +1723,7 @@ dev2 = {
 	
 }
 
-dev3 = {
+lav_dev3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -2081,7 +2081,7 @@ dev3 = {
 	}
 }	
 
-dev4 = {
+lav_dev4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -2393,7 +2393,7 @@ dev4 = {
 	}
 }
 
-dev5 = {
+lav_dev5 = {
 	slot = 5
 	generic = no
 	ai = yes
