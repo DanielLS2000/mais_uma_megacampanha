@@ -1,0 +1,84 @@
+l_english:
+
+ #---------------------------------------------------------
+ # Boh 1
+ #---------------------------------------------------------
+
+ emp_boh_hussite_start_title: "Emp Boh Hussite Start"
+ emp_boh_hussite_start_desc: ""
+ emp_boh_hussite_one_title: "Emp Boh Hussite One"
+ emp_boh_hussite_one_desc: ""
+ emp_boh_defenestrate_the_heretics_title: "Emp Boh Defenestrate The Heretics"
+ emp_boh_defenestrate_the_heretics_desc: ""
+ emp_boh_bohemian_crystal_title: "Emp Boh Bohemian Crystal"
+ emp_boh_bohemian_crystal_desc: ""
+ emp_hun_improve_economy_title: "Emp Hun Improve Economy"
+ emp_hun_improve_economy_desc: ""
+ emp_sax_manufacturing_title: "Emp Sax Manufacturing"
+ emp_sax_manufacturing_desc: ""
+
+ #---------------------------------------------------------
+ # Boh 2
+ #---------------------------------------------------------
+
+ subjugate_hungary_title: "Subjugate Hungary"
+ subjugate_hungary_desc: ""
+ austrian_hungary_title: "Austrian Hungary"
+ austrian_hungary_desc: ""
+ emp_hab_the_hungarian_question_title: "Emp Hab The Hungarian Question"
+ emp_hab_the_hungarian_question_desc: ""
+ austrian_croatia_title: "Austrian Croatia"
+ austrian_croatia_desc: ""
+ emp_hab_develop_hungary_bohemia_title: "Emp Hab Develop Hungary Bohemia"
+ emp_hab_develop_hungary_bohemia_desc: ""
+
+ #---------------------------------------------------------
+ # Boh 3
+ #---------------------------------------------------------
+
+ lightdev1_title: "Lightdev1"
+ lightdev1_desc: ""
+ lightdev2_title: "Lightdev2"
+ lightdev2_desc: ""
+ lightdev3_title: "Lightdev3"
+ lightdev3_desc: ""
+ gov1_title: "Gov1"
+ gov1_desc: ""
+ gov2_title: "Gov2"
+ gov2_desc: ""
+ gov3_title: "Gov3"
+ gov3_desc: ""
+
+ #---------------------------------------------------------
+ # Boh 4
+ #---------------------------------------------------------
+
+ wala1_title: "Wala1"
+ wala1_desc: ""
+ wala2_title: "Wala2"
+ wala2_desc: ""
+ wala3_title: "Wala3"
+ wala3_desc: ""
+ wala4_title: "Wala4"
+ wala4_desc: ""
+ wala5_title: "Wala5"
+ wala5_desc: ""
+ cort1_title: "Cort1"
+ cort1_desc: ""
+ cort2_title: "Cort2"
+ cort2_desc: ""
+ cort3_title: "Cort3"
+ cort3_desc: ""
+
+ #---------------------------------------------------------
+ # Boh 5
+ #---------------------------------------------------------
+
+ in_germany_title: "In Germany"
+ in_germany_desc: ""
+ in_germany2_title: "In Germany2"
+ in_germany2_desc: ""
+ in_germany3_title: "In Germany3"
+ in_germany3_desc: ""
+ in_germany4_title: "In Germany4"
+ in_germany4_desc: ""

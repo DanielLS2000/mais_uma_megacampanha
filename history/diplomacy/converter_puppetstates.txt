@@ -115,9 +115,8 @@ dependency=
 	end_date="1836.1.1"
 }
 
-dependency=
+vassal=
 {
-	subject_type = appanage
 	first="GUY"
 	second="DAU"
 	start_date="1444.11.11"

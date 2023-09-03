@@ -18,6 +18,7 @@ capital = 239
 	}
 	add_ruler_personality = drunkard_personality
 	add_ruler_personality = greedy_personality
+	add_ruler_personality = infertile_personality
 	queen = {
 		name = "Ermengarde"
 		dynasty = "Roudrac"

@@ -1,22 +1,4 @@
 ﻿l_english:
- emp_mlo_friends_in_high_places_title:0 ""
- emp_mlo_friends_in_high_places_desc:0 ""
-
- emp_mlo_fortify_alps_title:0 ""
- emp_mlo_fortify_alps_desc:0 ""
-
- emp_sav_defeat_the_swiss_title:0 ""
- emp_sav_defeat_the_swiss_desc:0 ""
-
- emp_mlo_alpine_wall_title:0 ""
- emp_mlo_alpine_wall_desc:0 ""
-
- emp_ita_redeem_tirolo_title:0 ""
- emp_ita_redeem_tirolo_desc:0 ""
-
- emp_ita_humiliate_austria_title:0 ""
- emp_ita_humiliate_austria_desc:0 ""
-
  ita_centralised_government_title:0 "Centralised Government"
  ita_centralised_government_desc:0 "With the empire unified we have we have become more centralized. This has lessened the power of local rulers, allowing us to channel more of its wealth into our own coffers."
 
@@ -62,9 +44,6 @@
  ven_armada_title:0 "Armata di Latium"
  ven_armada_desc:0 ""
 
- emp_mlo_terra_firma_title:0 ""
- emp_mlo_terra_firma_desc:0 ""
-
  emp_mlo_kingdom_of_lombardy_title:0 "King of the Alps"
  emp_mlo_kingdom_of_lombardy_desc:0 ""
 
@@ -95,9 +74,6 @@
  ven_arsenal_title:0 "Armata di Venezia"
  ven_arsenal_desc:0 ""
 
- emp_ita_a_worthy_navy_title:0 ""
- emp_ita_a_worthy_navy_desc:0 ""
-
  ita_lands_pirates_title:0 "The Lands of Pirates"
  ita_lands_pirates_desc:0 "The bloodiest period of barbarian activities coincided with the wars of Italy in the 16th century. It was then that the Maghrebi Muslims directed their raids towards the fleets and coasts of the Italian states, several times over the centuries, the southern coastal cities, Lazio, Tuscany and Liguria were sacked and destroyed. They did not limit themselves to pillaging ships, but also often made forays into the territories bordering the sea. The coastal guard towers, present along the coasts, especially in Italy, remain silent witnesses of this."
 
@@ -106,12 +82,6 @@
 
  ita_regia_marina_title:0 "Regia Marina"
  ita_regia_marina_desc:0 "I want ships capable of serving all over the Mediterranean, capable of carrying the most powerful artillery, of possessing maximum speed, of containing a large amount of fuel... I will consecrate all my forces... so that the organization of our Navy Military responds to the needs of the country."
-
- emp_ita_take_the_littoral_title:0 ""
- emp_ita_take_the_littoral_desc:0 ""
-
- emp_ita_cross_the_pindus_title:0 ""
- emp_ita_cross_the_pindus_desc:0 ""
 
  ita_city_world_desire_title:0 "City of World Desire"
  ita_city_world_desire_desc:0 "There had been the first ride at terrible speed without a halt, and then in the dawn he had seen a pale gleam of gold, to his left lay a sea of mist, rising to a bleak shadow in the East; but to his right great mountains reared their heads, ranging from west to a steep and sudden end, as if in the making of the land the sea had a burst through a great barrier, carving out a mighty valley to be a land of battle and debate in times to come. And upon its out-thrust knee was the Splendid City, with its walls of stone so strong and old that i seemed to have been not builded but craven by gods out of the bones of the earth."
@@ -122,23 +92,11 @@
  ita_primo_tutti_title:0 "Primo tra Tutti"
  ita_primo_tutti_desc:0 "Our prestige and power means little if it is not acknowledged by our neighbors. We must ensure the we have a place among the Great Powers of the world, and that they acknowledge us as their equal in relations and might."
 
- emp_mlo_renaissance_city_title:0 ""
- emp_mlo_renaissance_city_desc:0 ""
-
- emp_mlo_develop_po_valley_title:0 ""
- emp_mlo_develop_po_valley_desc:0 ""
-
  tus_florentine_cloth_title:0 "Florentine Cloth"
  tus_florentine_cloth_desc:0 ""
 
  spi_mining_investments_title:0 "Mining Investment"
  spi_mining_investments_desc:0 ""
-
- ven_vetro_veneziano_title:0 ""
- ven_vetro_veneziano_desc:0 ""
-
- emp_sav_powerhouse_of_the_north_title:0 ""
- emp_sav_powerhouse_of_the_north_desc:0 ""
 
  ita_questione_meridionale_title:0 "Questione Meridionale"
  ita_questione_meridionale_desc:0 "The new Italy had found the two sections of the peninsula, southern and northern, which reunited after more than a thousand years, in absolutely antithetical conditions. The Lombard invasion had definitively broken the unity created by Rome, and in the North the municipalities had given a special impetus to history, while in the South the kingdom of the Swabians, Anjou, Spain and the Bourbons had another. On the one hand, the tradition of a certain autonomy had created a bold bourgeoisie full of initiatives, and there was an economic organization similar to that of other European states, conducive to the further development of capitalism and industry. On the other, the paternal administrations of Spain and the Bourbons had created nothing: the bourgeoisie did not exist, agriculture was primitive and was not even enough to satisfy the local market; no roads, no ports, no use of the few waters that the region possessed due to its special conformation. The unification put the two parts of the peninsula in intimate contact."

@@ -1,0 +1,165 @@
+l_english:
+
+ #---------------------------------------------------------
+ # Lav Early Naval Branch
+ #---------------------------------------------------------
+
+ fra_raise_slave_ships_title: "Raise Slave Ships"
+ fra_raise_slave_ships_desc: ""
+ emp_pro_marseille_title: "Marseille"
+ emp_pro_marseille_desc: ""
+ fra_toulon_dockyards_title: "Toulon Dockyards"
+ fra_toulon_dockyards_desc: ""
+ emp_pro_la_marseillaise_title: "La Marseillaise"
+ emp_pro_la_marseillaise_desc: ""
+
+ #---------------------------------------------------------
+ # Lav Conquest Branch1
+ #---------------------------------------------------------
+
+ fra_chateux_gascony_title: "Chateux Gascony"
+ fra_chateux_gascony_desc: ""
+ take_south_islands_title: "Take South Islands"
+ take_south_islands_desc: ""
+ crow_laval_title: "Crow Laval"
+ crow_laval_desc: ""
+ mediterrainian_authority_title: "Mediterrainian Authority"
+ mediterrainian_authority_desc: ""
+ take_catalonia_title: "Take Catalonia"
+ take_catalonia_desc: ""
+ throne_of_aragon_title: "Throne Of Aragon"
+ throne_of_aragon_desc: ""
+ kingdom_of_laveria_title: "Kingdom Of Laveria"
+ kingdom_of_laveria_desc: ""
+
+ #---------------------------------------------------------
+ # Lav Conquest Branch2
+ #---------------------------------------------------------
+
+ push_the_french_line_title: "Push The French Line"
+ push_the_french_line_desc: ""
+ king_of_the_franks_title: "King Of The Franks"
+ king_of_the_franks_desc: ""
+ crown_of_lavonia_magna_title: "Crown Of Lavonia Magna"
+ crown_of_lavonia_magna_desc: ""
+
+ #---------------------------------------------------------
+ # Lav Colonial2
+ #---------------------------------------------------------
+
+ emp_fra_france_discovers_north_america_title: "France Discovers North America"
+ emp_fra_france_discovers_north_america_desc: ""
+ emp_fra_french_colony_in_north_america_title: "French Colony In North America"
+ emp_fra_french_colony_in_north_america_desc: ""
+ emp_fra_louisiana_title: "Louisiana"
+ emp_fra_louisiana_desc: ""
+ emp_fra_india_expansion_title: "India Expansion"
+ emp_fra_india_expansion_desc: ""
+
+ #---------------------------------------------------------
+ # Lav Colonial3
+ #---------------------------------------------------------
+
+ lav_terranova_title: "Lav Terranova"
+ lav_terranova_desc: ""
+ emp_fra_france_discovers_the_carribean_title: "France Discovers The Carribean"
+ emp_fra_france_discovers_the_carribean_desc: ""
+ lav_newfoundland_labrador_title: "Lav Newfoundland Labrador"
+ lav_newfoundland_labrador_desc: ""
+
+ #---------------------------------------------------------
+ # Lav Conquest Branch Italy1
+ #---------------------------------------------------------
+
+ port_mont_crist_title: "Port Mont Crist"
+ port_mont_crist_desc: ""
+ emp_fra_south_america_title: "South America"
+ emp_fra_south_america_desc: ""
+ emp_fra_native_relations_title: "Native Relations"
+ emp_fra_native_relations_desc: ""
+ fra_secure_alpine_pass_title: "Secure Alpine Pass"
+ fra_secure_alpine_pass_desc: ""
+ fra_italian_heartland_title: "Italian Heartland"
+ fra_italian_heartland_desc: ""
+ fra_house_god_title: "House God"
+ fra_house_god_desc: ""
+ kingdom_of_lavalia_title: "Kingdom Of Lavalia"
+ kingdom_of_lavalia_desc: ""
+
+ #---------------------------------------------------------
+ # Lav Conquest Branch Italy2
+ #---------------------------------------------------------
+
+ fra_restore_signoria_title: "Restore Signoria"
+ fra_restore_signoria_desc: ""
+ fra_secure_genoan_trade_title: "Secure Genoan Trade"
+ fra_secure_genoan_trade_desc: ""
+
+ #---------------------------------------------------------
+ # Lav Dev1
+ #---------------------------------------------------------
+
+ fra_appease_the_princes_title: "Appease The Princes"
+ fra_appease_the_princes_desc: ""
+ fra_crown_seat_capital_title: "Crown Seat Capital"
+ fra_crown_seat_capital_desc: ""
+ fra_religious_settlement_title: "Religious Settlement"
+ fra_religious_settlement_desc: ""
+
+ #---------------------------------------------------------
+ # Lav Dev2
+ #---------------------------------------------------------
+
+ fra_refine_bombards_title: "Refine Bombards"
+ fra_refine_bombards_desc: ""
+ fra_form_gendarmes_title: "Form Gendarmes"
+ fra_form_gendarmes_desc: ""
+ fra_movement_centralization_title: "Movement Centralization"
+ fra_movement_centralization_desc: ""
+ fra_reform_legal_system_title: "Reform Legal System"
+ fra_reform_legal_system_desc: ""
+ fra_educational_reforms_title: "Educational Reforms"
+ fra_educational_reforms_desc: ""
+
+ #---------------------------------------------------------
+ # Lav Dev3
+ #---------------------------------------------------------
+
+ fra_musketeers_title: "Musketeers"
+ fra_musketeers_desc: ""
+ fra_absolutism_title: "Absolutism"
+ fra_absolutism_desc: ""
+ fra_grande_armee_title: "Grande Armee"
+ fra_grande_armee_desc: ""
+ fra_military_reform_title: "Military Reform"
+ fra_military_reform_desc: ""
+ fra_french_industry_title: "French Industry"
+ fra_french_industry_desc: ""
+
+ #---------------------------------------------------------
+ # Lav Dev4
+ #---------------------------------------------------------
+
+ fra_embrace_renaissance_title: "Embrace Renaissance"
+ fra_embrace_renaissance_desc: ""
+ fra_nine_universities_title: "Nine Universities"
+ fra_nine_universities_desc: ""
+ fra_merchant_cooperation_title: "Merchant Cooperation"
+ fra_merchant_cooperation_desc: ""
+ fra_develop_trade_title: "Develop Trade"
+ fra_develop_trade_desc: ""
+ fra_national_bank_title: "National Bank"
+ fra_national_bank_desc: ""
+ fra_civil_code_title: "Civil Code"
+ fra_civil_code_desc: ""
+
+ #---------------------------------------------------------
+ # Lav Dev5
+ #---------------------------------------------------------
+
+ fra_connect_provinces_title: "Connect Provinces"
+ fra_connect_provinces_desc: ""
+ fra_renaissance_architecture_title: "Renaissance Architecture"
+ fra_renaissance_architecture_desc: ""
+ fra_trade_fairs_title: "Trade Fairs"
+ fra_trade_fairs_desc: ""

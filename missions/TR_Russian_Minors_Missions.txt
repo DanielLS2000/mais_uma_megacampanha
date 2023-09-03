@@ -998,7 +998,10 @@ consolidate = {
 			}
 		}
 		trigger = {
-			tag = RUS
+			OR = {
+				tag = RUS
+				tag = UKR
+			}
 		}
 		effect = {
 			remove_country_modifier = centralization_modifier
